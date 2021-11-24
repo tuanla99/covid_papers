@@ -1,0 +1,215 @@
+.article-item {
+  display: flex;
+  /* height: 224px; */
+  margin-bottom: 32px;
+  padding-right: 15px;
+}
+
+.article-thumb {
+  flex-shrink: 0;
+  width: 290px;
+  /* height: 224px; */
+  margin-right: 27px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.article-thumb img {
+  width: 100%;
+  height: 224px;
+  object-fit: cover;
+}
+
+.article-info {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 24px 28px;
+  /* border: 1px solid #F2F4F6; */
+  border-radius: 10px;
+  flex-grow: 1;
+}
+
+.article-category {
+  font: normal normal normal 14px/30px Lato !important;
+  letter-spacing: 0px;
+  color: #707070 !important;
+  text-transform: uppercase;
+}
+
+.article-title {
+  font: normal normal bold 22px/32px Lato !important;
+  letter-spacing: 0px;
+  color: #002222 !important;
+}
+
+.article-title:hover {
+  color: #F04800 !important;
+  transition: ease-in 0.2s;
+}
+
+.article-info-bot {
+  display: flex;
+  justify-content: space-between;
+}
+
+.createDate i, .cata-createDate i {
+  color: #086AD8 !important;
+  margin-right: 8px;
+}
+
+.readmore {
+  color: #086AD8 !important
+}
+
+.article-category-item {
+  display: flex;
+  align-items: center;
+  background: rgba(243, 241, 241, 0.849);
+  border-bottom-left-radius: 29px;
+  border-top-left-radius: 29px;
+  border-bottom-right-radius: 8px;
+  border-top-right-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.category-thumb {
+  width: 58px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 12px;
+}
+
+.category-thumb img {
+  width: 100%;
+  height: 58px;
+  object-fit: cover;
+}
+
+.category-name {
+  font: normal normal 600 16px/29px Lato !important;
+  letter-spacing: 0px;
+  color: #002222 !important;
+  text-transform: capitalize;
+}
+
+.categories-article p {
+  cursor: pointer;
+  text-align: center;
+  color: #F04800 !important;
+  font-size: 16px;
+  text-decoration: underline;
+}
+
+.news-catalog {
+  margin-top: 60px;
+}
+
+.price-comparing {
+  font-weight: 400;
+  font-size: 20px;
+  border-bottom: 2px solid #207bc1;
+  color: #fff;
+  line-height: 30px;
+}
+
+.price-comparing-title {
+  display: inline-block;
+  padding: 6px 20px 4px;
+  background: #207bc1 none;
+  border-radius: 5px 5px 0 0;
+}
+
+.news-cata-title h1 {
+  font: normal normal bold 20px/33px Lato !important;
+  letter-spacing: 0px;
+  color: #1185C4 !important;
+  margin: 0;
+  padding: 0;
+  /* text-align: center; */
+}
+
+.cate-article-item {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+}
+
+.cata-article-thumb {
+  width: 110px;
+  height: 110px;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-right: 12px;
+  flex-shrink: 0;
+}
+
+.article-list ul {
+  padding: 0;
+  height: auto;
+  max-height: 500px;
+  overflow: scroll;
+}
+
+.cata-article-thumb img {
+  width: 100%;
+  height: 110px;
+  object-fit: cover;
+}
+
+.cata-article-info {}
+
+.cata-article-title {
+  font: normal normal 600 13px/25px Lato !important;
+  letter-spacing: 0px;
+  color: #002222 !important;
+}
+
+.cata-createDate {
+  font: normal normal normal 14px/30px Lato !important;
+  letter-spacing: 0px;
+  color: #707070 !important;
+}
+
+.cata-createDate i {
+  color: #086AD8 !important;
+  margin-right: 8px;
+}
+
+.detail-title {
+  margin-bottom: 45px;
+}
+
+.detail-title h1 {
+  text-align: left;
+  font: normal normal bold 26px/33px Lato !important;
+  letter-spacing: 0px;
+  color: #222222 !important;
+}
+
+.detail-category {
+  font: normal normal normal 14px/30px Lato !important;
+  letter-spacing: 0px;
+  color: #707070 !important;
+  text-transform: uppercase;
+  margin-right: 16px;
+}
+
+.detail-createdate {
+  text-align: left;
+  font: normal normal normal 16px/30px Lato !important;
+  letter-spacing: 0px;
+  color: #707070 !important;
+}
+
+.detail-createdate i {
+  color: #086AD8 !important;
+  margin-right: 8px;
+}
+
+.page-item:last-child .page-link, .page-item:first-child .page-link {
+  background: #086AD8 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #1185C447;
+  opacity: 1;
+  color: #FFFFFF;
+}

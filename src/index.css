@@ -1,0 +1,555 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.React-logo {
+  height: 50px;
+  position: absolute;
+  right: 0;
+}
+
+.App-logo {
+  height: 25px;
+  position: absolute;
+  left: 0;
+  padding: 10px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 50px;
+  color: white;
+}
+
+.mainLogo {
+  width: 450px;
+}
+
+#title {
+  text-align: center;
+  height: 100%;
+}
+
+:root {
+  --bs-blue: #0d6efd;
+  --bs-indigo: #6610f2;
+  --bs-purple: #6f42c1;
+  --bs-pink: #d63384;
+  --bs-red: #dc3545;
+  --bs-orange: #fd7e14;
+  --bs-yellow: #ffc107;
+  --bs-green: #198754;
+  --bs-teal: #20c997;
+  --bs-cyan: #21cbce;
+  --bs-white: #fff;
+  --bs-gray: #6c757d;
+  --bs-gray-dark: #343a40;
+  --bs-primary: #0d6efd;
+  --bs-secondary: #6c757d;
+  --bs-success: #198754;
+  --bs-info: #21cbce;
+  --bs-warning: #ffc107;
+  --bs-danger: #dc3545;
+  --bs-light: #f8f9fa;
+  --bs-dark: #212529;
+  --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0))
+}
+
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local(""), url(https://production-assets.paperswithcode.com/perf/fonts/917632e36982ca7933c8.woff2) format("woff2")
+}
+
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local(""), url(https://production-assets.paperswithcode.com/perf/fonts/65e877e527022735c1a1.woff2) format("woff2")
+}
+
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local(""), url(https://production-assets.paperswithcode.com/perf/fonts/f1405bd8a987c2ea8a67.woff2) format("woff2")
+}
+
+@font-face {
+  font-family: "Computer Modern Serif";
+  src: local(""), url(https://production-assets.paperswithcode.com/perf/fonts/b63de31899ec71cfb870.woff) format("woff");
+  font-display: swap;
+  font-weight: normal;
+  font-style: normal
+}
+
+@font-face {
+  font-family: "Computer Modern Serif";
+  src: local(""), url(https://production-assets.paperswithcode.com/perf/fonts/5d5c7512cb539fb279b2.woff) format("woff");
+  font-display: swap;
+  font-weight: bold;
+  font-style: normal
+}
+
+@font-face {
+  font-family: "Computer Modern Serif";
+  src: local(""), url(https://production-assets.paperswithcode.com/perf/fonts/357ce3503c6299bc1b58.woff) format("woff");
+  font-display: swap;
+  font-weight: normal;
+  font-style: italic
+}
+
+@font-face {
+  font-family: "Computer Modern Serif";
+  src: local(""), url(https://production-assets.paperswithcode.com/perf/fonts/c83e6f15d4c7568ee872.woff) format("woff");
+  font-display: swap;
+  font-weight: bold;
+  font-style: italic
+}
+
+@font-face {
+  font-family: "Exo";
+  font-style: normal;
+  font-weight: 100;
+  src: local(""), url(https://production-assets.paperswithcode.com/perf/fonts/729c812ee9989426abb1.woff2) format("woff2");
+  font-display: swap
+}
+
+@font-face {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""), url(https://production-assets.paperswithcode.com/perf/fonts/39a18f443d434999b89b.woff2) format("woff2");
+  font-display: swap
+}
+
+@font-face {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  src: local(""), url(https://production-assets.paperswithcode.com/perf/fonts/4ad349571e28bb59c5a5.woff2) format("woff2");
+  font-display: swap
+}
+
+*, *::before, *::after {
+  box-sizing: border-box
+}
+
+@media(prefers-reduced-motion: no-preference) {
+  :root {
+    scroll-behavior: smooth
+  }
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+}
+
+[tabindex="-1"]:focus:not(:focus-visible) {
+  outline: 0 !important
+}
+
+hr {
+  margin: 1rem 0;
+  color: #000;
+  background-color: currentColor;
+  border: 0;
+  opacity: .1
+}
+
+hr:not([size]) {
+  height: 1px
+}
+
+h6, h5, h4, h3, h2, h1 {
+  margin-top: 0;
+  margin-bottom: .5rem;
+  font-weight: 500;
+  line-height: 1.2
+}
+
+h1 {
+  font-size: calc(1.375rem + 1.5vw)
+}
+
+@media(min-width: 1200px) {
+  h1 {
+    font-size: 2.5rem
+  }
+}
+
+h2 {
+  font-size: calc(1.325rem + 0.9vw)
+}
+
+@media(min-width: 1200px) {
+  h2 {
+    font-size: 2rem
+  }
+}
+
+h3 {
+  font-size: calc(1.3rem + 0.6vw)
+}
+
+@media(min-width: 1200px) {
+  h3 {
+    font-size: 1.75rem
+  }
+}
+
+h4 {
+  font-size: calc(1.275rem + 0.3vw)
+}
+
+@media(min-width: 1200px) {
+  h4 {
+    font-size: 1.5rem
+  }
+}
+
+h5 {
+  font-size: 1.25rem
+}
+
+h6 {
+  font-size: 1rem
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem
+}
+
+ol, ul {
+  padding-left: 2rem
+}
+
+ol, ul {
+  margin-top: 0;
+  margin-bottom: 1rem
+}
+
+ul ul {
+  margin-bottom: 0
+}
+
+b, strong {
+  font-weight: bolder
+}
+
+small {
+  font-size: 0.875em
+}
+
+a {
+  color: #0d6efd;
+  text-decoration: none
+}
+
+a:hover {
+  color: #0a58ca;
+  text-decoration: none
+}
+
+a:not([href]):not([class]), a:not([href]):not([class]):hover {
+  color: inherit;
+  text-decoration: none
+}
+
+pre, code {
+  font-family: var(--bs-font-monospace);
+  font-size: 1em;
+  direction: ltr/* rtl:ignore */
+  ;
+  unicode-bidi: bidi-override
+}
+
+pre {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  overflow: auto;
+  font-size: 0.875em
+}
+
+code {
+  font-size: 0.875em;
+  color: #d63384;
+  word-wrap: break-word
+}
+
+a>code {
+  color: inherit
+}
+
+figure {
+  margin: 0 0 1rem
+}
+
+img, svg {
+  vertical-align: middle
+}
+
+table {
+  caption-side: bottom;
+  border-collapse: collapse
+}
+
+th {
+  text-align: inherit;
+  text-align: -webkit-match-parent
+}
+
+thead, tbody, tfoot, tr, td, th {
+  border-color: inherit;
+  border-style: solid;
+  border-width: 0
+}
+
+label {
+  display: inline-block
+}
+
+button {
+  border-radius: 0
+}
+
+button:focus:not(:focus-visible) {
+  outline: 0
+}
+
+input, button, select, optgroup, textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit
+}
+
+button, select {
+  text-transform: none
+}
+
+[role=button] {
+  cursor: pointer
+}
+
+select {
+  word-wrap: normal
+}
+
+[list]::-webkit-calendar-picker-indicator {
+  display: none
+}
+
+button, [type=button], [type=reset], [type=submit] {
+  -webkit-appearance: button
+}
+
+button:not(:disabled), [type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled) {
+  cursor: pointer
+}
+
+::-moz-focus-inner {
+  padding: 0;
+  border-style: none
+}
+
+textarea {
+  resize: vertical
+}
+
+::-webkit-datetime-edit-fields-wrapper, ::-webkit-datetime-edit-text, ::-webkit-datetime-edit-minute, ::-webkit-datetime-edit-hour-field, ::-webkit-datetime-edit-day-field, ::-webkit-datetime-edit-month-field, ::-webkit-datetime-edit-year-field {
+  padding: 0
+}
+
+::-webkit-inner-spin-button {
+  height: auto
+}
+
+[type=search] {
+  outline-offset: -2px;
+  -webkit-appearance: textfield
+}
+
+::-webkit-search-decoration {
+  -webkit-appearance: none
+}
+
+::-webkit-color-swatch-wrapper {
+  padding: 0
+}
+
+::file-selector-button {
+  font: inherit
+}
+
+::-webkit-file-upload-button {
+  font: inherit;
+  -webkit-appearance: button
+}
+
+iframe {
+  border: 0
+}
+
+[hidden] {
+  display: none !important
+}
+
+.list-unstyled {
+  padding-left: 0;
+  list-style: none
+}
+
+small, .small {
+  font-size: 0.875em;
+  font-weight: 400
+}
+
+.footer {
+  display: block;
+  margin-top: 30px;
+  padding: 15px;
+  border-top: 1px solid #e0e0e0;
+  font-size: 13px;
+  color: #aaa;
+  text-align: center
+}
+
+.footer a {
+  color: #999
+}
+
+.footer-contact {
+  margin-bottom: 5px
+}
+
+.footer-contact-item {
+  display: inline-block
+}
+
+.footer-links>*:not(:last-child) {
+  margin-right: 1rem
+}
+
+.icon-wrapper {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  contain: strict;
+  fill: currentcolor;
+  box-sizing: content-box !important
+}
+
+.icon-wrapper.icon-fa {
+  position: relative;
+  top: 2px
+}
+
+.icon-wrapper svg {
+  display: block;
+  height: 100%;
+  width: 100%
+}
+
+.icon-wrapper[data-name=slack] svg {
+  width: 200%;
+  height: 200%;
+  transform: translate(-25%, -25%)
+}
+
+.icon-wrapper:not(.icon-color)>svg>* {
+  stroke: currentColor
+}
+
+.navbar-brand .icon-wrapper {
+  color: #21cbce;
+  width: 30px;
+  height: 30px;
+  vertical-align: middle
+}
+
+.navbar-mobile-twitter {
+  margin-right: 18px !important;
+  padding-top: 1px
+}
+
+.navbar-mobile-twitter a {
+  color: #1d9bf0
+}
+
+.navbar-mobile-twitter .icon-wrapper {
+  width: 23px;
+  height: 23px
+}
+
+.header-search {
+  margin-bottom: 26px
+}
+
+.header-search form {
+  position: relative
+}
+
+.header-search .icon {
+  color: gray;
+  position: absolute !important;
+  top: 50% !important;
+  left: initial !important;
+  padding-right: 0 !important;
+  transform: translateY(-50%);
+  right: 22px;
+  padding: 0;
+  height: 20px;
+  width: 20px
+}
+
+.header-search .icon .icon-wrapper {
+  width: 100%;
+  height: 100%;
+  top: 0
+}
+
+.nav-link-social-icon {
+  color: #1d9bf0;
+  width: 25px;
+  height: 25px
+}
+
+.nav-link-social-icon-slack {
+  vertical-align: middle
+}
+
+@media(min-width: 992px) {
+  .header-search {
+    margin: 0
+  }
+  .header-search .icon {
+    right: 10px !important
+  }
+  .nav-link-social-icon {
+    width: 20px;
+    height: 20px
+  }
+  .nav-link-social-icon-slack {
+    width: 22px;
+    height: 22px
+  }
+}

@@ -1,0 +1,44 @@
+.stores-list-container ul {
+  margin: 0;
+  padding: 0;
+}
+
+.stores .store-item {
+  padding: 22px 30px;
+  background: #F5F7FC 0% 0% no-repeat padding-box;
+  border-radius: 10px;
+  margin-bottom: 22px;
+}
+
+.stores .store-item h1 {
+  text-align: left;
+  font: normal normal bold 20px/28px Lato !important;
+  letter-spacing: 0px;
+  color: #D92B2E !important;
+  margin-bottom: 16px;
+}
+
+.stores .store-item p {
+  text-align: left;
+  font: normal normal normal 16px/22px Lato !important;
+  letter-spacing: 0px;
+  color: #222222 !important;
+  position: relative;
+}
+
+.stores .store-item p span {
+  text-align: left;
+  font: normal normal bold 16px/22px Lato !important;
+  letter-spacing: 0px;
+  color: #222222;
+}
+
+.see_on_map {
+  display: inline-block !important;
+  position: absolute !important;
+  right: 0 !important;
+  text-align: left !important;
+  font: normal normal bold 16px/22px Lato !important;
+  letter-spacing: 0px !important;
+  color: #2077B7 !important;
+}
