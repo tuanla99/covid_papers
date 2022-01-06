@@ -419,7 +419,7 @@ class SearchCar extends Component {
 
 
 
-            {'Attention Mechanisms in Computer Vision: A Survey'?.includes(searchName) && (
+            {('Attention Mechanisms in Computer Vision: A Survey'?.includes(searchName) || 'Attention Mechanisms in Computer Vision: A Survey'.toLowerCase()?.includes(searchName)) && (
               <div class="row infinite-item item paper-card">
 
 
@@ -537,8 +537,8 @@ class SearchCar extends Component {
 
 
 
+            {('CaraNet: Context Axial Reverse Attention Network for Segmentation of Small Medical Objects'?.includes(searchName) || 'CaraNet: Context Axial Reverse Attention Network for Segmentation of Small Medical Objects'.toLowerCase()?.includes(searchName)) && (
 
-            {'CaraNet: Context Axial Reverse Attention Network for Segmentation of Small Medical Objects'?.includes(searchName) && (
               <div class="row infinite-item item paper-card">
 
 
@@ -675,7 +675,8 @@ class SearchCar extends Component {
 
               </div>
             )}
-            {'Efficiently Modeling Long Sequences with Structured State Spaces'?.includes(searchName) && (
+            {('Efficiently Modeling Long Sequences with Structured State Spaces'?.includes(searchName) || 'Efficiently Modeling Long Sequences with Structured State Spaces'.toLowerCase()?.includes(searchName)) && (
+
               <div class="row infinite-item item paper-card">
 
                 <div class="col-lg-3 item-image-col">
@@ -821,7 +822,8 @@ class SearchCar extends Component {
 
               </div>
             )}
-            {'Mastering Atari Games with Limited Data'?.includes(searchName) && (
+            {('Mastering Atari Games with Limited Data'?.includes(searchName) || 'Mastering Atari Games with Limited Data'.toLowerCase()?.includes(searchName)) && (
+
               <div class="row infinite-item item paper-card">
 
                 <div class="col-lg-3 item-image-col">
