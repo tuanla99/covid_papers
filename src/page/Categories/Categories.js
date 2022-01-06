@@ -303,9 +303,9 @@ class SearchCar extends Component {
             <ul class="navbar-nav mr-auto navbar-nav__left light-header">
               <li class="nav-item header-search">
                 <form action="/search" method="get" id="id_global_search_form" autocomplete="off">
-                  <input type="text" name="q_meta" style={{ display: 'none' }} id="q_meta" />
-                  <input type="hidden" name="q_type" id="q_type" />
-                  <input id="id_global_search_input" autocomplete="off" value="" name="q" class="global-search ui-autocomplete-input" type="search" placeholder="Search" />
+                  {/* <input type="text" name="q_meta" style={{ display: 'none' }} id="q_meta" /> */}
+                  {/* <input type="hidden" name="q_type" id="q_type" /> */}
+                  <input id="id_global_search_input" autocomplete="off" name="text" class="global-search ui-autocomplete-input" type="search" placeholder="Search" />
                   <button type="submit" class="icon"><span class=" icon-wrapper icon-fa icon-fa-light" data-name="search"><svg viewBox="0 0 512.025 520.146" xmlns="http://www.w3.org/2000/svg"><path d="M508.5 482.6c4.7 4.7 4.7 12.3 0 17l-9.9 9.9c-4.7 4.7-12.3 4.7-17 0l-129-129c-2.2-2.3-3.5-5.3-3.5-8.5v-10.2C312 396 262.5 417 208 417 93.1 417 0 323.9 0 209S93.1 1 208 1s208 93.1 208 208c0 54.5-21 104-55.3 141.1H371c3.2 0 6.2 1.2 8.5 3.5zM208 385c97.3 0 176-78.7 176-176S305.3 33 208 33 32 111.7 32 209s78.7 176 176 176z"></path></svg></span></button>
                 </form>
               </li>

@@ -214,13 +214,13 @@ class Register extends Component {
 
 
 
-                  <a href="https://arxiv.org/pdf/2111.07624v1.pdf" onclick="captureOutboundLink('https://arxiv.org/pdf/2111.07624v1.pdf'); return true;" class="badge badge-light ">
+                  <a target="_blank" href="https://arxiv.org/pdf/2111.07624v1.pdf" onclick="captureOutboundLink('https://arxiv.org/pdf/2111.07624v1.pdf'); return true;" class="badge badge-light ">
                     <span class=" icon-wrapper icon-fa icon-fa-regular" data-name="file-pdf"><svg viewBox="0 0 384 513.795" xmlns="http://www.w3.org/2000/svg"><path d="M369.9 98.88c9 9 14.1 21.3 14.1 34v332.1c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48v-416c0-26.5 21.5-48 48-48.1h204.1c12.7 0 24.9 5.1 33.9 14.1zm-37.8 30.1L256 52.88v76.1h76.1zM48 464.98h288v-288H232c-13.3 0-24-10.7-24-24v-104H48v416zm250.2-143.7c10.5 10.5 8 38.7-17.5 38.7-14.8 0-36.9-6.8-55.8-17-21.6 3.6-46 12.7-68.4 20.1-50.1 86.4-79.4 47-76.1 31.2 4-20 31-35.9 51-46.2 10.5-18.4 25.4-50.5 35.4-74.4-7.4-28.6-11.4-51-7-67.1 4.8-17.7 38.4-20.3 42.6 5.9 4.7 15.4-1.5 39.9-5.4 56 8.1 21.3 19.6 35.8 36.8 46.3 17.4-2.2 52.2-5.5 64.4 6.5zm-198.1 77.8c0 .7 11.4-4.7 30.4-35-5.9 5.5-25.299 21.3-30.4 35zm81.6-190.6c-2.5 0-2.6 26.9 1.8 40.8 4.9-8.7 5.6-40.8-1.8-40.8zm-24.4 136.6c15.9-6.1 34-14.9 54.8-19.2-11.199-8.3-21.8-20.4-30.1-35.5-6.7 17.7-15 37.8-24.7 54.7zm131.6-5c3.6-2.4-2.2-10.4-37.3-7.8 32.3 13.8 37.3 7.8 37.3 7.8z"></path></svg></span>
                     <span>PDF</span>
 
                   </a>
 
-                  <a href="https://arxiv.org/abs/2111.07624v1" onclick="captureOutboundLink('https://arxiv.org/abs/2111.07624v1'); return true;" class="badge badge-light ">
+                  <a target="_blank" href="https://arxiv.org/abs/2111.07624v1" onclick="captureOutboundLink('https://arxiv.org/abs/2111.07624v1'); return true;" class="badge badge-light ">
                     <span class=" icon-wrapper icon-fa icon-fa-regular" data-name="file"><svg viewBox="0 0 384 513.795" xmlns="http://www.w3.org/2000/svg"><path d="M369.9 98.88c9 9 14.1 21.3 14.1 34v332.1c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48v-416c0-26.5 21.5-48 48-48.1h204.1c12.7 0 24.9 5.1 33.9 14.1zm-37.8 30.1L256 52.88v76.1h76.1zM48 464.98h288v-288H232c-13.3 0-24-10.7-24-24v-104H48v416z"></path></svg></span>
                     <span>Abstract</span>
                   </a>
@@ -239,122 +239,6 @@ class Register extends Component {
 
 
 
-
-
-
-
-            <div class="row infinite-item item paper-card">
-
-
-              <div class="col-lg-3 item-image-col">
-
-
-                <a href="/paper/wantwords-an-open-source-online-reverse">
-                  <div class="item-image" style={{ backgroundImage: "url('https://production-media.paperswithcode.com/thumbnails/papergithubrepo/0bf9dda8-65b9-49cb-85bf-c9d04aec870c.jpg')" }}> </div>
-                </a>
-
-
-              </div>
-
-
-              <div class="col-lg-9 item-col">
-                <div class="row">
-                  <div class="col-lg-9 item-content">
-
-
-
-                    <h1><Link to="/paper">Attention Mechanisms in Computer Vision: A Survey</Link></h1>
-
-
-                    {/* <p class="author-section" style={{paddingTop:'2px'}}>
-
-
-
-
-                    <span class="item-github-link">
-                      <span class=" icon-wrapper icon-ion" data-name="logo-github"><svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512"><path d="M256 32C132.3 32 32 134.9 32 261.7c0 101.5 64.2 187.5 153.2 217.9a17.56 17.56 0 0 0 3.8.4c8.3 0 11.5-6.1 11.5-11.4 0-5.5-.2-19.9-.3-39.1a102.4 102.4 0 0 1-22.6 2.7c-43.1 0-52.9-33.5-52.9-33.5-10.2-26.5-24.9-33.6-24.9-33.6-19.5-13.7-.1-14.1 1.4-14.1h.1c22.5 2 34.3 23.8 34.3 23.8 11.2 19.6 26.2 25.1 39.6 25.1a63 63 0 0 0 25.6-6c2-14.8 7.8-24.9 14.2-30.7-49.7-5.8-102-25.5-102-113.5 0-25.1 8.7-45.6 23-61.6-2.3-5.8-10-29.2 2.2-60.8a18.64 18.64 0 0 1 5-.5c8.1 0 26.4 3.1 56.6 24.1a208.21 208.21 0 0 1 112.2 0c30.2-21 48.5-24.1 56.6-24.1a18.64 18.64 0 0 1 5 .5c12.2 31.6 4.5 55 2.2 60.8 14.3 16.1 23 36.6 23 61.6 0 88.2-52.4 107.6-102.3 113.3 8 7.1 15.2 21.1 15.2 42.5 0 30.7-.3 55.5-.3 63 0 5.4 3.1 11.5 11.4 11.5a19.35 19.35 0 0 0 4-.4C415.9 449.2 480 363.1 480 261.7 480 134.9 379.7 32 256 32z"></path></svg></span>  <a href="https://github.com/thunlp/WantWords" onclick="captureOutboundLink('https://github.com/thunlp/WantWords'); return true;" style={{fontSize:'13px'}}>
-                        thunlp/WantWords
-                      </a>
-                    </span>
-
-
-
-                    •  <span class="item-framework-link">
-                      <img class="" src="https://production-assets.paperswithcode.com/perf/images/frameworks/pytorch-2fbf2cb9.png" />
-                    </span>
-
-
-
-
-
-
-                    • <span class="item-conference-link">
-                      <a href="/conference/emnlp-2020-11">
-                        EMNLP 2020
-
-                      </a>
-                    </span>
-
-
-
-                  </p> */}
-
-                    <p class="item-strip-abstract">Humans can naturally and effectively find salient regions in complex scenes.</p>
-
-                    <div class="sota">
-
-                    </div>
-
-
-
-
-                    <p>
-
-
-
-                    </p>
-
-                  </div>
-
-                  <div class="col-lg-3 item-interact text-center">
-                    {/* <div class="entity-stars">
-
-
-                    <span class="badge badge-secondary"><span class=" icon-wrapper icon-ion" data-name="star"><svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512"><path d="M394 480a16 16 0 0 1-9.39-3L256 383.76 127.39 477a16 16 0 0 1-24.55-18.08L153 310.35 23 221.2a16 16 0 0 1 9-29.2h160.38l48.4-148.95a16 16 0 0 1 30.44 0l48.4 149H480a16 16 0 0 1 9.05 29.2L359 310.35l50.13 148.53A16 16 0 0 1 394 480z"></path></svg></span> 741</span>
-
-
-                  </div> */}
-
-
-                    {/* <div class="stars-accumulated text-center">
-                    2.28 stars / hour
-                  </div> */}
-
-
-
-
-                    <div class="entity" style={{ marginBottom: '20px' }}>
-                      <Link to="/paper" class="badge badge-light ">
-                        <span class=" icon-wrapper icon-ion" data-name="document"><svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512"><path d="M428 224H288a48 48 0 0 1-48-48V36a4 4 0 0 0-4-4h-92a64 64 0 0 0-64 64v320a64 64 0 0 0 64 64h224a64 64 0 0 0 64-64V228a4 4 0 0 0-4-4z"></path><path d="M419.22 188.59L275.41 44.78a2 2 0 0 0-3.41 1.41V176a16 16 0 0 0 16 16h129.81a2 2 0 0 0 1.41-3.41z"></path></svg></span> Paper
-                      </Link>
-                      <br />
-
-
-
-                      {/* <a href="/paper/wantwords-an-open-source-online-reverse#code" class="badge badge-dark ">
-                      <span class=" icon-wrapper icon-ion" data-name="logo-github"><svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512"><path d="M256 32C132.3 32 32 134.9 32 261.7c0 101.5 64.2 187.5 153.2 217.9a17.56 17.56 0 0 0 3.8.4c8.3 0 11.5-6.1 11.5-11.4 0-5.5-.2-19.9-.3-39.1a102.4 102.4 0 0 1-22.6 2.7c-43.1 0-52.9-33.5-52.9-33.5-10.2-26.5-24.9-33.6-24.9-33.6-19.5-13.7-.1-14.1 1.4-14.1h.1c22.5 2 34.3 23.8 34.3 23.8 11.2 19.6 26.2 25.1 39.6 25.1a63 63 0 0 0 25.6-6c2-14.8 7.8-24.9 14.2-30.7-49.7-5.8-102-25.5-102-113.5 0-25.1 8.7-45.6 23-61.6-2.3-5.8-10-29.2 2.2-60.8a18.64 18.64 0 0 1 5-.5c8.1 0 26.4 3.1 56.6 24.1a208.21 208.21 0 0 1 112.2 0c30.2-21 48.5-24.1 56.6-24.1a18.64 18.64 0 0 1 5 .5c12.2 31.6 4.5 55 2.2 60.8 14.3 16.1 23 36.6 23 61.6 0 88.2-52.4 107.6-102.3 113.3 8 7.1 15.2 21.1 15.2 42.5 0 30.7-.3 55.5-.3 63 0 5.4 3.1 11.5 11.4 11.5a19.35 19.35 0 0 0 4-.4C415.9 449.2 480 363.1 480 261.7 480 134.9 379.7 32 256 32z"></path></svg></span> Code
-                    </a> */}
-
-                      <br />
-
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-
-
-            </div>
 
 
 

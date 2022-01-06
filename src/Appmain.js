@@ -20,13 +20,13 @@ export default class Appmain extends Component {
                     <br /> */}
                     <Switch>
                          <Route exact path="/" component={Categories} />
-                         <Route exact path="/Categories" component={Categories} />
+                         <Route path="/paper" component={Paper} />
+                         <Route path="/search" component={ComparePrice} />
+                         {/* <Route exact path="/Categories" component={Categories} />
                          <Route exact path="/View_profile" component={View_profile} />
                          <Route exact path="/SearchCar" component={SearchCar} />
-                         <Route path="/Login" component={Login} />
-                         <Route path="/paper" component={Paper} />
-                         <Route path="/compare-price" component={ComparePrice} />
-                         <Route path="/UserManagement" component={UserManagement} />
+                         <Route path="/Login" component={Login} /> */}
+                         {/* <Route path="/UserManagement" component={UserManagement} /> */}
                     </Switch>
 
                </React.Fragment>
