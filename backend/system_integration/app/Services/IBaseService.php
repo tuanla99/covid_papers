@@ -6,4 +6,7 @@ interface IBaseService
 {
     public function getById($id);
     public function getAll();
+    public function createIndex();
+    public function addAllToIndex();
+    public function search($request);
 }

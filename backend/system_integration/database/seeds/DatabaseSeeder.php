@@ -1,6 +1,9 @@
 <?php
 
+
+use App\News;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
 
 class DatabaseSeeder extends Seeder
 {
@@ -11,6 +14,16 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // $this->call(UserSeeder::class);
+        $news = News::factory()
+                ->count(50)
+                ->create();
+        foreach($news as $newspaper) {
+            for($i=0; $i<10; $i++) {
+                DB::table('similar_news')->insert([
+                    'news_id' => $newspaper->id,
+                    'similar_id' => rand(1, 49),
+                ]);
+            }
+        }
     }
 }
