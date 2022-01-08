@@ -22,4 +22,5 @@ Route::prefix('v1')->group(function () {
     Route::get('/news/createIndex', 'NewController@createIndex');
     Route::get('/news/index', 'NewController@index');
     Route::get('/news/show/{id}', 'NewController@show');
+    Route::get('/news/category/{category}', 'NewController@getNewsByCategory');
 });

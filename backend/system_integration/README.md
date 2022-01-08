@@ -50,11 +50,11 @@ To use, follow these steps:
 php artisan serve
 ```
 Start using at http://127.0.0.1:8000/
+See Api Document at https://app.swaggerhub.com/apis/tuanla99/system_integration/1.0.0-oas3#/news/get_news_index
 
-
-## Contributing to Love Book
+## Contributing
 <!--- If your README is long or you have some specific process or steps you want contributors to follow, consider creating a separate CONTRIBUTING.md file--->
-To contribute to Love Book, follow these steps:
+To contribute, follow these steps:
 
 1. Fork this repository.
 2. Create a branch: `git checkout -b <branch_name>`.

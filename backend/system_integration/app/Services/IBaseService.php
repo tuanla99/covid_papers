@@ -9,4 +9,5 @@ interface IBaseService
     public function createIndex();
     public function addAllToIndex();
     public function search($request);
+    public function getNewsByCategory($category);
 }

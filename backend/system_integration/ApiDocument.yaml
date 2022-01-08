@@ -7,7 +7,7 @@ info:
 servers:
   - url: http://127.0.0.1:8000/api/v1
     description: server test
-  - url: https://app.swaggerhub.com/apis/tuanla99/system_integration/1.0.0-oas3#/news/get_news_index
+  - url: https://app.swaggerhub.com/apis/tuanla99/system_integration/1.0.0-oas3
 tags:
   - name: news
     description: danh sách API để lấy bài báo
@@ -105,6 +105,65 @@ paths:
                         type: array
                         items:
                           $ref: '#/components/schemas/News'
+
+  /news/category/{category}:
+    get:
+      tags:
+        - news
+      summary: Get news by category
+      parameters: 
+        - name: category
+          in: path
+          required: true
+          description: category
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  current_page:
+                    type: integer
+                  data:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/News'
+                  first_page_url:
+                    type: string
+                    description: url first page
+                    default: "http://127.0.0.1:8000/api/v1/news/index?page=1"
+                  from:
+                    type: integer
+                  to:
+                    type: integer
+                  last_page:
+                    type: integer
+                  last_page_url:
+                    type: string
+                    default: "ví dụ http://127.0.0.1:8000/api/v1/news/index?page=6"
+                  links:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/Link'
+                  next_page_url:
+                    type: string
+                    default: " ví dụ: http://127.0.0.1:8000/api/v1/news/index?page=2"
+                  path:
+                    type: string
+                    default: "http://127.0.0.1:8000/api/v1/news/index"
+                  per_page:
+                    type: integer
+                    default: 10
+                  prev_page_url:
+                    type: string
+                    default: " ví dụ: http://127.0.0.1:8000/api/v1/news/index?page=2"
+                  total:
+                    type: integer
+                          
   /news/search:
     get:
       tags:

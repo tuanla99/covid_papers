@@ -56,4 +56,11 @@ class NewsServiceIml implements IBaseService
 
     return $result->getHits();
   }
+
+  public function getNewsByCategory($category)
+  {
+    $query = News::where('category', $category)->orderByDesc('created_at')->paginate(10);
+
+    return $query->toArray();
+  }
 }

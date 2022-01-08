@@ -39,6 +39,11 @@ class NewController extends Controller
         ->setStatusCode(200);
     }
 
+    public function getNewsByCategory($category)
+    {
+        return response()->json($this->newsService->getNewsByCategory($category));
+    }
+
     /**
      * search newspapers
      *
@@ -48,9 +53,6 @@ class NewController extends Controller
      */
     public function search(Request $request)
     {
-        // return (new NewsCollection($this->newsService->search($request)))
-        // ->response()
-        // ->setStatusCode(200);
         return response()->json($this->newsService->search($request));
     }
 
