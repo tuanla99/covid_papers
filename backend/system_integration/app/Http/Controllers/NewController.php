@@ -34,9 +34,7 @@ class NewController extends Controller
      */
     public function show($new_id)
     {
-        return (new NewsResource($this->newsService->getById($new_id)))
-        ->response()
-        ->setStatusCode(200);
+        return response()->json($this->newsService->getById($new_id));
     }
 
     public function getNewsByCategory($category)

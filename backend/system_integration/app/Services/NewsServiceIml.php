@@ -9,7 +9,13 @@ class NewsServiceIml implements IBaseService
 
   public function getById($id)
   {
-    return News::find($id);
+    $news = News::find($id);
+    if ($news) {
+      $similarNews = $news->similars()->orderByDesc('created_at')->limit(10)->get()->toArray();
+      $news->similars = $similarNews;
+    }
+
+    return $news;
   }
 
   public function getAll()
