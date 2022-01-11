@@ -5,9 +5,10 @@ info:
   version: 1.0.0-oas3
   title: Api Document
 servers:
+  - url: https://system-integration.herokuapp.com/api/v1
+    description: server heroku
   - url: http://127.0.0.1:8000/api/v1
     description: server test
-  - url: https://app.swaggerhub.com/apis/tuanla99/system_integration/1.0.0-oas3
 tags:
   - name: news
     description: danh sách API để lấy bài báo

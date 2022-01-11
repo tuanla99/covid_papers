@@ -2,6 +2,7 @@
 
 
 use App\News;
+use Carbon\Carbon;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 
@@ -22,6 +23,7 @@ class DatabaseSeeder extends Seeder
                 DB::table('similar_news')->insert([
                     'news_id' => $newspaper->id,
                     'similar_id' => rand(1, 49),
+                    'created_at' => Carbon::now()
                 ]);
             }
         }
