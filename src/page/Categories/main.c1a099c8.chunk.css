@@ -1,7 +1,7 @@
 .htSelectEditor {
   padding: 5px 7px;
   position: absolute;
-  -webkit-appearance: menulist-button!important
+  -webkit-appearance: menulist-button !important
 }
 
 .edit-sota-table {
@@ -17,7 +17,7 @@
 }
 
 .edit-sota-table th {
-  background-color: #fff!important;
+  background-color: #fff !important;
   font-weight: 500;
   color: #565656;
   font-size: 15px
@@ -35,7 +35,7 @@
 
 .edit-sota-table td .paper-title {
   font-weight: 600;
-  font-size: 15px!important
+  font-size: 15px !important
 }
 
 .edit-sota-table td, .edit-sota-table td a {
@@ -72,8 +72,8 @@
   border-radius: 50px;
   background-color: #21cbce;
   padding: 5px 12px;
-  color: #fff!important;
-  text-decoration: none!important
+  color: #fff !important;
+  text-decoration: none !important
 }
 
 .edit-sota-table .btn-primary:hover {
@@ -81,32 +81,32 @@
 }
 
 .edit-sota-table a {
-  color: #00a497!important;
+  color: #00a497 !important;
   cursor: pointer
 }
 
 .edit-sota-table td.invalid {
-  background-color: rgba(255, 0, 0, .4)!important
+  background-color: rgba(255, 0, 0, .4) !important
 }
 
 .edit-sota-table .table-striped>tbody>tr:nth-child(odd)>td {
-  background-color: #fff!important
+  background-color: #fff !important
 }
 
 .edit-sota-table .table-striped>tbody>tr:nth-child(odd)>td.invalid {
-  background-color: rgba(255, 0, 0, .4)!important
+  background-color: rgba(255, 0, 0, .4) !important
 }
 
 .edit-sota-table .table-striped>tbody>tr:nth-child(2n)>td {
-  background-color: #fff!important
+  background-color: #fff !important
 }
 
 .edit-sota-table .table-striped>tbody>tr:nth-child(2n)>td.invalid {
-  background-color: rgba(255, 0, 0, .4)!important
+  background-color: rgba(255, 0, 0, .4) !important
 }
 
 .edit-sota-table .table-striped>thead>tr:nth-child(odd)>th {
-  background-color: #fff!important
+  background-color: #fff !important
 }
 
 .edit-sota-table .btn-danger {
@@ -128,7 +128,7 @@
 
 .view-sota-table th {
   color: #6f787d;
-  font-weight: 400!important;
+  font-weight: 400 !important;
   font-size: 12px;
   letter-spacing: 1.2px;
   font-family: "Lato";
@@ -160,9 +160,9 @@
 }
 
 .view-sota-table td .method-name a {
-  font-size: 15px!important;
+  font-size: 15px !important;
   letter-spacing: .1px;
-  color: #000!important
+  color: #000 !important
 }
 
 .view-sota-table td .method-name a .small {
@@ -171,7 +171,7 @@
 
 .view-sota-table td .paper-title {
   font-weight: 600;
-  font-size: 15px!important
+  font-size: 15px !important
 }
 
 .view-sota-table td, .view-sota-table td a {
@@ -213,8 +213,8 @@
   border-radius: 50px;
   background-color: #21cbce;
   padding: 5px 12px;
-  color: #fff!important;
-  text-decoration: none!important
+  color: #fff !important;
+  text-decoration: none !important
 }
 
 .view-sota-table .btn-primary:hover {
@@ -222,12 +222,12 @@
 }
 
 .view-sota-table a {
-  color: #0096b1!important;
+  color: #0096b1 !important;
   cursor: pointer
 }
 
 .view-sota-table td.invalid {
-  background-color: rgba(255, 0, 0, .4)!important
+  background-color: rgba(255, 0, 0, .4) !important
 }
 
 .view-sota-table .table-striped>tbody>tr:nth-child(odd)>td {
@@ -259,7 +259,7 @@
 }
 
 .row-highlight, .row-highlight td {
-  background-color: #fffba1!important
+  background-color: #fffba1 !important
 }
 
 select.admin-autocomplete {
@@ -798,161 +798,207 @@ select.admin-autocomplete {
     flex-grow: 1;
     max-width: 100%
   }
+
   .row-cols-sm-1>* {
     flex: 0 0 100%;
     max-width: 100%
   }
+
   .row-cols-sm-2>* {
     flex: 0 0 50%;
     max-width: 50%
   }
+
   .row-cols-sm-3>* {
     flex: 0 0 33.33333%;
     max-width: 33.33333%
   }
+
   .row-cols-sm-4>* {
     flex: 0 0 25%;
     max-width: 25%
   }
+
   .row-cols-sm-5>* {
     flex: 0 0 20%;
     max-width: 20%
   }
+
   .row-cols-sm-6>* {
     flex: 0 0 16.66667%;
     max-width: 16.66667%
   }
+
   .col-sm-auto {
     flex: 0 0 auto;
     width: auto;
     max-width: 100%
   }
+
   .col-sm-1 {
     flex: 0 0 8.33333%;
     max-width: 8.33333%
   }
+
   .col-sm-2 {
     flex: 0 0 16.66667%;
     max-width: 16.66667%
   }
+
   .col-sm-3 {
     flex: 0 0 25%;
     max-width: 25%
   }
+
   .col-sm-4 {
     flex: 0 0 33.33333%;
     max-width: 33.33333%
   }
+
   .col-sm-5 {
     flex: 0 0 41.66667%;
     max-width: 41.66667%
   }
+
   .col-sm-6 {
     flex: 0 0 50%;
     max-width: 50%
   }
+
   .col-sm-7 {
     flex: 0 0 58.33333%;
     max-width: 58.33333%
   }
+
   .col-sm-8 {
     flex: 0 0 66.66667%;
     max-width: 66.66667%
   }
+
   .col-sm-9 {
     flex: 0 0 75%;
     max-width: 75%
   }
+
   .col-sm-10 {
     flex: 0 0 83.33333%;
     max-width: 83.33333%
   }
+
   .col-sm-11 {
     flex: 0 0 91.66667%;
     max-width: 91.66667%
   }
+
   .col-sm-12 {
     flex: 0 0 100%;
     max-width: 100%
   }
+
   .order-sm-first {
     order: -1
   }
+
   .order-sm-last {
     order: 13
   }
+
   .order-sm-0 {
     order: 0
   }
+
   .order-sm-1 {
     order: 1
   }
+
   .order-sm-2 {
     order: 2
   }
+
   .order-sm-3 {
     order: 3
   }
+
   .order-sm-4 {
     order: 4
   }
+
   .order-sm-5 {
     order: 5
   }
+
   .order-sm-6 {
     order: 6
   }
+
   .order-sm-7 {
     order: 7
   }
+
   .order-sm-8 {
     order: 8
   }
+
   .order-sm-9 {
     order: 9
   }
+
   .order-sm-10 {
     order: 10
   }
+
   .order-sm-11 {
     order: 11
   }
+
   .order-sm-12 {
     order: 12
   }
+
   .offset-sm-0 {
     margin-left: 0
   }
+
   .offset-sm-1 {
     margin-left: 8.33333%
   }
+
   .offset-sm-2 {
     margin-left: 16.66667%
   }
+
   .offset-sm-3 {
     margin-left: 25%
   }
+
   .offset-sm-4 {
     margin-left: 33.33333%
   }
+
   .offset-sm-5 {
     margin-left: 41.66667%
   }
+
   .offset-sm-6 {
     margin-left: 50%
   }
+
   .offset-sm-7 {
     margin-left: 58.33333%
   }
+
   .offset-sm-8 {
     margin-left: 66.66667%
   }
+
   .offset-sm-9 {
     margin-left: 75%
   }
+
   .offset-sm-10 {
     margin-left: 83.33333%
   }
+
   .offset-sm-11 {
     margin-left: 91.66667%
   }
@@ -964,161 +1010,207 @@ select.admin-autocomplete {
     flex-grow: 1;
     max-width: 100%
   }
+
   .row-cols-md-1>* {
     flex: 0 0 100%;
     max-width: 100%
   }
+
   .row-cols-md-2>* {
     flex: 0 0 50%;
     max-width: 50%
   }
+
   .row-cols-md-3>* {
     flex: 0 0 33.33333%;
     max-width: 33.33333%
   }
+
   .row-cols-md-4>* {
     flex: 0 0 25%;
     max-width: 25%
   }
+
   .row-cols-md-5>* {
     flex: 0 0 20%;
     max-width: 20%
   }
+
   .row-cols-md-6>* {
     flex: 0 0 16.66667%;
     max-width: 16.66667%
   }
+
   .col-md-auto {
     flex: 0 0 auto;
     width: auto;
     max-width: 100%
   }
+
   .col-md-1 {
     flex: 0 0 8.33333%;
     max-width: 8.33333%
   }
+
   .col-md-2 {
     flex: 0 0 16.66667%;
     max-width: 16.66667%
   }
+
   .col-md-3 {
     flex: 0 0 25%;
     max-width: 25%
   }
+
   .col-md-4 {
     flex: 0 0 33.33333%;
     max-width: 33.33333%
   }
+
   .col-md-5 {
     flex: 0 0 41.66667%;
     max-width: 41.66667%
   }
+
   .col-md-6 {
     flex: 0 0 50%;
     max-width: 50%
   }
+
   .col-md-7 {
     flex: 0 0 58.33333%;
     max-width: 58.33333%
   }
+
   .col-md-8 {
     flex: 0 0 66.66667%;
     max-width: 66.66667%
   }
+
   .col-md-9 {
     flex: 0 0 75%;
     max-width: 75%
   }
+
   .col-md-10 {
     flex: 0 0 83.33333%;
     max-width: 83.33333%
   }
+
   .col-md-11 {
     flex: 0 0 91.66667%;
     max-width: 91.66667%
   }
+
   .col-md-12 {
     flex: 0 0 100%;
     max-width: 100%
   }
+
   .order-md-first {
     order: -1
   }
+
   .order-md-last {
     order: 13
   }
+
   .order-md-0 {
     order: 0
   }
+
   .order-md-1 {
     order: 1
   }
+
   .order-md-2 {
     order: 2
   }
+
   .order-md-3 {
     order: 3
   }
+
   .order-md-4 {
     order: 4
   }
+
   .order-md-5 {
     order: 5
   }
+
   .order-md-6 {
     order: 6
   }
+
   .order-md-7 {
     order: 7
   }
+
   .order-md-8 {
     order: 8
   }
+
   .order-md-9 {
     order: 9
   }
+
   .order-md-10 {
     order: 10
   }
+
   .order-md-11 {
     order: 11
   }
+
   .order-md-12 {
     order: 12
   }
+
   .offset-md-0 {
     margin-left: 0
   }
+
   .offset-md-1 {
     margin-left: 8.33333%
   }
+
   .offset-md-2 {
     margin-left: 16.66667%
   }
+
   .offset-md-3 {
     margin-left: 25%
   }
+
   .offset-md-4 {
     margin-left: 33.33333%
   }
+
   .offset-md-5 {
     margin-left: 41.66667%
   }
+
   .offset-md-6 {
     margin-left: 50%
   }
+
   .offset-md-7 {
     margin-left: 58.33333%
   }
+
   .offset-md-8 {
     margin-left: 66.66667%
   }
+
   .offset-md-9 {
     margin-left: 75%
   }
+
   .offset-md-10 {
     margin-left: 83.33333%
   }
+
   .offset-md-11 {
     margin-left: 91.66667%
   }
@@ -1130,161 +1222,207 @@ select.admin-autocomplete {
     flex-grow: 1;
     max-width: 100%
   }
+
   .row-cols-lg-1>* {
     flex: 0 0 100%;
     max-width: 100%
   }
+
   .row-cols-lg-2>* {
     flex: 0 0 50%;
     max-width: 50%
   }
+
   .row-cols-lg-3>* {
     flex: 0 0 33.33333%;
     max-width: 33.33333%
   }
+
   .row-cols-lg-4>* {
     flex: 0 0 25%;
     max-width: 25%
   }
+
   .row-cols-lg-5>* {
     flex: 0 0 20%;
     max-width: 20%
   }
+
   .row-cols-lg-6>* {
     flex: 0 0 16.66667%;
     max-width: 16.66667%
   }
+
   .col-lg-auto {
     flex: 0 0 auto;
     width: auto;
     max-width: 100%
   }
+
   .col-lg-1 {
     flex: 0 0 8.33333%;
     max-width: 8.33333%
   }
+
   .col-lg-2 {
     flex: 0 0 16.66667%;
     max-width: 16.66667%
   }
+
   .col-lg-3 {
     flex: 0 0 25%;
     max-width: 25%
   }
+
   .col-lg-4 {
     flex: 0 0 33.33333%;
     max-width: 33.33333%
   }
+
   .col-lg-5 {
     flex: 0 0 41.66667%;
     max-width: 41.66667%
   }
+
   .col-lg-6 {
     flex: 0 0 50%;
     max-width: 50%
   }
+
   .col-lg-7 {
     flex: 0 0 58.33333%;
     max-width: 58.33333%
   }
+
   .col-lg-8 {
     flex: 0 0 66.66667%;
     max-width: 66.66667%
   }
+
   .col-lg-9 {
     flex: 0 0 75%;
     max-width: 75%
   }
+
   .col-lg-10 {
     flex: 0 0 83.33333%;
     max-width: 83.33333%
   }
+
   .col-lg-11 {
     flex: 0 0 91.66667%;
     max-width: 91.66667%
   }
+
   .col-lg-12 {
     flex: 0 0 100%;
     max-width: 100%
   }
+
   .order-lg-first {
     order: -1
   }
+
   .order-lg-last {
     order: 13
   }
+
   .order-lg-0 {
     order: 0
   }
+
   .order-lg-1 {
     order: 1
   }
+
   .order-lg-2 {
     order: 2
   }
+
   .order-lg-3 {
     order: 3
   }
+
   .order-lg-4 {
     order: 4
   }
+
   .order-lg-5 {
     order: 5
   }
+
   .order-lg-6 {
     order: 6
   }
+
   .order-lg-7 {
     order: 7
   }
+
   .order-lg-8 {
     order: 8
   }
+
   .order-lg-9 {
     order: 9
   }
+
   .order-lg-10 {
     order: 10
   }
+
   .order-lg-11 {
     order: 11
   }
+
   .order-lg-12 {
     order: 12
   }
+
   .offset-lg-0 {
     margin-left: 0
   }
+
   .offset-lg-1 {
     margin-left: 8.33333%
   }
+
   .offset-lg-2 {
     margin-left: 16.66667%
   }
+
   .offset-lg-3 {
     margin-left: 25%
   }
+
   .offset-lg-4 {
     margin-left: 33.33333%
   }
+
   .offset-lg-5 {
     margin-left: 41.66667%
   }
+
   .offset-lg-6 {
     margin-left: 50%
   }
+
   .offset-lg-7 {
     margin-left: 58.33333%
   }
+
   .offset-lg-8 {
     margin-left: 66.66667%
   }
+
   .offset-lg-9 {
     margin-left: 75%
   }
+
   .offset-lg-10 {
     margin-left: 83.33333%
   }
+
   .offset-lg-11 {
     margin-left: 91.66667%
   }
@@ -1296,161 +1434,207 @@ select.admin-autocomplete {
     flex-grow: 1;
     max-width: 100%
   }
+
   .row-cols-xl-1>* {
     flex: 0 0 100%;
     max-width: 100%
   }
+
   .row-cols-xl-2>* {
     flex: 0 0 50%;
     max-width: 50%
   }
+
   .row-cols-xl-3>* {
     flex: 0 0 33.33333%;
     max-width: 33.33333%
   }
+
   .row-cols-xl-4>* {
     flex: 0 0 25%;
     max-width: 25%
   }
+
   .row-cols-xl-5>* {
     flex: 0 0 20%;
     max-width: 20%
   }
+
   .row-cols-xl-6>* {
     flex: 0 0 16.66667%;
     max-width: 16.66667%
   }
+
   .col-xl-auto {
     flex: 0 0 auto;
     width: auto;
     max-width: 100%
   }
+
   .col-xl-1 {
     flex: 0 0 8.33333%;
     max-width: 8.33333%
   }
+
   .col-xl-2 {
     flex: 0 0 16.66667%;
     max-width: 16.66667%
   }
+
   .col-xl-3 {
     flex: 0 0 25%;
     max-width: 25%
   }
+
   .col-xl-4 {
     flex: 0 0 33.33333%;
     max-width: 33.33333%
   }
+
   .col-xl-5 {
     flex: 0 0 41.66667%;
     max-width: 41.66667%
   }
+
   .col-xl-6 {
     flex: 0 0 50%;
     max-width: 50%
   }
+
   .col-xl-7 {
     flex: 0 0 58.33333%;
     max-width: 58.33333%
   }
+
   .col-xl-8 {
     flex: 0 0 66.66667%;
     max-width: 66.66667%
   }
+
   .col-xl-9 {
     flex: 0 0 75%;
     max-width: 75%
   }
+
   .col-xl-10 {
     flex: 0 0 83.33333%;
     max-width: 83.33333%
   }
+
   .col-xl-11 {
     flex: 0 0 91.66667%;
     max-width: 91.66667%
   }
+
   .col-xl-12 {
     flex: 0 0 100%;
     max-width: 100%
   }
+
   .order-xl-first {
     order: -1
   }
+
   .order-xl-last {
     order: 13
   }
+
   .order-xl-0 {
     order: 0
   }
+
   .order-xl-1 {
     order: 1
   }
+
   .order-xl-2 {
     order: 2
   }
+
   .order-xl-3 {
     order: 3
   }
+
   .order-xl-4 {
     order: 4
   }
+
   .order-xl-5 {
     order: 5
   }
+
   .order-xl-6 {
     order: 6
   }
+
   .order-xl-7 {
     order: 7
   }
+
   .order-xl-8 {
     order: 8
   }
+
   .order-xl-9 {
     order: 9
   }
+
   .order-xl-10 {
     order: 10
   }
+
   .order-xl-11 {
     order: 11
   }
+
   .order-xl-12 {
     order: 12
   }
+
   .offset-xl-0 {
     margin-left: 0
   }
+
   .offset-xl-1 {
     margin-left: 8.33333%
   }
+
   .offset-xl-2 {
     margin-left: 16.66667%
   }
+
   .offset-xl-3 {
     margin-left: 25%
   }
+
   .offset-xl-4 {
     margin-left: 33.33333%
   }
+
   .offset-xl-5 {
     margin-left: 41.66667%
   }
+
   .offset-xl-6 {
     margin-left: 50%
   }
+
   .offset-xl-7 {
     margin-left: 58.33333%
   }
+
   .offset-xl-8 {
     margin-left: 66.66667%
   }
+
   .offset-xl-9 {
     margin-left: 75%
   }
+
   .offset-xl-10 {
     margin-left: 83.33333%
   }
+
   .offset-xl-11 {
     margin-left: 91.66667%
   }
@@ -1643,6 +1827,7 @@ select.admin-autocomplete {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch
   }
+
   .table-responsive-sm>.table-bordered {
     border: 0
   }
@@ -1655,6 +1840,7 @@ select.admin-autocomplete {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch
   }
+
   .table-responsive-md>.table-bordered {
     border: 0
   }
@@ -1667,6 +1853,7 @@ select.admin-autocomplete {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch
   }
+
   .table-responsive-lg>.table-bordered {
     border: 0
   }
@@ -1679,6 +1866,7 @@ select.admin-autocomplete {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch
   }
+
   .table-responsive-xl>.table-bordered {
     border: 0
   }
@@ -2089,26 +2277,32 @@ select.form-control[multiple], select.form-control[size], textarea.form-control 
   .form-inline label {
     justify-content: center
   }
+
   .form-inline .form-group, .form-inline label {
     display: flex;
     align-items: center;
     margin-bottom: 0
   }
+
   .form-inline .form-group {
     flex: 0 0 auto;
     flex-flow: row wrap
   }
+
   .form-inline .form-control {
     display: inline-block;
     width: auto;
     vertical-align: middle
   }
+
   .form-inline .form-control-plaintext {
     display: inline-block
   }
+
   .form-inline .custom-select, .form-inline .input-group {
     width: auto
   }
+
   .form-inline .form-check {
     display: flex;
     align-items: center;
@@ -2116,6 +2310,7 @@ select.form-control[multiple], select.form-control[size], textarea.form-control 
     width: auto;
     padding-left: 0
   }
+
   .form-inline .form-check-input {
     position: relative;
     flex-shrink: 0;
@@ -2123,10 +2318,12 @@ select.form-control[multiple], select.form-control[size], textarea.form-control 
     margin-right: .25rem;
     margin-left: 0
   }
+
   .form-inline .custom-control {
     align-items: center;
     justify-content: center
   }
+
   .form-inline .custom-control-label {
     margin-bottom: 0
   }
@@ -2809,6 +3006,7 @@ input[type=button].btn-block, input[type=reset].btn-block, input[type=submit].bt
     right: auto;
     left: 0
   }
+
   .dropdown-menu-sm-right {
     right: 0;
     left: auto
@@ -2820,6 +3018,7 @@ input[type=button].btn-block, input[type=reset].btn-block, input[type=submit].bt
     right: auto;
     left: 0
   }
+
   .dropdown-menu-md-right {
     right: 0;
     left: auto
@@ -2831,6 +3030,7 @@ input[type=button].btn-block, input[type=reset].btn-block, input[type=submit].bt
     right: auto;
     left: 0
   }
+
   .dropdown-menu-lg-right {
     right: 0;
     left: auto
@@ -2842,6 +3042,7 @@ input[type=button].btn-block, input[type=reset].btn-block, input[type=submit].bt
     right: auto;
     left: 0
   }
+
   .dropdown-menu-xl-right {
     right: 0;
     left: auto
@@ -3852,23 +4053,29 @@ input[type=button].btn-block, input[type=reset].btn-block, input[type=submit].bt
     flex-flow: row nowrap;
     justify-content: flex-start
   }
+
   .navbar-expand-sm .navbar-nav {
     flex-direction: row
   }
+
   .navbar-expand-sm .navbar-nav .dropdown-menu {
     position: absolute
   }
+
   .navbar-expand-sm .navbar-nav .nav-link {
     padding-right: 1rem;
     padding-left: 1rem
   }
+
   .navbar-expand-sm>.container, .navbar-expand-sm>.container-fluid, .navbar-expand-sm>.container-lg, .navbar-expand-sm>.container-md, .navbar-expand-sm>.container-sm, .navbar-expand-sm>.container-xl {
     flex-wrap: nowrap
   }
+
   .navbar-expand-sm .navbar-collapse {
-    display: flex!important;
+    display: flex !important;
     flex-basis: auto
   }
+
   .navbar-expand-sm .navbar-toggler {
     display: none
   }
@@ -3886,23 +4093,29 @@ input[type=button].btn-block, input[type=reset].btn-block, input[type=submit].bt
     flex-flow: row nowrap;
     justify-content: flex-start
   }
+
   .navbar-expand-md .navbar-nav {
     flex-direction: row
   }
+
   .navbar-expand-md .navbar-nav .dropdown-menu {
     position: absolute
   }
+
   .navbar-expand-md .navbar-nav .nav-link {
     padding-right: 1rem;
     padding-left: 1rem
   }
+
   .navbar-expand-md>.container, .navbar-expand-md>.container-fluid, .navbar-expand-md>.container-lg, .navbar-expand-md>.container-md, .navbar-expand-md>.container-sm, .navbar-expand-md>.container-xl {
     flex-wrap: nowrap
   }
+
   .navbar-expand-md .navbar-collapse {
-    display: flex!important;
+    display: flex !important;
     flex-basis: auto
   }
+
   .navbar-expand-md .navbar-toggler {
     display: none
   }
@@ -3920,23 +4133,29 @@ input[type=button].btn-block, input[type=reset].btn-block, input[type=submit].bt
     flex-flow: row nowrap;
     justify-content: flex-start
   }
+
   .navbar-expand-lg .navbar-nav {
     flex-direction: row
   }
+
   .navbar-expand-lg .navbar-nav .dropdown-menu {
     position: absolute
   }
+
   .navbar-expand-lg .navbar-nav .nav-link {
     padding-right: 1rem;
     padding-left: 1rem
   }
+
   .navbar-expand-lg>.container, .navbar-expand-lg>.container-fluid, .navbar-expand-lg>.container-lg, .navbar-expand-lg>.container-md, .navbar-expand-lg>.container-sm, .navbar-expand-lg>.container-xl {
     flex-wrap: nowrap
   }
+
   .navbar-expand-lg .navbar-collapse {
-    display: flex!important;
+    display: flex !important;
     flex-basis: auto
   }
+
   .navbar-expand-lg .navbar-toggler {
     display: none
   }
@@ -3954,23 +4173,29 @@ input[type=button].btn-block, input[type=reset].btn-block, input[type=submit].bt
     flex-flow: row nowrap;
     justify-content: flex-start
   }
+
   .navbar-expand-xl .navbar-nav {
     flex-direction: row
   }
+
   .navbar-expand-xl .navbar-nav .dropdown-menu {
     position: absolute
   }
+
   .navbar-expand-xl .navbar-nav .nav-link {
     padding-right: 1rem;
     padding-left: 1rem
   }
+
   .navbar-expand-xl>.container, .navbar-expand-xl>.container-fluid, .navbar-expand-xl>.container-lg, .navbar-expand-xl>.container-md, .navbar-expand-xl>.container-sm, .navbar-expand-xl>.container-xl {
     flex-wrap: nowrap
   }
+
   .navbar-expand-xl .navbar-collapse {
-    display: flex!important;
+    display: flex !important;
     flex-basis: auto
   }
+
   .navbar-expand-xl .navbar-toggler {
     display: none
   }
@@ -4004,7 +4229,7 @@ input[type=button].btn-block, input[type=reset].btn-block, input[type=submit].bt
 }
 
 .navbar-expand .navbar-collapse {
-  display: flex!important;
+  display: flex !important;
   flex-basis: auto
 }
 
@@ -4213,6 +4438,7 @@ input[type=button].btn-block, input[type=reset].btn-block, input[type=submit].bt
     margin-right: -15px;
     margin-left: -15px
   }
+
   .card-deck .card {
     flex: 1 0;
     margin-right: 15px;
@@ -4230,31 +4456,39 @@ input[type=button].btn-block, input[type=reset].btn-block, input[type=submit].bt
     display: flex;
     flex-flow: row wrap
   }
+
   .card-group>.card {
     flex: 1 0;
     margin-bottom: 0
   }
+
   .card-group>.card+.card {
     margin-left: 0;
     border-left: 0
   }
+
   .card-group>.card:not(:last-child) {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0
   }
+
   .card-group>.card:not(:last-child) .card-header, .card-group>.card:not(:last-child) .card-img-top {
     border-top-right-radius: 0
   }
+
   .card-group>.card:not(:last-child) .card-footer, .card-group>.card:not(:last-child) .card-img-bottom {
     border-bottom-right-radius: 0
   }
+
   .card-group>.card:not(:first-child) {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0
   }
+
   .card-group>.card:not(:first-child) .card-header, .card-group>.card:not(:first-child) .card-img-top {
     border-top-left-radius: 0
   }
+
   .card-group>.card:not(:first-child) .card-footer, .card-group>.card:not(:first-child) .card-img-bottom {
     border-bottom-left-radius: 0
   }
@@ -4274,6 +4508,7 @@ input[type=button].btn-block, input[type=reset].btn-block, input[type=submit].bt
     orphans: 1;
     widows: 1
   }
+
   .card-columns .card {
     display: inline-block;
     width: 100%
@@ -4943,21 +5178,26 @@ a.close.disabled {
     max-width: 500px;
     margin: 1.75rem auto
   }
+
   .modal-dialog-scrollable {
     max-height: calc(100% - 3.5rem)
   }
+
   .modal-dialog-scrollable .modal-content {
     max-height: calc(100vh - 3.5rem)
   }
+
   .modal-dialog-centered {
     min-height: calc(100% - 3.5rem)
   }
+
   .modal-dialog-centered:before {
     height: calc(100vh - 3.5rem);
     height: -webkit-min-content;
     height: -moz-min-content;
     height: min-content
   }
+
   .modal-sm {
     max-width: 300px
   }
@@ -5249,219 +5489,219 @@ a.close.disabled {
 }
 
 .align-baseline {
-  vertical-align: baseline!important
+  vertical-align: baseline !important
 }
 
 .align-top {
-  vertical-align: top!important
+  vertical-align: top !important
 }
 
 .align-middle {
-  vertical-align: middle!important
+  vertical-align: middle !important
 }
 
 .align-bottom {
-  vertical-align: bottom!important
+  vertical-align: bottom !important
 }
 
 .align-text-bottom {
-  vertical-align: text-bottom!important
+  vertical-align: text-bottom !important
 }
 
 .align-text-top {
-  vertical-align: text-top!important
+  vertical-align: text-top !important
 }
 
 .bg-primary {
-  background-color: #007bff!important
+  background-color: #007bff !important
 }
 
 a.bg-primary:focus, a.bg-primary:hover, button.bg-primary:focus, button.bg-primary:hover {
-  background-color: #0062cc!important
+  background-color: #0062cc !important
 }
 
 .bg-secondary {
-  background-color: #6c757d!important
+  background-color: #6c757d !important
 }
 
 a.bg-secondary:focus, a.bg-secondary:hover, button.bg-secondary:focus, button.bg-secondary:hover {
-  background-color: #545b62!important
+  background-color: #545b62 !important
 }
 
 .bg-success {
-  background-color: #28a745!important
+  background-color: #28a745 !important
 }
 
 a.bg-success:focus, a.bg-success:hover, button.bg-success:focus, button.bg-success:hover {
-  background-color: #1e7e34!important
+  background-color: #1e7e34 !important
 }
 
 .bg-info {
-  background-color: #17a2b8!important
+  background-color: #17a2b8 !important
 }
 
 a.bg-info:focus, a.bg-info:hover, button.bg-info:focus, button.bg-info:hover {
-  background-color: #117a8b!important
+  background-color: #117a8b !important
 }
 
 .bg-warning {
-  background-color: #ffc107!important
+  background-color: #ffc107 !important
 }
 
 a.bg-warning:focus, a.bg-warning:hover, button.bg-warning:focus, button.bg-warning:hover {
-  background-color: #d39e00!important
+  background-color: #d39e00 !important
 }
 
 .bg-danger {
-  background-color: #dc3545!important
+  background-color: #dc3545 !important
 }
 
 a.bg-danger:focus, a.bg-danger:hover, button.bg-danger:focus, button.bg-danger:hover {
-  background-color: #bd2130!important
+  background-color: #bd2130 !important
 }
 
 .bg-light {
-  background-color: #f8f9fa!important
+  background-color: #f8f9fa !important
 }
 
 a.bg-light:focus, a.bg-light:hover, button.bg-light:focus, button.bg-light:hover {
-  background-color: #dae0e5!important
+  background-color: #dae0e5 !important
 }
 
 .bg-dark {
-  background-color: #343a40!important
+  background-color: #343a40 !important
 }
 
 a.bg-dark:focus, a.bg-dark:hover, button.bg-dark:focus, button.bg-dark:hover {
-  background-color: #1d2124!important
+  background-color: #1d2124 !important
 }
 
 .bg-white {
-  background-color: #fff!important
+  background-color: #fff !important
 }
 
 .bg-transparent {
-  background-color: transparent!important
+  background-color: transparent !important
 }
 
 .border {
-  border: 1px solid #dee2e6!important
+  border: 1px solid #dee2e6 !important
 }
 
 .border-top {
-  border-top: 1px solid #dee2e6!important
+  border-top: 1px solid #dee2e6 !important
 }
 
 .border-right {
-  border-right: 1px solid #dee2e6!important
+  border-right: 1px solid #dee2e6 !important
 }
 
 .border-bottom {
-  border-bottom: 1px solid #dee2e6!important
+  border-bottom: 1px solid #dee2e6 !important
 }
 
 .border-left {
-  border-left: 1px solid #dee2e6!important
+  border-left: 1px solid #dee2e6 !important
 }
 
 .border-0 {
-  border: 0!important
+  border: 0 !important
 }
 
 .border-top-0 {
-  border-top: 0!important
+  border-top: 0 !important
 }
 
 .border-right-0 {
-  border-right: 0!important
+  border-right: 0 !important
 }
 
 .border-bottom-0 {
-  border-bottom: 0!important
+  border-bottom: 0 !important
 }
 
 .border-left-0 {
-  border-left: 0!important
+  border-left: 0 !important
 }
 
 .border-primary {
-  border-color: #007bff!important
+  border-color: #007bff !important
 }
 
 .border-secondary {
-  border-color: #6c757d!important
+  border-color: #6c757d !important
 }
 
 .border-success {
-  border-color: #28a745!important
+  border-color: #28a745 !important
 }
 
 .border-info {
-  border-color: #17a2b8!important
+  border-color: #17a2b8 !important
 }
 
 .border-warning {
-  border-color: #ffc107!important
+  border-color: #ffc107 !important
 }
 
 .border-danger {
-  border-color: #dc3545!important
+  border-color: #dc3545 !important
 }
 
 .border-light {
-  border-color: #f8f9fa!important
+  border-color: #f8f9fa !important
 }
 
 .border-dark {
-  border-color: #343a40!important
+  border-color: #343a40 !important
 }
 
 .border-white {
-  border-color: #fff!important
+  border-color: #fff !important
 }
 
 .rounded-sm {
-  border-radius: .2rem!important
+  border-radius: .2rem !important
 }
 
 .rounded {
-  border-radius: .25rem!important
+  border-radius: .25rem !important
 }
 
 .rounded-top {
-  border-top-left-radius: .25rem!important
+  border-top-left-radius: .25rem !important
 }
 
 .rounded-right, .rounded-top {
-  border-top-right-radius: .25rem!important
+  border-top-right-radius: .25rem !important
 }
 
 .rounded-bottom, .rounded-right {
-  border-bottom-right-radius: .25rem!important
+  border-bottom-right-radius: .25rem !important
 }
 
 .rounded-bottom, .rounded-left {
-  border-bottom-left-radius: .25rem!important
+  border-bottom-left-radius: .25rem !important
 }
 
 .rounded-left {
-  border-top-left-radius: .25rem!important
+  border-top-left-radius: .25rem !important
 }
 
 .rounded-lg {
-  border-radius: .3rem!important
+  border-radius: .3rem !important
 }
 
 .rounded-circle {
-  border-radius: 50%!important
+  border-radius: 50% !important
 }
 
 .rounded-pill {
-  border-radius: 50rem!important
+  border-radius: 50rem !important
 }
 
 .rounded-0 {
-  border-radius: 0!important
+  border-radius: 0 !important
 }
 
 .clearfix:after {
@@ -5471,188 +5711,228 @@ a.bg-dark:focus, a.bg-dark:hover, button.bg-dark:focus, button.bg-dark:hover {
 }
 
 .d-none {
-  display: none!important
+  display: none !important
 }
 
 .d-inline {
-  display: inline!important
+  display: inline !important
 }
 
 .d-inline-block {
-  display: inline-block!important
+  display: inline-block !important
 }
 
 .d-block {
-  display: block!important
+  display: block !important
 }
 
 .d-table {
-  display: table!important
+  display: table !important
 }
 
 .d-table-row {
-  display: table-row!important
+  display: table-row !important
 }
 
 .d-table-cell {
-  display: table-cell!important
+  display: table-cell !important
 }
 
 .d-flex {
-  display: flex!important
+  display: flex !important
 }
 
 .d-inline-flex {
-  display: inline-flex!important
+  display: inline-flex !important
 }
 
 @media (min-width:576px) {
   .d-sm-none {
-    display: none!important
+    display: none !important
   }
+
   .d-sm-inline {
-    display: inline!important
+    display: inline !important
   }
+
   .d-sm-inline-block {
-    display: inline-block!important
+    display: inline-block !important
   }
+
   .d-sm-block {
-    display: block!important
+    display: block !important
   }
+
   .d-sm-table {
-    display: table!important
+    display: table !important
   }
+
   .d-sm-table-row {
-    display: table-row!important
+    display: table-row !important
   }
+
   .d-sm-table-cell {
-    display: table-cell!important
+    display: table-cell !important
   }
+
   .d-sm-flex {
-    display: flex!important
+    display: flex !important
   }
+
   .d-sm-inline-flex {
-    display: inline-flex!important
+    display: inline-flex !important
   }
 }
 
 @media (min-width:768px) {
   .d-md-none {
-    display: none!important
+    display: none !important
   }
+
   .d-md-inline {
-    display: inline!important
+    display: inline !important
   }
+
   .d-md-inline-block {
-    display: inline-block!important
+    display: inline-block !important
   }
+
   .d-md-block {
-    display: block!important
+    display: block !important
   }
+
   .d-md-table {
-    display: table!important
+    display: table !important
   }
+
   .d-md-table-row {
-    display: table-row!important
+    display: table-row !important
   }
+
   .d-md-table-cell {
-    display: table-cell!important
+    display: table-cell !important
   }
+
   .d-md-flex {
-    display: flex!important
+    display: flex !important
   }
+
   .d-md-inline-flex {
-    display: inline-flex!important
+    display: inline-flex !important
   }
 }
 
 @media (min-width:992px) {
   .d-lg-none {
-    display: none!important
+    display: none !important
   }
+
   .d-lg-inline {
-    display: inline!important
+    display: inline !important
   }
+
   .d-lg-inline-block {
-    display: inline-block!important
+    display: inline-block !important
   }
+
   .d-lg-block {
-    display: block!important
+    display: block !important
   }
+
   .d-lg-table {
-    display: table!important
+    display: table !important
   }
+
   .d-lg-table-row {
-    display: table-row!important
+    display: table-row !important
   }
+
   .d-lg-table-cell {
-    display: table-cell!important
+    display: table-cell !important
   }
+
   .d-lg-flex {
-    display: flex!important
+    display: flex !important
   }
+
   .d-lg-inline-flex {
-    display: inline-flex!important
+    display: inline-flex !important
   }
 }
 
 @media (min-width:1200px) {
   .d-xl-none {
-    display: none!important
+    display: none !important
   }
+
   .d-xl-inline {
-    display: inline!important
+    display: inline !important
   }
+
   .d-xl-inline-block {
-    display: inline-block!important
+    display: inline-block !important
   }
+
   .d-xl-block {
-    display: block!important
+    display: block !important
   }
+
   .d-xl-table {
-    display: table!important
+    display: table !important
   }
+
   .d-xl-table-row {
-    display: table-row!important
+    display: table-row !important
   }
+
   .d-xl-table-cell {
-    display: table-cell!important
+    display: table-cell !important
   }
+
   .d-xl-flex {
-    display: flex!important
+    display: flex !important
   }
+
   .d-xl-inline-flex {
-    display: inline-flex!important
+    display: inline-flex !important
   }
 }
 
 @media print {
   .d-print-none {
-    display: none!important
+    display: none !important
   }
+
   .d-print-inline {
-    display: inline!important
+    display: inline !important
   }
+
   .d-print-inline-block {
-    display: inline-block!important
+    display: inline-block !important
   }
+
   .d-print-block {
-    display: block!important
+    display: block !important
   }
+
   .d-print-table {
-    display: table!important
+    display: table !important
   }
+
   .d-print-table-row {
-    display: table-row!important
+    display: table-row !important
   }
+
   .d-print-table-cell {
-    display: table-cell!important
+    display: table-cell !important
   }
+
   .d-print-flex {
-    display: flex!important
+    display: flex !important
   }
+
   .d-print-inline-flex {
-    display: inline-flex!important
+    display: inline-flex !important
   }
 }
 
@@ -5696,666 +5976,806 @@ a.bg-dark:focus, a.bg-dark:hover, button.bg-dark:focus, button.bg-dark:hover {
 }
 
 .flex-row {
-  flex-direction: row!important
+  flex-direction: row !important
 }
 
 .flex-column {
-  flex-direction: column!important
+  flex-direction: column !important
 }
 
 .flex-row-reverse {
-  flex-direction: row-reverse!important
+  flex-direction: row-reverse !important
 }
 
 .flex-column-reverse {
-  flex-direction: column-reverse!important
+  flex-direction: column-reverse !important
 }
 
 .flex-wrap {
-  flex-wrap: wrap!important
+  flex-wrap: wrap !important
 }
 
 .flex-nowrap {
-  flex-wrap: nowrap!important
+  flex-wrap: nowrap !important
 }
 
 .flex-wrap-reverse {
-  flex-wrap: wrap-reverse!important
+  flex-wrap: wrap-reverse !important
 }
 
 .flex-fill {
-  flex: 1 1 auto!important
+  flex: 1 1 auto !important
 }
 
 .flex-grow-0 {
-  flex-grow: 0!important
+  flex-grow: 0 !important
 }
 
 .flex-grow-1 {
-  flex-grow: 1!important
+  flex-grow: 1 !important
 }
 
 .flex-shrink-0 {
-  flex-shrink: 0!important
+  flex-shrink: 0 !important
 }
 
 .flex-shrink-1 {
-  flex-shrink: 1!important
+  flex-shrink: 1 !important
 }
 
 .justify-content-start {
-  justify-content: flex-start!important
+  justify-content: flex-start !important
 }
 
 .justify-content-end {
-  justify-content: flex-end!important
+  justify-content: flex-end !important
 }
 
 .justify-content-center {
-  justify-content: center!important
+  justify-content: center !important
 }
 
 .justify-content-between {
-  justify-content: space-between!important
+  justify-content: space-between !important
 }
 
 .justify-content-around {
-  justify-content: space-around!important
+  justify-content: space-around !important
 }
 
 .align-items-start {
-  align-items: flex-start!important
+  align-items: flex-start !important
 }
 
 .align-items-end {
-  align-items: flex-end!important
+  align-items: flex-end !important
 }
 
 .align-items-center {
-  align-items: center!important
+  align-items: center !important
 }
 
 .align-items-baseline {
-  align-items: baseline!important
+  align-items: baseline !important
 }
 
 .align-items-stretch {
-  align-items: stretch!important
+  align-items: stretch !important
 }
 
 .align-content-start {
-  align-content: flex-start!important
+  align-content: flex-start !important
 }
 
 .align-content-end {
-  align-content: flex-end!important
+  align-content: flex-end !important
 }
 
 .align-content-center {
-  align-content: center!important
+  align-content: center !important
 }
 
 .align-content-between {
-  align-content: space-between!important
+  align-content: space-between !important
 }
 
 .align-content-around {
-  align-content: space-around!important
+  align-content: space-around !important
 }
 
 .align-content-stretch {
-  align-content: stretch!important
+  align-content: stretch !important
 }
 
 .align-self-auto {
-  align-self: auto!important
+  align-self: auto !important
 }
 
 .align-self-start {
-  align-self: flex-start!important
+  align-self: flex-start !important
 }
 
 .align-self-end {
-  align-self: flex-end!important
+  align-self: flex-end !important
 }
 
 .align-self-center {
-  align-self: center!important
+  align-self: center !important
 }
 
 .align-self-baseline {
-  align-self: baseline!important
+  align-self: baseline !important
 }
 
 .align-self-stretch {
-  align-self: stretch!important
+  align-self: stretch !important
 }
 
 @media (min-width:576px) {
   .flex-sm-row {
-    flex-direction: row!important
+    flex-direction: row !important
   }
+
   .flex-sm-column {
-    flex-direction: column!important
+    flex-direction: column !important
   }
+
   .flex-sm-row-reverse {
-    flex-direction: row-reverse!important
+    flex-direction: row-reverse !important
   }
+
   .flex-sm-column-reverse {
-    flex-direction: column-reverse!important
+    flex-direction: column-reverse !important
   }
+
   .flex-sm-wrap {
-    flex-wrap: wrap!important
+    flex-wrap: wrap !important
   }
+
   .flex-sm-nowrap {
-    flex-wrap: nowrap!important
+    flex-wrap: nowrap !important
   }
+
   .flex-sm-wrap-reverse {
-    flex-wrap: wrap-reverse!important
+    flex-wrap: wrap-reverse !important
   }
+
   .flex-sm-fill {
-    flex: 1 1 auto!important
+    flex: 1 1 auto !important
   }
+
   .flex-sm-grow-0 {
-    flex-grow: 0!important
+    flex-grow: 0 !important
   }
+
   .flex-sm-grow-1 {
-    flex-grow: 1!important
+    flex-grow: 1 !important
   }
+
   .flex-sm-shrink-0 {
-    flex-shrink: 0!important
+    flex-shrink: 0 !important
   }
+
   .flex-sm-shrink-1 {
-    flex-shrink: 1!important
+    flex-shrink: 1 !important
   }
+
   .justify-content-sm-start {
-    justify-content: flex-start!important
+    justify-content: flex-start !important
   }
+
   .justify-content-sm-end {
-    justify-content: flex-end!important
+    justify-content: flex-end !important
   }
+
   .justify-content-sm-center {
-    justify-content: center!important
+    justify-content: center !important
   }
+
   .justify-content-sm-between {
-    justify-content: space-between!important
+    justify-content: space-between !important
   }
+
   .justify-content-sm-around {
-    justify-content: space-around!important
+    justify-content: space-around !important
   }
+
   .align-items-sm-start {
-    align-items: flex-start!important
+    align-items: flex-start !important
   }
+
   .align-items-sm-end {
-    align-items: flex-end!important
+    align-items: flex-end !important
   }
+
   .align-items-sm-center {
-    align-items: center!important
+    align-items: center !important
   }
+
   .align-items-sm-baseline {
-    align-items: baseline!important
+    align-items: baseline !important
   }
+
   .align-items-sm-stretch {
-    align-items: stretch!important
+    align-items: stretch !important
   }
+
   .align-content-sm-start {
-    align-content: flex-start!important
+    align-content: flex-start !important
   }
+
   .align-content-sm-end {
-    align-content: flex-end!important
+    align-content: flex-end !important
   }
+
   .align-content-sm-center {
-    align-content: center!important
+    align-content: center !important
   }
+
   .align-content-sm-between {
-    align-content: space-between!important
+    align-content: space-between !important
   }
+
   .align-content-sm-around {
-    align-content: space-around!important
+    align-content: space-around !important
   }
+
   .align-content-sm-stretch {
-    align-content: stretch!important
+    align-content: stretch !important
   }
+
   .align-self-sm-auto {
-    align-self: auto!important
+    align-self: auto !important
   }
+
   .align-self-sm-start {
-    align-self: flex-start!important
+    align-self: flex-start !important
   }
+
   .align-self-sm-end {
-    align-self: flex-end!important
+    align-self: flex-end !important
   }
+
   .align-self-sm-center {
-    align-self: center!important
+    align-self: center !important
   }
+
   .align-self-sm-baseline {
-    align-self: baseline!important
+    align-self: baseline !important
   }
+
   .align-self-sm-stretch {
-    align-self: stretch!important
+    align-self: stretch !important
   }
 }
 
 @media (min-width:768px) {
   .flex-md-row {
-    flex-direction: row!important
+    flex-direction: row !important
   }
+
   .flex-md-column {
-    flex-direction: column!important
+    flex-direction: column !important
   }
+
   .flex-md-row-reverse {
-    flex-direction: row-reverse!important
+    flex-direction: row-reverse !important
   }
+
   .flex-md-column-reverse {
-    flex-direction: column-reverse!important
+    flex-direction: column-reverse !important
   }
+
   .flex-md-wrap {
-    flex-wrap: wrap!important
+    flex-wrap: wrap !important
   }
+
   .flex-md-nowrap {
-    flex-wrap: nowrap!important
+    flex-wrap: nowrap !important
   }
+
   .flex-md-wrap-reverse {
-    flex-wrap: wrap-reverse!important
+    flex-wrap: wrap-reverse !important
   }
+
   .flex-md-fill {
-    flex: 1 1 auto!important
+    flex: 1 1 auto !important
   }
+
   .flex-md-grow-0 {
-    flex-grow: 0!important
+    flex-grow: 0 !important
   }
+
   .flex-md-grow-1 {
-    flex-grow: 1!important
+    flex-grow: 1 !important
   }
+
   .flex-md-shrink-0 {
-    flex-shrink: 0!important
+    flex-shrink: 0 !important
   }
+
   .flex-md-shrink-1 {
-    flex-shrink: 1!important
+    flex-shrink: 1 !important
   }
+
   .justify-content-md-start {
-    justify-content: flex-start!important
+    justify-content: flex-start !important
   }
+
   .justify-content-md-end {
-    justify-content: flex-end!important
+    justify-content: flex-end !important
   }
+
   .justify-content-md-center {
-    justify-content: center!important
+    justify-content: center !important
   }
+
   .justify-content-md-between {
-    justify-content: space-between!important
+    justify-content: space-between !important
   }
+
   .justify-content-md-around {
-    justify-content: space-around!important
+    justify-content: space-around !important
   }
+
   .align-items-md-start {
-    align-items: flex-start!important
+    align-items: flex-start !important
   }
+
   .align-items-md-end {
-    align-items: flex-end!important
+    align-items: flex-end !important
   }
+
   .align-items-md-center {
-    align-items: center!important
+    align-items: center !important
   }
+
   .align-items-md-baseline {
-    align-items: baseline!important
+    align-items: baseline !important
   }
+
   .align-items-md-stretch {
-    align-items: stretch!important
+    align-items: stretch !important
   }
+
   .align-content-md-start {
-    align-content: flex-start!important
+    align-content: flex-start !important
   }
+
   .align-content-md-end {
-    align-content: flex-end!important
+    align-content: flex-end !important
   }
+
   .align-content-md-center {
-    align-content: center!important
+    align-content: center !important
   }
+
   .align-content-md-between {
-    align-content: space-between!important
+    align-content: space-between !important
   }
+
   .align-content-md-around {
-    align-content: space-around!important
+    align-content: space-around !important
   }
+
   .align-content-md-stretch {
-    align-content: stretch!important
+    align-content: stretch !important
   }
+
   .align-self-md-auto {
-    align-self: auto!important
+    align-self: auto !important
   }
+
   .align-self-md-start {
-    align-self: flex-start!important
+    align-self: flex-start !important
   }
+
   .align-self-md-end {
-    align-self: flex-end!important
+    align-self: flex-end !important
   }
+
   .align-self-md-center {
-    align-self: center!important
+    align-self: center !important
   }
+
   .align-self-md-baseline {
-    align-self: baseline!important
+    align-self: baseline !important
   }
+
   .align-self-md-stretch {
-    align-self: stretch!important
+    align-self: stretch !important
   }
 }
 
 @media (min-width:992px) {
   .flex-lg-row {
-    flex-direction: row!important
+    flex-direction: row !important
   }
+
   .flex-lg-column {
-    flex-direction: column!important
+    flex-direction: column !important
   }
+
   .flex-lg-row-reverse {
-    flex-direction: row-reverse!important
+    flex-direction: row-reverse !important
   }
+
   .flex-lg-column-reverse {
-    flex-direction: column-reverse!important
+    flex-direction: column-reverse !important
   }
+
   .flex-lg-wrap {
-    flex-wrap: wrap!important
+    flex-wrap: wrap !important
   }
+
   .flex-lg-nowrap {
-    flex-wrap: nowrap!important
+    flex-wrap: nowrap !important
   }
+
   .flex-lg-wrap-reverse {
-    flex-wrap: wrap-reverse!important
+    flex-wrap: wrap-reverse !important
   }
+
   .flex-lg-fill {
-    flex: 1 1 auto!important
+    flex: 1 1 auto !important
   }
+
   .flex-lg-grow-0 {
-    flex-grow: 0!important
+    flex-grow: 0 !important
   }
+
   .flex-lg-grow-1 {
-    flex-grow: 1!important
+    flex-grow: 1 !important
   }
+
   .flex-lg-shrink-0 {
-    flex-shrink: 0!important
+    flex-shrink: 0 !important
   }
+
   .flex-lg-shrink-1 {
-    flex-shrink: 1!important
+    flex-shrink: 1 !important
   }
+
   .justify-content-lg-start {
-    justify-content: flex-start!important
+    justify-content: flex-start !important
   }
+
   .justify-content-lg-end {
-    justify-content: flex-end!important
+    justify-content: flex-end !important
   }
+
   .justify-content-lg-center {
-    justify-content: center!important
+    justify-content: center !important
   }
+
   .justify-content-lg-between {
-    justify-content: space-between!important
+    justify-content: space-between !important
   }
+
   .justify-content-lg-around {
-    justify-content: space-around!important
+    justify-content: space-around !important
   }
+
   .align-items-lg-start {
-    align-items: flex-start!important
+    align-items: flex-start !important
   }
+
   .align-items-lg-end {
-    align-items: flex-end!important
+    align-items: flex-end !important
   }
+
   .align-items-lg-center {
-    align-items: center!important
+    align-items: center !important
   }
+
   .align-items-lg-baseline {
-    align-items: baseline!important
+    align-items: baseline !important
   }
+
   .align-items-lg-stretch {
-    align-items: stretch!important
+    align-items: stretch !important
   }
+
   .align-content-lg-start {
-    align-content: flex-start!important
+    align-content: flex-start !important
   }
+
   .align-content-lg-end {
-    align-content: flex-end!important
+    align-content: flex-end !important
   }
+
   .align-content-lg-center {
-    align-content: center!important
+    align-content: center !important
   }
+
   .align-content-lg-between {
-    align-content: space-between!important
+    align-content: space-between !important
   }
+
   .align-content-lg-around {
-    align-content: space-around!important
+    align-content: space-around !important
   }
+
   .align-content-lg-stretch {
-    align-content: stretch!important
+    align-content: stretch !important
   }
+
   .align-self-lg-auto {
-    align-self: auto!important
+    align-self: auto !important
   }
+
   .align-self-lg-start {
-    align-self: flex-start!important
+    align-self: flex-start !important
   }
+
   .align-self-lg-end {
-    align-self: flex-end!important
+    align-self: flex-end !important
   }
+
   .align-self-lg-center {
-    align-self: center!important
+    align-self: center !important
   }
+
   .align-self-lg-baseline {
-    align-self: baseline!important
+    align-self: baseline !important
   }
+
   .align-self-lg-stretch {
-    align-self: stretch!important
+    align-self: stretch !important
   }
 }
 
 @media (min-width:1200px) {
   .flex-xl-row {
-    flex-direction: row!important
+    flex-direction: row !important
   }
+
   .flex-xl-column {
-    flex-direction: column!important
+    flex-direction: column !important
   }
+
   .flex-xl-row-reverse {
-    flex-direction: row-reverse!important
+    flex-direction: row-reverse !important
   }
+
   .flex-xl-column-reverse {
-    flex-direction: column-reverse!important
+    flex-direction: column-reverse !important
   }
+
   .flex-xl-wrap {
-    flex-wrap: wrap!important
+    flex-wrap: wrap !important
   }
+
   .flex-xl-nowrap {
-    flex-wrap: nowrap!important
+    flex-wrap: nowrap !important
   }
+
   .flex-xl-wrap-reverse {
-    flex-wrap: wrap-reverse!important
+    flex-wrap: wrap-reverse !important
   }
+
   .flex-xl-fill {
-    flex: 1 1 auto!important
+    flex: 1 1 auto !important
   }
+
   .flex-xl-grow-0 {
-    flex-grow: 0!important
+    flex-grow: 0 !important
   }
+
   .flex-xl-grow-1 {
-    flex-grow: 1!important
+    flex-grow: 1 !important
   }
+
   .flex-xl-shrink-0 {
-    flex-shrink: 0!important
+    flex-shrink: 0 !important
   }
+
   .flex-xl-shrink-1 {
-    flex-shrink: 1!important
+    flex-shrink: 1 !important
   }
+
   .justify-content-xl-start {
-    justify-content: flex-start!important
+    justify-content: flex-start !important
   }
+
   .justify-content-xl-end {
-    justify-content: flex-end!important
+    justify-content: flex-end !important
   }
+
   .justify-content-xl-center {
-    justify-content: center!important
+    justify-content: center !important
   }
+
   .justify-content-xl-between {
-    justify-content: space-between!important
+    justify-content: space-between !important
   }
+
   .justify-content-xl-around {
-    justify-content: space-around!important
+    justify-content: space-around !important
   }
+
   .align-items-xl-start {
-    align-items: flex-start!important
+    align-items: flex-start !important
   }
+
   .align-items-xl-end {
-    align-items: flex-end!important
+    align-items: flex-end !important
   }
+
   .align-items-xl-center {
-    align-items: center!important
+    align-items: center !important
   }
+
   .align-items-xl-baseline {
-    align-items: baseline!important
+    align-items: baseline !important
   }
+
   .align-items-xl-stretch {
-    align-items: stretch!important
+    align-items: stretch !important
   }
+
   .align-content-xl-start {
-    align-content: flex-start!important
+    align-content: flex-start !important
   }
+
   .align-content-xl-end {
-    align-content: flex-end!important
+    align-content: flex-end !important
   }
+
   .align-content-xl-center {
-    align-content: center!important
+    align-content: center !important
   }
+
   .align-content-xl-between {
-    align-content: space-between!important
+    align-content: space-between !important
   }
+
   .align-content-xl-around {
-    align-content: space-around!important
+    align-content: space-around !important
   }
+
   .align-content-xl-stretch {
-    align-content: stretch!important
+    align-content: stretch !important
   }
+
   .align-self-xl-auto {
-    align-self: auto!important
+    align-self: auto !important
   }
+
   .align-self-xl-start {
-    align-self: flex-start!important
+    align-self: flex-start !important
   }
+
   .align-self-xl-end {
-    align-self: flex-end!important
+    align-self: flex-end !important
   }
+
   .align-self-xl-center {
-    align-self: center!important
+    align-self: center !important
   }
+
   .align-self-xl-baseline {
-    align-self: baseline!important
+    align-self: baseline !important
   }
+
   .align-self-xl-stretch {
-    align-self: stretch!important
+    align-self: stretch !important
   }
 }
 
 .float-left {
-  float: left!important
+  float: left !important
 }
 
 .float-right {
-  float: right!important
+  float: right !important
 }
 
 .float-none {
-  float: none!important
+  float: none !important
 }
 
 @media (min-width:576px) {
   .float-sm-left {
-    float: left!important
+    float: left !important
   }
+
   .float-sm-right {
-    float: right!important
+    float: right !important
   }
+
   .float-sm-none {
-    float: none!important
+    float: none !important
   }
 }
 
 @media (min-width:768px) {
   .float-md-left {
-    float: left!important
+    float: left !important
   }
+
   .float-md-right {
-    float: right!important
+    float: right !important
   }
+
   .float-md-none {
-    float: none!important
+    float: none !important
   }
 }
 
 @media (min-width:992px) {
   .float-lg-left {
-    float: left!important
+    float: left !important
   }
+
   .float-lg-right {
-    float: right!important
+    float: right !important
   }
+
   .float-lg-none {
-    float: none!important
+    float: none !important
   }
 }
 
 @media (min-width:1200px) {
   .float-xl-left {
-    float: left!important
+    float: left !important
   }
+
   .float-xl-right {
-    float: right!important
+    float: right !important
   }
+
   .float-xl-none {
-    float: none!important
+    float: none !important
   }
 }
 
 .user-select-all {
-  -webkit-user-select: all!important;
-  -ms-user-select: all!important;
-  user-select: all!important
+  -webkit-user-select: all !important;
+  -ms-user-select: all !important;
+  user-select: all !important
 }
 
 .user-select-auto {
-  -webkit-user-select: auto!important;
-  -ms-user-select: auto!important;
-  user-select: auto!important
+  -webkit-user-select: auto !important;
+  -ms-user-select: auto !important;
+  user-select: auto !important
 }
 
 .user-select-none {
-  -webkit-user-select: none!important;
-  -ms-user-select: none!important;
-  user-select: none!important
+  -webkit-user-select: none !important;
+  -ms-user-select: none !important;
+  user-select: none !important
 }
 
 .overflow-auto {
-  overflow: auto!important
+  overflow: auto !important
 }
 
 .overflow-hidden {
-  overflow: hidden!important
+  overflow: hidden !important
 }
 
 .position-static {
-  position: static!important
+  position: static !important
 }
 
 .position-relative {
-  position: relative!important
+  position: relative !important
 }
 
 .position-absolute {
-  position: absolute!important
+  position: absolute !important
 }
 
 .position-fixed {
-  position: fixed!important
+  position: fixed !important
 }
 
 .position-sticky {
-  position: -webkit-sticky!important;
-  position: sticky!important
+  position: -webkit-sticky !important;
+  position: sticky !important
 }
 
 .fixed-top {
@@ -6404,1534 +6824,1890 @@ a.bg-dark:focus, a.bg-dark:hover, button.bg-dark:focus, button.bg-dark:hover {
 }
 
 .shadow-sm {
-  box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075)!important
+  box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075) !important
 }
 
 .shadow {
-  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15)!important
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important
 }
 
 .shadow-lg {
-  box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175)!important
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175) !important
 }
 
 .shadow-none {
-  box-shadow: none!important
+  box-shadow: none !important
 }
 
 .w-25 {
-  width: 25%!important
+  width: 25% !important
 }
 
 .w-50 {
-  width: 50%!important
+  width: 50% !important
 }
 
 .w-75 {
-  width: 75%!important
+  width: 75% !important
 }
 
 .w-100 {
-  width: 100%!important
+  width: 100% !important
 }
 
 .w-auto {
-  width: auto!important
+  width: auto !important
 }
 
 .h-25 {
-  height: 25%!important
+  height: 25% !important
 }
 
 .h-50 {
-  height: 50%!important
+  height: 50% !important
 }
 
 .h-75 {
-  height: 75%!important
+  height: 75% !important
 }
 
 .h-100 {
-  height: 100%!important
+  height: 100% !important
 }
 
 .h-auto {
-  height: auto!important
+  height: auto !important
 }
 
 .mw-100 {
-  max-width: 100%!important
+  max-width: 100% !important
 }
 
 .mh-100 {
-  max-height: 100%!important
+  max-height: 100% !important
 }
 
 .min-vw-100 {
-  min-width: 100vw!important
+  min-width: 100vw !important
 }
 
 .min-vh-100 {
-  min-height: 100vh!important
+  min-height: 100vh !important
 }
 
 .vw-100 {
-  width: 100vw!important
+  width: 100vw !important
 }
 
 .vh-100 {
-  height: 100vh!important
+  height: 100vh !important
 }
 
 .m-0 {
-  margin: 0!important
+  margin: 0 !important
 }
 
 .mt-0, .my-0 {
-  margin-top: 0!important
+  margin-top: 0 !important
 }
 
 .mr-0, .mx-0 {
-  margin-right: 0!important
+  margin-right: 0 !important
 }
 
 .mb-0, .my-0 {
-  margin-bottom: 0!important
+  margin-bottom: 0 !important
 }
 
 .ml-0, .mx-0 {
-  margin-left: 0!important
+  margin-left: 0 !important
 }
 
 .m-1 {
-  margin: .25rem!important
+  margin: .25rem !important
 }
 
 .mt-1, .my-1 {
-  margin-top: .25rem!important
+  margin-top: .25rem !important
 }
 
 .mr-1, .mx-1 {
-  margin-right: .25rem!important
+  margin-right: .25rem !important
 }
 
 .mb-1, .my-1 {
-  margin-bottom: .25rem!important
+  margin-bottom: .25rem !important
 }
 
 .ml-1, .mx-1 {
-  margin-left: .25rem!important
+  margin-left: .25rem !important
 }
 
 .m-2 {
-  margin: .5rem!important
+  margin: .5rem !important
 }
 
 .mt-2, .my-2 {
-  margin-top: .5rem!important
+  margin-top: .5rem !important
 }
 
 .mr-2, .mx-2 {
-  margin-right: .5rem!important
+  margin-right: .5rem !important
 }
 
 .mb-2, .my-2 {
-  margin-bottom: .5rem!important
+  margin-bottom: .5rem !important
 }
 
 .ml-2, .mx-2 {
-  margin-left: .5rem!important
+  margin-left: .5rem !important
 }
 
 .m-3 {
-  margin: 1rem!important
+  margin: 1rem !important
 }
 
 .mt-3, .my-3 {
-  margin-top: 1rem!important
+  margin-top: 1rem !important
 }
 
 .mr-3, .mx-3 {
-  margin-right: 1rem!important
+  margin-right: 1rem !important
 }
 
 .mb-3, .my-3 {
-  margin-bottom: 1rem!important
+  margin-bottom: 1rem !important
 }
 
 .ml-3, .mx-3 {
-  margin-left: 1rem!important
+  margin-left: 1rem !important
 }
 
 .m-4 {
-  margin: 1.5rem!important
+  margin: 1.5rem !important
 }
 
 .mt-4, .my-4 {
-  margin-top: 1.5rem!important
+  margin-top: 1.5rem !important
 }
 
 .mr-4, .mx-4 {
-  margin-right: 1.5rem!important
+  margin-right: 1.5rem !important
 }
 
 .mb-4, .my-4 {
-  margin-bottom: 1.5rem!important
+  margin-bottom: 1.5rem !important
 }
 
 .ml-4, .mx-4 {
-  margin-left: 1.5rem!important
+  margin-left: 1.5rem !important
 }
 
 .m-5 {
-  margin: 3rem!important
+  margin: 3rem !important
 }
 
 .mt-5, .my-5 {
-  margin-top: 3rem!important
+  margin-top: 3rem !important
 }
 
 .mr-5, .mx-5 {
-  margin-right: 3rem!important
+  margin-right: 3rem !important
 }
 
 .mb-5, .my-5 {
-  margin-bottom: 3rem!important
+  margin-bottom: 3rem !important
 }
 
 .ml-5, .mx-5 {
-  margin-left: 3rem!important
+  margin-left: 3rem !important
 }
 
 .p-0 {
-  padding: 0!important
+  padding: 0 !important
 }
 
 .pt-0, .py-0 {
-  padding-top: 0!important
+  padding-top: 0 !important
 }
 
 .pr-0, .px-0 {
-  padding-right: 0!important
+  padding-right: 0 !important
 }
 
 .pb-0, .py-0 {
-  padding-bottom: 0!important
+  padding-bottom: 0 !important
 }
 
 .pl-0, .px-0 {
-  padding-left: 0!important
+  padding-left: 0 !important
 }
 
 .p-1 {
-  padding: .25rem!important
+  padding: .25rem !important
 }
 
 .pt-1, .py-1 {
-  padding-top: .25rem!important
+  padding-top: .25rem !important
 }
 
 .pr-1, .px-1 {
-  padding-right: .25rem!important
+  padding-right: .25rem !important
 }
 
 .pb-1, .py-1 {
-  padding-bottom: .25rem!important
+  padding-bottom: .25rem !important
 }
 
 .pl-1, .px-1 {
-  padding-left: .25rem!important
+  padding-left: .25rem !important
 }
 
 .p-2 {
-  padding: .5rem!important
+  padding: .5rem !important
 }
 
 .pt-2, .py-2 {
-  padding-top: .5rem!important
+  padding-top: .5rem !important
 }
 
 .pr-2, .px-2 {
-  padding-right: .5rem!important
+  padding-right: .5rem !important
 }
 
 .pb-2, .py-2 {
-  padding-bottom: .5rem!important
+  padding-bottom: .5rem !important
 }
 
 .pl-2, .px-2 {
-  padding-left: .5rem!important
+  padding-left: .5rem !important
 }
 
 .p-3 {
-  padding: 1rem!important
+  padding: 1rem !important
 }
 
 .pt-3, .py-3 {
-  padding-top: 1rem!important
+  padding-top: 1rem !important
 }
 
 .pr-3, .px-3 {
-  padding-right: 1rem!important
+  padding-right: 1rem !important
 }
 
 .pb-3, .py-3 {
-  padding-bottom: 1rem!important
+  padding-bottom: 1rem !important
 }
 
 .pl-3, .px-3 {
-  padding-left: 1rem!important
+  padding-left: 1rem !important
 }
 
 .p-4 {
-  padding: 1.5rem!important
+  padding: 1.5rem !important
 }
 
 .pt-4, .py-4 {
-  padding-top: 1.5rem!important
+  padding-top: 1.5rem !important
 }
 
 .pr-4, .px-4 {
-  padding-right: 1.5rem!important
+  padding-right: 1.5rem !important
 }
 
 .pb-4, .py-4 {
-  padding-bottom: 1.5rem!important
+  padding-bottom: 1.5rem !important
 }
 
 .pl-4, .px-4 {
-  padding-left: 1.5rem!important
+  padding-left: 1.5rem !important
 }
 
 .p-5 {
-  padding: 3rem!important
+  padding: 3rem !important
 }
 
 .pt-5, .py-5 {
-  padding-top: 3rem!important
+  padding-top: 3rem !important
 }
 
 .pr-5, .px-5 {
-  padding-right: 3rem!important
+  padding-right: 3rem !important
 }
 
 .pb-5, .py-5 {
-  padding-bottom: 3rem!important
+  padding-bottom: 3rem !important
 }
 
 .pl-5, .px-5 {
-  padding-left: 3rem!important
+  padding-left: 3rem !important
 }
 
 .m-n1 {
-  margin: -.25rem!important
+  margin: -.25rem !important
 }
 
 .mt-n1, .my-n1 {
-  margin-top: -.25rem!important
+  margin-top: -.25rem !important
 }
 
 .mr-n1, .mx-n1 {
-  margin-right: -.25rem!important
+  margin-right: -.25rem !important
 }
 
 .mb-n1, .my-n1 {
-  margin-bottom: -.25rem!important
+  margin-bottom: -.25rem !important
 }
 
 .ml-n1, .mx-n1 {
-  margin-left: -.25rem!important
+  margin-left: -.25rem !important
 }
 
 .m-n2 {
-  margin: -.5rem!important
+  margin: -.5rem !important
 }
 
 .mt-n2, .my-n2 {
-  margin-top: -.5rem!important
+  margin-top: -.5rem !important
 }
 
 .mr-n2, .mx-n2 {
-  margin-right: -.5rem!important
+  margin-right: -.5rem !important
 }
 
 .mb-n2, .my-n2 {
-  margin-bottom: -.5rem!important
+  margin-bottom: -.5rem !important
 }
 
 .ml-n2, .mx-n2 {
-  margin-left: -.5rem!important
+  margin-left: -.5rem !important
 }
 
 .m-n3 {
-  margin: -1rem!important
+  margin: -1rem !important
 }
 
 .mt-n3, .my-n3 {
-  margin-top: -1rem!important
+  margin-top: -1rem !important
 }
 
 .mr-n3, .mx-n3 {
-  margin-right: -1rem!important
+  margin-right: -1rem !important
 }
 
 .mb-n3, .my-n3 {
-  margin-bottom: -1rem!important
+  margin-bottom: -1rem !important
 }
 
 .ml-n3, .mx-n3 {
-  margin-left: -1rem!important
+  margin-left: -1rem !important
 }
 
 .m-n4 {
-  margin: -1.5rem!important
+  margin: -1.5rem !important
 }
 
 .mt-n4, .my-n4 {
-  margin-top: -1.5rem!important
+  margin-top: -1.5rem !important
 }
 
 .mr-n4, .mx-n4 {
-  margin-right: -1.5rem!important
+  margin-right: -1.5rem !important
 }
 
 .mb-n4, .my-n4 {
-  margin-bottom: -1.5rem!important
+  margin-bottom: -1.5rem !important
 }
 
 .ml-n4, .mx-n4 {
-  margin-left: -1.5rem!important
+  margin-left: -1.5rem !important
 }
 
 .m-n5 {
-  margin: -3rem!important
+  margin: -3rem !important
 }
 
 .mt-n5, .my-n5 {
-  margin-top: -3rem!important
+  margin-top: -3rem !important
 }
 
 .mr-n5, .mx-n5 {
-  margin-right: -3rem!important
+  margin-right: -3rem !important
 }
 
 .mb-n5, .my-n5 {
-  margin-bottom: -3rem!important
+  margin-bottom: -3rem !important
 }
 
 .ml-n5, .mx-n5 {
-  margin-left: -3rem!important
+  margin-left: -3rem !important
 }
 
 .m-auto {
-  margin: auto!important
+  margin: auto !important
 }
 
 .mt-auto, .my-auto {
-  margin-top: auto!important
+  margin-top: auto !important
 }
 
 .mr-auto, .mx-auto {
-  margin-right: auto!important
+  margin-right: auto !important
 }
 
 .mb-auto, .my-auto {
-  margin-bottom: auto!important
+  margin-bottom: auto !important
 }
 
 .ml-auto, .mx-auto {
-  margin-left: auto!important
+  margin-left: auto !important
 }
 
 @media (min-width:576px) {
   .m-sm-0 {
-    margin: 0!important
+    margin: 0 !important
   }
+
   .mt-sm-0, .my-sm-0 {
-    margin-top: 0!important
+    margin-top: 0 !important
   }
+
   .mr-sm-0, .mx-sm-0 {
-    margin-right: 0!important
+    margin-right: 0 !important
   }
+
   .mb-sm-0, .my-sm-0 {
-    margin-bottom: 0!important
+    margin-bottom: 0 !important
   }
+
   .ml-sm-0, .mx-sm-0 {
-    margin-left: 0!important
+    margin-left: 0 !important
   }
+
   .m-sm-1 {
-    margin: .25rem!important
+    margin: .25rem !important
   }
+
   .mt-sm-1, .my-sm-1 {
-    margin-top: .25rem!important
+    margin-top: .25rem !important
   }
+
   .mr-sm-1, .mx-sm-1 {
-    margin-right: .25rem!important
+    margin-right: .25rem !important
   }
+
   .mb-sm-1, .my-sm-1 {
-    margin-bottom: .25rem!important
+    margin-bottom: .25rem !important
   }
+
   .ml-sm-1, .mx-sm-1 {
-    margin-left: .25rem!important
+    margin-left: .25rem !important
   }
+
   .m-sm-2 {
-    margin: .5rem!important
+    margin: .5rem !important
   }
+
   .mt-sm-2, .my-sm-2 {
-    margin-top: .5rem!important
+    margin-top: .5rem !important
   }
+
   .mr-sm-2, .mx-sm-2 {
-    margin-right: .5rem!important
+    margin-right: .5rem !important
   }
+
   .mb-sm-2, .my-sm-2 {
-    margin-bottom: .5rem!important
+    margin-bottom: .5rem !important
   }
+
   .ml-sm-2, .mx-sm-2 {
-    margin-left: .5rem!important
+    margin-left: .5rem !important
   }
+
   .m-sm-3 {
-    margin: 1rem!important
+    margin: 1rem !important
   }
+
   .mt-sm-3, .my-sm-3 {
-    margin-top: 1rem!important
+    margin-top: 1rem !important
   }
+
   .mr-sm-3, .mx-sm-3 {
-    margin-right: 1rem!important
+    margin-right: 1rem !important
   }
+
   .mb-sm-3, .my-sm-3 {
-    margin-bottom: 1rem!important
+    margin-bottom: 1rem !important
   }
+
   .ml-sm-3, .mx-sm-3 {
-    margin-left: 1rem!important
+    margin-left: 1rem !important
   }
+
   .m-sm-4 {
-    margin: 1.5rem!important
+    margin: 1.5rem !important
   }
+
   .mt-sm-4, .my-sm-4 {
-    margin-top: 1.5rem!important
+    margin-top: 1.5rem !important
   }
+
   .mr-sm-4, .mx-sm-4 {
-    margin-right: 1.5rem!important
+    margin-right: 1.5rem !important
   }
+
   .mb-sm-4, .my-sm-4 {
-    margin-bottom: 1.5rem!important
+    margin-bottom: 1.5rem !important
   }
+
   .ml-sm-4, .mx-sm-4 {
-    margin-left: 1.5rem!important
+    margin-left: 1.5rem !important
   }
+
   .m-sm-5 {
-    margin: 3rem!important
+    margin: 3rem !important
   }
+
   .mt-sm-5, .my-sm-5 {
-    margin-top: 3rem!important
+    margin-top: 3rem !important
   }
+
   .mr-sm-5, .mx-sm-5 {
-    margin-right: 3rem!important
+    margin-right: 3rem !important
   }
+
   .mb-sm-5, .my-sm-5 {
-    margin-bottom: 3rem!important
+    margin-bottom: 3rem !important
   }
+
   .ml-sm-5, .mx-sm-5 {
-    margin-left: 3rem!important
+    margin-left: 3rem !important
   }
+
   .p-sm-0 {
-    padding: 0!important
+    padding: 0 !important
   }
+
   .pt-sm-0, .py-sm-0 {
-    padding-top: 0!important
+    padding-top: 0 !important
   }
+
   .pr-sm-0, .px-sm-0 {
-    padding-right: 0!important
+    padding-right: 0 !important
   }
+
   .pb-sm-0, .py-sm-0 {
-    padding-bottom: 0!important
+    padding-bottom: 0 !important
   }
+
   .pl-sm-0, .px-sm-0 {
-    padding-left: 0!important
+    padding-left: 0 !important
   }
+
   .p-sm-1 {
-    padding: .25rem!important
+    padding: .25rem !important
   }
+
   .pt-sm-1, .py-sm-1 {
-    padding-top: .25rem!important
+    padding-top: .25rem !important
   }
+
   .pr-sm-1, .px-sm-1 {
-    padding-right: .25rem!important
+    padding-right: .25rem !important
   }
+
   .pb-sm-1, .py-sm-1 {
-    padding-bottom: .25rem!important
+    padding-bottom: .25rem !important
   }
+
   .pl-sm-1, .px-sm-1 {
-    padding-left: .25rem!important
+    padding-left: .25rem !important
   }
+
   .p-sm-2 {
-    padding: .5rem!important
+    padding: .5rem !important
   }
+
   .pt-sm-2, .py-sm-2 {
-    padding-top: .5rem!important
+    padding-top: .5rem !important
   }
+
   .pr-sm-2, .px-sm-2 {
-    padding-right: .5rem!important
+    padding-right: .5rem !important
   }
+
   .pb-sm-2, .py-sm-2 {
-    padding-bottom: .5rem!important
+    padding-bottom: .5rem !important
   }
+
   .pl-sm-2, .px-sm-2 {
-    padding-left: .5rem!important
+    padding-left: .5rem !important
   }
+
   .p-sm-3 {
-    padding: 1rem!important
+    padding: 1rem !important
   }
+
   .pt-sm-3, .py-sm-3 {
-    padding-top: 1rem!important
+    padding-top: 1rem !important
   }
+
   .pr-sm-3, .px-sm-3 {
-    padding-right: 1rem!important
+    padding-right: 1rem !important
   }
+
   .pb-sm-3, .py-sm-3 {
-    padding-bottom: 1rem!important
+    padding-bottom: 1rem !important
   }
+
   .pl-sm-3, .px-sm-3 {
-    padding-left: 1rem!important
+    padding-left: 1rem !important
   }
+
   .p-sm-4 {
-    padding: 1.5rem!important
+    padding: 1.5rem !important
   }
+
   .pt-sm-4, .py-sm-4 {
-    padding-top: 1.5rem!important
+    padding-top: 1.5rem !important
   }
+
   .pr-sm-4, .px-sm-4 {
-    padding-right: 1.5rem!important
+    padding-right: 1.5rem !important
   }
+
   .pb-sm-4, .py-sm-4 {
-    padding-bottom: 1.5rem!important
+    padding-bottom: 1.5rem !important
   }
+
   .pl-sm-4, .px-sm-4 {
-    padding-left: 1.5rem!important
+    padding-left: 1.5rem !important
   }
+
   .p-sm-5 {
-    padding: 3rem!important
+    padding: 3rem !important
   }
+
   .pt-sm-5, .py-sm-5 {
-    padding-top: 3rem!important
+    padding-top: 3rem !important
   }
+
   .pr-sm-5, .px-sm-5 {
-    padding-right: 3rem!important
+    padding-right: 3rem !important
   }
+
   .pb-sm-5, .py-sm-5 {
-    padding-bottom: 3rem!important
+    padding-bottom: 3rem !important
   }
+
   .pl-sm-5, .px-sm-5 {
-    padding-left: 3rem!important
+    padding-left: 3rem !important
   }
+
   .m-sm-n1 {
-    margin: -.25rem!important
+    margin: -.25rem !important
   }
+
   .mt-sm-n1, .my-sm-n1 {
-    margin-top: -.25rem!important
+    margin-top: -.25rem !important
   }
+
   .mr-sm-n1, .mx-sm-n1 {
-    margin-right: -.25rem!important
+    margin-right: -.25rem !important
   }
+
   .mb-sm-n1, .my-sm-n1 {
-    margin-bottom: -.25rem!important
+    margin-bottom: -.25rem !important
   }
+
   .ml-sm-n1, .mx-sm-n1 {
-    margin-left: -.25rem!important
+    margin-left: -.25rem !important
   }
+
   .m-sm-n2 {
-    margin: -.5rem!important
+    margin: -.5rem !important
   }
+
   .mt-sm-n2, .my-sm-n2 {
-    margin-top: -.5rem!important
+    margin-top: -.5rem !important
   }
+
   .mr-sm-n2, .mx-sm-n2 {
-    margin-right: -.5rem!important
+    margin-right: -.5rem !important
   }
+
   .mb-sm-n2, .my-sm-n2 {
-    margin-bottom: -.5rem!important
+    margin-bottom: -.5rem !important
   }
+
   .ml-sm-n2, .mx-sm-n2 {
-    margin-left: -.5rem!important
+    margin-left: -.5rem !important
   }
+
   .m-sm-n3 {
-    margin: -1rem!important
+    margin: -1rem !important
   }
+
   .mt-sm-n3, .my-sm-n3 {
-    margin-top: -1rem!important
+    margin-top: -1rem !important
   }
+
   .mr-sm-n3, .mx-sm-n3 {
-    margin-right: -1rem!important
+    margin-right: -1rem !important
   }
+
   .mb-sm-n3, .my-sm-n3 {
-    margin-bottom: -1rem!important
+    margin-bottom: -1rem !important
   }
+
   .ml-sm-n3, .mx-sm-n3 {
-    margin-left: -1rem!important
+    margin-left: -1rem !important
   }
+
   .m-sm-n4 {
-    margin: -1.5rem!important
+    margin: -1.5rem !important
   }
+
   .mt-sm-n4, .my-sm-n4 {
-    margin-top: -1.5rem!important
+    margin-top: -1.5rem !important
   }
+
   .mr-sm-n4, .mx-sm-n4 {
-    margin-right: -1.5rem!important
+    margin-right: -1.5rem !important
   }
+
   .mb-sm-n4, .my-sm-n4 {
-    margin-bottom: -1.5rem!important
+    margin-bottom: -1.5rem !important
   }
+
   .ml-sm-n4, .mx-sm-n4 {
-    margin-left: -1.5rem!important
+    margin-left: -1.5rem !important
   }
+
   .m-sm-n5 {
-    margin: -3rem!important
+    margin: -3rem !important
   }
+
   .mt-sm-n5, .my-sm-n5 {
-    margin-top: -3rem!important
+    margin-top: -3rem !important
   }
+
   .mr-sm-n5, .mx-sm-n5 {
-    margin-right: -3rem!important
+    margin-right: -3rem !important
   }
+
   .mb-sm-n5, .my-sm-n5 {
-    margin-bottom: -3rem!important
+    margin-bottom: -3rem !important
   }
+
   .ml-sm-n5, .mx-sm-n5 {
-    margin-left: -3rem!important
+    margin-left: -3rem !important
   }
+
   .m-sm-auto {
-    margin: auto!important
+    margin: auto !important
   }
+
   .mt-sm-auto, .my-sm-auto {
-    margin-top: auto!important
+    margin-top: auto !important
   }
+
   .mr-sm-auto, .mx-sm-auto {
-    margin-right: auto!important
+    margin-right: auto !important
   }
+
   .mb-sm-auto, .my-sm-auto {
-    margin-bottom: auto!important
+    margin-bottom: auto !important
   }
+
   .ml-sm-auto, .mx-sm-auto {
-    margin-left: auto!important
+    margin-left: auto !important
   }
 }
 
 @media (min-width:768px) {
   .m-md-0 {
-    margin: 0!important
+    margin: 0 !important
   }
+
   .mt-md-0, .my-md-0 {
-    margin-top: 0!important
+    margin-top: 0 !important
   }
+
   .mr-md-0, .mx-md-0 {
-    margin-right: 0!important
+    margin-right: 0 !important
   }
+
   .mb-md-0, .my-md-0 {
-    margin-bottom: 0!important
+    margin-bottom: 0 !important
   }
+
   .ml-md-0, .mx-md-0 {
-    margin-left: 0!important
+    margin-left: 0 !important
   }
+
   .m-md-1 {
-    margin: .25rem!important
+    margin: .25rem !important
   }
+
   .mt-md-1, .my-md-1 {
-    margin-top: .25rem!important
+    margin-top: .25rem !important
   }
+
   .mr-md-1, .mx-md-1 {
-    margin-right: .25rem!important
+    margin-right: .25rem !important
   }
+
   .mb-md-1, .my-md-1 {
-    margin-bottom: .25rem!important
+    margin-bottom: .25rem !important
   }
+
   .ml-md-1, .mx-md-1 {
-    margin-left: .25rem!important
+    margin-left: .25rem !important
   }
+
   .m-md-2 {
-    margin: .5rem!important
+    margin: .5rem !important
   }
+
   .mt-md-2, .my-md-2 {
-    margin-top: .5rem!important
+    margin-top: .5rem !important
   }
+
   .mr-md-2, .mx-md-2 {
-    margin-right: .5rem!important
+    margin-right: .5rem !important
   }
+
   .mb-md-2, .my-md-2 {
-    margin-bottom: .5rem!important
+    margin-bottom: .5rem !important
   }
+
   .ml-md-2, .mx-md-2 {
-    margin-left: .5rem!important
+    margin-left: .5rem !important
   }
+
   .m-md-3 {
-    margin: 1rem!important
+    margin: 1rem !important
   }
+
   .mt-md-3, .my-md-3 {
-    margin-top: 1rem!important
+    margin-top: 1rem !important
   }
+
   .mr-md-3, .mx-md-3 {
-    margin-right: 1rem!important
+    margin-right: 1rem !important
   }
+
   .mb-md-3, .my-md-3 {
-    margin-bottom: 1rem!important
+    margin-bottom: 1rem !important
   }
+
   .ml-md-3, .mx-md-3 {
-    margin-left: 1rem!important
+    margin-left: 1rem !important
   }
+
   .m-md-4 {
-    margin: 1.5rem!important
+    margin: 1.5rem !important
   }
+
   .mt-md-4, .my-md-4 {
-    margin-top: 1.5rem!important
+    margin-top: 1.5rem !important
   }
+
   .mr-md-4, .mx-md-4 {
-    margin-right: 1.5rem!important
+    margin-right: 1.5rem !important
   }
+
   .mb-md-4, .my-md-4 {
-    margin-bottom: 1.5rem!important
+    margin-bottom: 1.5rem !important
   }
+
   .ml-md-4, .mx-md-4 {
-    margin-left: 1.5rem!important
+    margin-left: 1.5rem !important
   }
+
   .m-md-5 {
-    margin: 3rem!important
+    margin: 3rem !important
   }
+
   .mt-md-5, .my-md-5 {
-    margin-top: 3rem!important
+    margin-top: 3rem !important
   }
+
   .mr-md-5, .mx-md-5 {
-    margin-right: 3rem!important
+    margin-right: 3rem !important
   }
+
   .mb-md-5, .my-md-5 {
-    margin-bottom: 3rem!important
+    margin-bottom: 3rem !important
   }
+
   .ml-md-5, .mx-md-5 {
-    margin-left: 3rem!important
+    margin-left: 3rem !important
   }
+
   .p-md-0 {
-    padding: 0!important
+    padding: 0 !important
   }
+
   .pt-md-0, .py-md-0 {
-    padding-top: 0!important
+    padding-top: 0 !important
   }
+
   .pr-md-0, .px-md-0 {
-    padding-right: 0!important
+    padding-right: 0 !important
   }
+
   .pb-md-0, .py-md-0 {
-    padding-bottom: 0!important
+    padding-bottom: 0 !important
   }
+
   .pl-md-0, .px-md-0 {
-    padding-left: 0!important
+    padding-left: 0 !important
   }
+
   .p-md-1 {
-    padding: .25rem!important
+    padding: .25rem !important
   }
+
   .pt-md-1, .py-md-1 {
-    padding-top: .25rem!important
+    padding-top: .25rem !important
   }
+
   .pr-md-1, .px-md-1 {
-    padding-right: .25rem!important
+    padding-right: .25rem !important
   }
+
   .pb-md-1, .py-md-1 {
-    padding-bottom: .25rem!important
+    padding-bottom: .25rem !important
   }
+
   .pl-md-1, .px-md-1 {
-    padding-left: .25rem!important
+    padding-left: .25rem !important
   }
+
   .p-md-2 {
-    padding: .5rem!important
+    padding: .5rem !important
   }
+
   .pt-md-2, .py-md-2 {
-    padding-top: .5rem!important
+    padding-top: .5rem !important
   }
+
   .pr-md-2, .px-md-2 {
-    padding-right: .5rem!important
+    padding-right: .5rem !important
   }
+
   .pb-md-2, .py-md-2 {
-    padding-bottom: .5rem!important
+    padding-bottom: .5rem !important
   }
+
   .pl-md-2, .px-md-2 {
-    padding-left: .5rem!important
+    padding-left: .5rem !important
   }
+
   .p-md-3 {
-    padding: 1rem!important
+    padding: 1rem !important
   }
+
   .pt-md-3, .py-md-3 {
-    padding-top: 1rem!important
+    padding-top: 1rem !important
   }
+
   .pr-md-3, .px-md-3 {
-    padding-right: 1rem!important
+    padding-right: 1rem !important
   }
+
   .pb-md-3, .py-md-3 {
-    padding-bottom: 1rem!important
+    padding-bottom: 1rem !important
   }
+
   .pl-md-3, .px-md-3 {
-    padding-left: 1rem!important
+    padding-left: 1rem !important
   }
+
   .p-md-4 {
-    padding: 1.5rem!important
+    padding: 1.5rem !important
   }
+
   .pt-md-4, .py-md-4 {
-    padding-top: 1.5rem!important
+    padding-top: 1.5rem !important
   }
+
   .pr-md-4, .px-md-4 {
-    padding-right: 1.5rem!important
+    padding-right: 1.5rem !important
   }
+
   .pb-md-4, .py-md-4 {
-    padding-bottom: 1.5rem!important
+    padding-bottom: 1.5rem !important
   }
+
   .pl-md-4, .px-md-4 {
-    padding-left: 1.5rem!important
+    padding-left: 1.5rem !important
   }
+
   .p-md-5 {
-    padding: 3rem!important
+    padding: 3rem !important
   }
+
   .pt-md-5, .py-md-5 {
-    padding-top: 3rem!important
+    padding-top: 3rem !important
   }
+
   .pr-md-5, .px-md-5 {
-    padding-right: 3rem!important
+    padding-right: 3rem !important
   }
+
   .pb-md-5, .py-md-5 {
-    padding-bottom: 3rem!important
+    padding-bottom: 3rem !important
   }
+
   .pl-md-5, .px-md-5 {
-    padding-left: 3rem!important
+    padding-left: 3rem !important
   }
+
   .m-md-n1 {
-    margin: -.25rem!important
+    margin: -.25rem !important
   }
+
   .mt-md-n1, .my-md-n1 {
-    margin-top: -.25rem!important
+    margin-top: -.25rem !important
   }
+
   .mr-md-n1, .mx-md-n1 {
-    margin-right: -.25rem!important
+    margin-right: -.25rem !important
   }
+
   .mb-md-n1, .my-md-n1 {
-    margin-bottom: -.25rem!important
+    margin-bottom: -.25rem !important
   }
+
   .ml-md-n1, .mx-md-n1 {
-    margin-left: -.25rem!important
+    margin-left: -.25rem !important
   }
+
   .m-md-n2 {
-    margin: -.5rem!important
+    margin: -.5rem !important
   }
+
   .mt-md-n2, .my-md-n2 {
-    margin-top: -.5rem!important
+    margin-top: -.5rem !important
   }
+
   .mr-md-n2, .mx-md-n2 {
-    margin-right: -.5rem!important
+    margin-right: -.5rem !important
   }
+
   .mb-md-n2, .my-md-n2 {
-    margin-bottom: -.5rem!important
+    margin-bottom: -.5rem !important
   }
+
   .ml-md-n2, .mx-md-n2 {
-    margin-left: -.5rem!important
+    margin-left: -.5rem !important
   }
+
   .m-md-n3 {
-    margin: -1rem!important
+    margin: -1rem !important
   }
+
   .mt-md-n3, .my-md-n3 {
-    margin-top: -1rem!important
+    margin-top: -1rem !important
   }
+
   .mr-md-n3, .mx-md-n3 {
-    margin-right: -1rem!important
+    margin-right: -1rem !important
   }
+
   .mb-md-n3, .my-md-n3 {
-    margin-bottom: -1rem!important
+    margin-bottom: -1rem !important
   }
+
   .ml-md-n3, .mx-md-n3 {
-    margin-left: -1rem!important
+    margin-left: -1rem !important
   }
+
   .m-md-n4 {
-    margin: -1.5rem!important
+    margin: -1.5rem !important
   }
+
   .mt-md-n4, .my-md-n4 {
-    margin-top: -1.5rem!important
+    margin-top: -1.5rem !important
   }
+
   .mr-md-n4, .mx-md-n4 {
-    margin-right: -1.5rem!important
+    margin-right: -1.5rem !important
   }
+
   .mb-md-n4, .my-md-n4 {
-    margin-bottom: -1.5rem!important
+    margin-bottom: -1.5rem !important
   }
+
   .ml-md-n4, .mx-md-n4 {
-    margin-left: -1.5rem!important
+    margin-left: -1.5rem !important
   }
+
   .m-md-n5 {
-    margin: -3rem!important
+    margin: -3rem !important
   }
+
   .mt-md-n5, .my-md-n5 {
-    margin-top: -3rem!important
+    margin-top: -3rem !important
   }
+
   .mr-md-n5, .mx-md-n5 {
-    margin-right: -3rem!important
+    margin-right: -3rem !important
   }
+
   .mb-md-n5, .my-md-n5 {
-    margin-bottom: -3rem!important
+    margin-bottom: -3rem !important
   }
+
   .ml-md-n5, .mx-md-n5 {
-    margin-left: -3rem!important
+    margin-left: -3rem !important
   }
+
   .m-md-auto {
-    margin: auto!important
+    margin: auto !important
   }
+
   .mt-md-auto, .my-md-auto {
-    margin-top: auto!important
+    margin-top: auto !important
   }
+
   .mr-md-auto, .mx-md-auto {
-    margin-right: auto!important
+    margin-right: auto !important
   }
+
   .mb-md-auto, .my-md-auto {
-    margin-bottom: auto!important
+    margin-bottom: auto !important
   }
+
   .ml-md-auto, .mx-md-auto {
-    margin-left: auto!important
+    margin-left: auto !important
   }
 }
 
 @media (min-width:992px) {
   .m-lg-0 {
-    margin: 0!important
+    margin: 0 !important
   }
+
   .mt-lg-0, .my-lg-0 {
-    margin-top: 0!important
+    margin-top: 0 !important
   }
+
   .mr-lg-0, .mx-lg-0 {
-    margin-right: 0!important
+    margin-right: 0 !important
   }
+
   .mb-lg-0, .my-lg-0 {
-    margin-bottom: 0!important
+    margin-bottom: 0 !important
   }
+
   .ml-lg-0, .mx-lg-0 {
-    margin-left: 0!important
+    margin-left: 0 !important
   }
+
   .m-lg-1 {
-    margin: .25rem!important
+    margin: .25rem !important
   }
+
   .mt-lg-1, .my-lg-1 {
-    margin-top: .25rem!important
+    margin-top: .25rem !important
   }
+
   .mr-lg-1, .mx-lg-1 {
-    margin-right: .25rem!important
+    margin-right: .25rem !important
   }
+
   .mb-lg-1, .my-lg-1 {
-    margin-bottom: .25rem!important
+    margin-bottom: .25rem !important
   }
+
   .ml-lg-1, .mx-lg-1 {
-    margin-left: .25rem!important
+    margin-left: .25rem !important
   }
+
   .m-lg-2 {
-    margin: .5rem!important
+    margin: .5rem !important
   }
+
   .mt-lg-2, .my-lg-2 {
-    margin-top: .5rem!important
+    margin-top: .5rem !important
   }
+
   .mr-lg-2, .mx-lg-2 {
-    margin-right: .5rem!important
+    margin-right: .5rem !important
   }
+
   .mb-lg-2, .my-lg-2 {
-    margin-bottom: .5rem!important
+    margin-bottom: .5rem !important
   }
+
   .ml-lg-2, .mx-lg-2 {
-    margin-left: .5rem!important
+    margin-left: .5rem !important
   }
+
   .m-lg-3 {
-    margin: 1rem!important
+    margin: 1rem !important
   }
+
   .mt-lg-3, .my-lg-3 {
-    margin-top: 1rem!important
+    margin-top: 1rem !important
   }
+
   .mr-lg-3, .mx-lg-3 {
-    margin-right: 1rem!important
+    margin-right: 1rem !important
   }
+
   .mb-lg-3, .my-lg-3 {
-    margin-bottom: 1rem!important
+    margin-bottom: 1rem !important
   }
+
   .ml-lg-3, .mx-lg-3 {
-    margin-left: 1rem!important
+    margin-left: 1rem !important
   }
+
   .m-lg-4 {
-    margin: 1.5rem!important
+    margin: 1.5rem !important
   }
+
   .mt-lg-4, .my-lg-4 {
-    margin-top: 1.5rem!important
+    margin-top: 1.5rem !important
   }
+
   .mr-lg-4, .mx-lg-4 {
-    margin-right: 1.5rem!important
+    margin-right: 1.5rem !important
   }
+
   .mb-lg-4, .my-lg-4 {
-    margin-bottom: 1.5rem!important
+    margin-bottom: 1.5rem !important
   }
+
   .ml-lg-4, .mx-lg-4 {
-    margin-left: 1.5rem!important
+    margin-left: 1.5rem !important
   }
+
   .m-lg-5 {
-    margin: 3rem!important
+    margin: 3rem !important
   }
+
   .mt-lg-5, .my-lg-5 {
-    margin-top: 3rem!important
+    margin-top: 3rem !important
   }
+
   .mr-lg-5, .mx-lg-5 {
-    margin-right: 3rem!important
+    margin-right: 3rem !important
   }
+
   .mb-lg-5, .my-lg-5 {
-    margin-bottom: 3rem!important
+    margin-bottom: 3rem !important
   }
+
   .ml-lg-5, .mx-lg-5 {
-    margin-left: 3rem!important
+    margin-left: 3rem !important
   }
+
   .p-lg-0 {
-    padding: 0!important
+    padding: 0 !important
   }
+
   .pt-lg-0, .py-lg-0 {
-    padding-top: 0!important
+    padding-top: 0 !important
   }
+
   .pr-lg-0, .px-lg-0 {
-    padding-right: 0!important
+    padding-right: 0 !important
   }
+
   .pb-lg-0, .py-lg-0 {
-    padding-bottom: 0!important
+    padding-bottom: 0 !important
   }
+
   .pl-lg-0, .px-lg-0 {
-    padding-left: 0!important
+    padding-left: 0 !important
   }
+
   .p-lg-1 {
-    padding: .25rem!important
+    padding: .25rem !important
   }
+
   .pt-lg-1, .py-lg-1 {
-    padding-top: .25rem!important
+    padding-top: .25rem !important
   }
+
   .pr-lg-1, .px-lg-1 {
-    padding-right: .25rem!important
+    padding-right: .25rem !important
   }
+
   .pb-lg-1, .py-lg-1 {
-    padding-bottom: .25rem!important
+    padding-bottom: .25rem !important
   }
+
   .pl-lg-1, .px-lg-1 {
-    padding-left: .25rem!important
+    padding-left: .25rem !important
   }
+
   .p-lg-2 {
-    padding: .5rem!important
+    padding: .5rem !important
   }
+
   .pt-lg-2, .py-lg-2 {
-    padding-top: .5rem!important
+    padding-top: .5rem !important
   }
+
   .pr-lg-2, .px-lg-2 {
-    padding-right: .5rem!important
+    padding-right: .5rem !important
   }
+
   .pb-lg-2, .py-lg-2 {
-    padding-bottom: .5rem!important
+    padding-bottom: .5rem !important
   }
+
   .pl-lg-2, .px-lg-2 {
-    padding-left: .5rem!important
+    padding-left: .5rem !important
   }
+
   .p-lg-3 {
-    padding: 1rem!important
+    padding: 1rem !important
   }
+
   .pt-lg-3, .py-lg-3 {
-    padding-top: 1rem!important
+    padding-top: 1rem !important
   }
+
   .pr-lg-3, .px-lg-3 {
-    padding-right: 1rem!important
+    padding-right: 1rem !important
   }
+
   .pb-lg-3, .py-lg-3 {
-    padding-bottom: 1rem!important
+    padding-bottom: 1rem !important
   }
+
   .pl-lg-3, .px-lg-3 {
-    padding-left: 1rem!important
+    padding-left: 1rem !important
   }
+
   .p-lg-4 {
-    padding: 1.5rem!important
+    padding: 1.5rem !important
   }
+
   .pt-lg-4, .py-lg-4 {
-    padding-top: 1.5rem!important
+    padding-top: 1.5rem !important
   }
+
   .pr-lg-4, .px-lg-4 {
-    padding-right: 1.5rem!important
+    padding-right: 1.5rem !important
   }
+
   .pb-lg-4, .py-lg-4 {
-    padding-bottom: 1.5rem!important
+    padding-bottom: 1.5rem !important
   }
+
   .pl-lg-4, .px-lg-4 {
-    padding-left: 1.5rem!important
+    padding-left: 1.5rem !important
   }
+
   .p-lg-5 {
-    padding: 3rem!important
+    padding: 3rem !important
   }
+
   .pt-lg-5, .py-lg-5 {
-    padding-top: 3rem!important
+    padding-top: 3rem !important
   }
+
   .pr-lg-5, .px-lg-5 {
-    padding-right: 3rem!important
+    padding-right: 3rem !important
   }
+
   .pb-lg-5, .py-lg-5 {
-    padding-bottom: 3rem!important
+    padding-bottom: 3rem !important
   }
+
   .pl-lg-5, .px-lg-5 {
-    padding-left: 3rem!important
+    padding-left: 3rem !important
   }
+
   .m-lg-n1 {
-    margin: -.25rem!important
+    margin: -.25rem !important
   }
+
   .mt-lg-n1, .my-lg-n1 {
-    margin-top: -.25rem!important
+    margin-top: -.25rem !important
   }
+
   .mr-lg-n1, .mx-lg-n1 {
-    margin-right: -.25rem!important
+    margin-right: -.25rem !important
   }
+
   .mb-lg-n1, .my-lg-n1 {
-    margin-bottom: -.25rem!important
+    margin-bottom: -.25rem !important
   }
+
   .ml-lg-n1, .mx-lg-n1 {
-    margin-left: -.25rem!important
+    margin-left: -.25rem !important
   }
+
   .m-lg-n2 {
-    margin: -.5rem!important
+    margin: -.5rem !important
   }
+
   .mt-lg-n2, .my-lg-n2 {
-    margin-top: -.5rem!important
+    margin-top: -.5rem !important
   }
+
   .mr-lg-n2, .mx-lg-n2 {
-    margin-right: -.5rem!important
+    margin-right: -.5rem !important
   }
+
   .mb-lg-n2, .my-lg-n2 {
-    margin-bottom: -.5rem!important
+    margin-bottom: -.5rem !important
   }
+
   .ml-lg-n2, .mx-lg-n2 {
-    margin-left: -.5rem!important
+    margin-left: -.5rem !important
   }
+
   .m-lg-n3 {
-    margin: -1rem!important
+    margin: -1rem !important
   }
+
   .mt-lg-n3, .my-lg-n3 {
-    margin-top: -1rem!important
+    margin-top: -1rem !important
   }
+
   .mr-lg-n3, .mx-lg-n3 {
-    margin-right: -1rem!important
+    margin-right: -1rem !important
   }
+
   .mb-lg-n3, .my-lg-n3 {
-    margin-bottom: -1rem!important
+    margin-bottom: -1rem !important
   }
+
   .ml-lg-n3, .mx-lg-n3 {
-    margin-left: -1rem!important
+    margin-left: -1rem !important
   }
+
   .m-lg-n4 {
-    margin: -1.5rem!important
+    margin: -1.5rem !important
   }
+
   .mt-lg-n4, .my-lg-n4 {
-    margin-top: -1.5rem!important
+    margin-top: -1.5rem !important
   }
+
   .mr-lg-n4, .mx-lg-n4 {
-    margin-right: -1.5rem!important
+    margin-right: -1.5rem !important
   }
+
   .mb-lg-n4, .my-lg-n4 {
-    margin-bottom: -1.5rem!important
+    margin-bottom: -1.5rem !important
   }
+
   .ml-lg-n4, .mx-lg-n4 {
-    margin-left: -1.5rem!important
+    margin-left: -1.5rem !important
   }
+
   .m-lg-n5 {
-    margin: -3rem!important
+    margin: -3rem !important
   }
+
   .mt-lg-n5, .my-lg-n5 {
-    margin-top: -3rem!important
+    margin-top: -3rem !important
   }
+
   .mr-lg-n5, .mx-lg-n5 {
-    margin-right: -3rem!important
+    margin-right: -3rem !important
   }
+
   .mb-lg-n5, .my-lg-n5 {
-    margin-bottom: -3rem!important
+    margin-bottom: -3rem !important
   }
+
   .ml-lg-n5, .mx-lg-n5 {
-    margin-left: -3rem!important
+    margin-left: -3rem !important
   }
+
   .m-lg-auto {
-    margin: auto!important
+    margin: auto !important
   }
+
   .mt-lg-auto, .my-lg-auto {
-    margin-top: auto!important
+    margin-top: auto !important
   }
+
   .mr-lg-auto, .mx-lg-auto {
-    margin-right: auto!important
+    margin-right: auto !important
   }
+
   .mb-lg-auto, .my-lg-auto {
-    margin-bottom: auto!important
+    margin-bottom: auto !important
   }
+
   .ml-lg-auto, .mx-lg-auto {
-    margin-left: auto!important
+    margin-left: auto !important
   }
 }
 
 @media (min-width:1200px) {
   .m-xl-0 {
-    margin: 0!important
+    margin: 0 !important
   }
+
   .mt-xl-0, .my-xl-0 {
-    margin-top: 0!important
+    margin-top: 0 !important
   }
+
   .mr-xl-0, .mx-xl-0 {
-    margin-right: 0!important
+    margin-right: 0 !important
   }
+
   .mb-xl-0, .my-xl-0 {
-    margin-bottom: 0!important
+    margin-bottom: 0 !important
   }
+
   .ml-xl-0, .mx-xl-0 {
-    margin-left: 0!important
+    margin-left: 0 !important
   }
+
   .m-xl-1 {
-    margin: .25rem!important
+    margin: .25rem !important
   }
+
   .mt-xl-1, .my-xl-1 {
-    margin-top: .25rem!important
+    margin-top: .25rem !important
   }
+
   .mr-xl-1, .mx-xl-1 {
-    margin-right: .25rem!important
+    margin-right: .25rem !important
   }
+
   .mb-xl-1, .my-xl-1 {
-    margin-bottom: .25rem!important
+    margin-bottom: .25rem !important
   }
+
   .ml-xl-1, .mx-xl-1 {
-    margin-left: .25rem!important
+    margin-left: .25rem !important
   }
+
   .m-xl-2 {
-    margin: .5rem!important
+    margin: .5rem !important
   }
+
   .mt-xl-2, .my-xl-2 {
-    margin-top: .5rem!important
+    margin-top: .5rem !important
   }
+
   .mr-xl-2, .mx-xl-2 {
-    margin-right: .5rem!important
+    margin-right: .5rem !important
   }
+
   .mb-xl-2, .my-xl-2 {
-    margin-bottom: .5rem!important
+    margin-bottom: .5rem !important
   }
+
   .ml-xl-2, .mx-xl-2 {
-    margin-left: .5rem!important
+    margin-left: .5rem !important
   }
+
   .m-xl-3 {
-    margin: 1rem!important
+    margin: 1rem !important
   }
+
   .mt-xl-3, .my-xl-3 {
-    margin-top: 1rem!important
+    margin-top: 1rem !important
   }
+
   .mr-xl-3, .mx-xl-3 {
-    margin-right: 1rem!important
+    margin-right: 1rem !important
   }
+
   .mb-xl-3, .my-xl-3 {
-    margin-bottom: 1rem!important
+    margin-bottom: 1rem !important
   }
+
   .ml-xl-3, .mx-xl-3 {
-    margin-left: 1rem!important
+    margin-left: 1rem !important
   }
+
   .m-xl-4 {
-    margin: 1.5rem!important
+    margin: 1.5rem !important
   }
+
   .mt-xl-4, .my-xl-4 {
-    margin-top: 1.5rem!important
+    margin-top: 1.5rem !important
   }
+
   .mr-xl-4, .mx-xl-4 {
-    margin-right: 1.5rem!important
+    margin-right: 1.5rem !important
   }
+
   .mb-xl-4, .my-xl-4 {
-    margin-bottom: 1.5rem!important
+    margin-bottom: 1.5rem !important
   }
+
   .ml-xl-4, .mx-xl-4 {
-    margin-left: 1.5rem!important
+    margin-left: 1.5rem !important
   }
+
   .m-xl-5 {
-    margin: 3rem!important
+    margin: 3rem !important
   }
+
   .mt-xl-5, .my-xl-5 {
-    margin-top: 3rem!important
+    margin-top: 3rem !important
   }
+
   .mr-xl-5, .mx-xl-5 {
-    margin-right: 3rem!important
+    margin-right: 3rem !important
   }
+
   .mb-xl-5, .my-xl-5 {
-    margin-bottom: 3rem!important
+    margin-bottom: 3rem !important
   }
+
   .ml-xl-5, .mx-xl-5 {
-    margin-left: 3rem!important
+    margin-left: 3rem !important
   }
+
   .p-xl-0 {
-    padding: 0!important
+    padding: 0 !important
   }
+
   .pt-xl-0, .py-xl-0 {
-    padding-top: 0!important
+    padding-top: 0 !important
   }
+
   .pr-xl-0, .px-xl-0 {
-    padding-right: 0!important
+    padding-right: 0 !important
   }
+
   .pb-xl-0, .py-xl-0 {
-    padding-bottom: 0!important
+    padding-bottom: 0 !important
   }
+
   .pl-xl-0, .px-xl-0 {
-    padding-left: 0!important
+    padding-left: 0 !important
   }
+
   .p-xl-1 {
-    padding: .25rem!important
+    padding: .25rem !important
   }
+
   .pt-xl-1, .py-xl-1 {
-    padding-top: .25rem!important
+    padding-top: .25rem !important
   }
+
   .pr-xl-1, .px-xl-1 {
-    padding-right: .25rem!important
+    padding-right: .25rem !important
   }
+
   .pb-xl-1, .py-xl-1 {
-    padding-bottom: .25rem!important
+    padding-bottom: .25rem !important
   }
+
   .pl-xl-1, .px-xl-1 {
-    padding-left: .25rem!important
+    padding-left: .25rem !important
   }
+
   .p-xl-2 {
-    padding: .5rem!important
+    padding: .5rem !important
   }
+
   .pt-xl-2, .py-xl-2 {
-    padding-top: .5rem!important
+    padding-top: .5rem !important
   }
+
   .pr-xl-2, .px-xl-2 {
-    padding-right: .5rem!important
+    padding-right: .5rem !important
   }
+
   .pb-xl-2, .py-xl-2 {
-    padding-bottom: .5rem!important
+    padding-bottom: .5rem !important
   }
+
   .pl-xl-2, .px-xl-2 {
-    padding-left: .5rem!important
+    padding-left: .5rem !important
   }
+
   .p-xl-3 {
-    padding: 1rem!important
+    padding: 1rem !important
   }
+
   .pt-xl-3, .py-xl-3 {
-    padding-top: 1rem!important
+    padding-top: 1rem !important
   }
+
   .pr-xl-3, .px-xl-3 {
-    padding-right: 1rem!important
+    padding-right: 1rem !important
   }
+
   .pb-xl-3, .py-xl-3 {
-    padding-bottom: 1rem!important
+    padding-bottom: 1rem !important
   }
+
   .pl-xl-3, .px-xl-3 {
-    padding-left: 1rem!important
+    padding-left: 1rem !important
   }
+
   .p-xl-4 {
-    padding: 1.5rem!important
+    padding: 1.5rem !important
   }
+
   .pt-xl-4, .py-xl-4 {
-    padding-top: 1.5rem!important
+    padding-top: 1.5rem !important
   }
+
   .pr-xl-4, .px-xl-4 {
-    padding-right: 1.5rem!important
+    padding-right: 1.5rem !important
   }
+
   .pb-xl-4, .py-xl-4 {
-    padding-bottom: 1.5rem!important
+    padding-bottom: 1.5rem !important
   }
+
   .pl-xl-4, .px-xl-4 {
-    padding-left: 1.5rem!important
+    padding-left: 1.5rem !important
   }
+
   .p-xl-5 {
-    padding: 3rem!important
+    padding: 3rem !important
   }
+
   .pt-xl-5, .py-xl-5 {
-    padding-top: 3rem!important
+    padding-top: 3rem !important
   }
+
   .pr-xl-5, .px-xl-5 {
-    padding-right: 3rem!important
+    padding-right: 3rem !important
   }
+
   .pb-xl-5, .py-xl-5 {
-    padding-bottom: 3rem!important
+    padding-bottom: 3rem !important
   }
+
   .pl-xl-5, .px-xl-5 {
-    padding-left: 3rem!important
+    padding-left: 3rem !important
   }
+
   .m-xl-n1 {
-    margin: -.25rem!important
+    margin: -.25rem !important
   }
+
   .mt-xl-n1, .my-xl-n1 {
-    margin-top: -.25rem!important
+    margin-top: -.25rem !important
   }
+
   .mr-xl-n1, .mx-xl-n1 {
-    margin-right: -.25rem!important
+    margin-right: -.25rem !important
   }
+
   .mb-xl-n1, .my-xl-n1 {
-    margin-bottom: -.25rem!important
+    margin-bottom: -.25rem !important
   }
+
   .ml-xl-n1, .mx-xl-n1 {
-    margin-left: -.25rem!important
+    margin-left: -.25rem !important
   }
+
   .m-xl-n2 {
-    margin: -.5rem!important
+    margin: -.5rem !important
   }
+
   .mt-xl-n2, .my-xl-n2 {
-    margin-top: -.5rem!important
+    margin-top: -.5rem !important
   }
+
   .mr-xl-n2, .mx-xl-n2 {
-    margin-right: -.5rem!important
+    margin-right: -.5rem !important
   }
+
   .mb-xl-n2, .my-xl-n2 {
-    margin-bottom: -.5rem!important
+    margin-bottom: -.5rem !important
   }
+
   .ml-xl-n2, .mx-xl-n2 {
-    margin-left: -.5rem!important
+    margin-left: -.5rem !important
   }
+
   .m-xl-n3 {
-    margin: -1rem!important
+    margin: -1rem !important
   }
+
   .mt-xl-n3, .my-xl-n3 {
-    margin-top: -1rem!important
+    margin-top: -1rem !important
   }
+
   .mr-xl-n3, .mx-xl-n3 {
-    margin-right: -1rem!important
+    margin-right: -1rem !important
   }
+
   .mb-xl-n3, .my-xl-n3 {
-    margin-bottom: -1rem!important
+    margin-bottom: -1rem !important
   }
+
   .ml-xl-n3, .mx-xl-n3 {
-    margin-left: -1rem!important
+    margin-left: -1rem !important
   }
+
   .m-xl-n4 {
-    margin: -1.5rem!important
+    margin: -1.5rem !important
   }
+
   .mt-xl-n4, .my-xl-n4 {
-    margin-top: -1.5rem!important
+    margin-top: -1.5rem !important
   }
+
   .mr-xl-n4, .mx-xl-n4 {
-    margin-right: -1.5rem!important
+    margin-right: -1.5rem !important
   }
+
   .mb-xl-n4, .my-xl-n4 {
-    margin-bottom: -1.5rem!important
+    margin-bottom: -1.5rem !important
   }
+
   .ml-xl-n4, .mx-xl-n4 {
-    margin-left: -1.5rem!important
+    margin-left: -1.5rem !important
   }
+
   .m-xl-n5 {
-    margin: -3rem!important
+    margin: -3rem !important
   }
+
   .mt-xl-n5, .my-xl-n5 {
-    margin-top: -3rem!important
+    margin-top: -3rem !important
   }
+
   .mr-xl-n5, .mx-xl-n5 {
-    margin-right: -3rem!important
+    margin-right: -3rem !important
   }
+
   .mb-xl-n5, .my-xl-n5 {
-    margin-bottom: -3rem!important
+    margin-bottom: -3rem !important
   }
+
   .ml-xl-n5, .mx-xl-n5 {
-    margin-left: -3rem!important
+    margin-left: -3rem !important
   }
+
   .m-xl-auto {
-    margin: auto!important
+    margin: auto !important
   }
+
   .mt-xl-auto, .my-xl-auto {
-    margin-top: auto!important
+    margin-top: auto !important
   }
+
   .mr-xl-auto, .mx-xl-auto {
-    margin-right: auto!important
+    margin-right: auto !important
   }
+
   .mb-xl-auto, .my-xl-auto {
-    margin-bottom: auto!important
+    margin-bottom: auto !important
   }
+
   .ml-xl-auto, .mx-xl-auto {
-    margin-left: auto!important
+    margin-left: auto !important
   }
 }
 
@@ -7948,19 +8724,19 @@ a.bg-dark:focus, a.bg-dark:hover, button.bg-dark:focus, button.bg-dark:hover {
 }
 
 .text-monospace {
-  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace!important
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !important
 }
 
 .text-justify {
-  text-align: justify!important
+  text-align: justify !important
 }
 
 .text-wrap {
-  white-space: normal!important
+  white-space: normal !important
 }
 
 .text-nowrap {
-  white-space: nowrap!important
+  white-space: nowrap !important
 }
 
 .text-truncate {
@@ -7970,183 +8746,191 @@ a.bg-dark:focus, a.bg-dark:hover, button.bg-dark:focus, button.bg-dark:hover {
 }
 
 .text-left {
-  text-align: left!important
+  text-align: left !important
 }
 
 .text-right {
-  text-align: right!important
+  text-align: right !important
 }
 
 .text-center {
-  text-align: center!important
+  text-align: center !important
 }
 
 @media (min-width:576px) {
   .text-sm-left {
-    text-align: left!important
+    text-align: left !important
   }
+
   .text-sm-right {
-    text-align: right!important
+    text-align: right !important
   }
+
   .text-sm-center {
-    text-align: center!important
+    text-align: center !important
   }
 }
 
 @media (min-width:768px) {
   .text-md-left {
-    text-align: left!important
+    text-align: left !important
   }
+
   .text-md-right {
-    text-align: right!important
+    text-align: right !important
   }
+
   .text-md-center {
-    text-align: center!important
+    text-align: center !important
   }
 }
 
 @media (min-width:992px) {
   .text-lg-left {
-    text-align: left!important
+    text-align: left !important
   }
+
   .text-lg-right {
-    text-align: right!important
+    text-align: right !important
   }
+
   .text-lg-center {
-    text-align: center!important
+    text-align: center !important
   }
 }
 
 @media (min-width:1200px) {
   .text-xl-left {
-    text-align: left!important
+    text-align: left !important
   }
+
   .text-xl-right {
-    text-align: right!important
+    text-align: right !important
   }
+
   .text-xl-center {
-    text-align: center!important
+    text-align: center !important
   }
 }
 
 .text-lowercase {
-  text-transform: lowercase!important
+  text-transform: lowercase !important
 }
 
 .text-uppercase {
-  text-transform: uppercase!important
+  text-transform: uppercase !important
 }
 
 .text-capitalize {
-  text-transform: capitalize!important
+  text-transform: capitalize !important
 }
 
 .font-weight-light {
-  font-weight: 300!important
+  font-weight: 300 !important
 }
 
 .font-weight-lighter {
-  font-weight: lighter!important
+  font-weight: lighter !important
 }
 
 .font-weight-normal {
-  font-weight: 400!important
+  font-weight: 400 !important
 }
 
 .font-weight-bold {
-  font-weight: 700!important
+  font-weight: 700 !important
 }
 
 .font-weight-bolder {
-  font-weight: bolder!important
+  font-weight: bolder !important
 }
 
 .font-italic {
-  font-style: italic!important
+  font-style: italic !important
 }
 
 .text-white {
-  color: #fff!important
+  color: #fff !important
 }
 
 .text-primary {
-  color: #007bff!important
+  color: #007bff !important
 }
 
 a.text-primary:focus, a.text-primary:hover {
-  color: #0056b3!important
+  color: #0056b3 !important
 }
 
 .text-secondary {
-  color: #6c757d!important
+  color: #6c757d !important
 }
 
 a.text-secondary:focus, a.text-secondary:hover {
-  color: #494f54!important
+  color: #494f54 !important
 }
 
 .text-success {
-  color: #28a745!important
+  color: #28a745 !important
 }
 
 a.text-success:focus, a.text-success:hover {
-  color: #19692c!important
+  color: #19692c !important
 }
 
 .text-info {
-  color: #17a2b8!important
+  color: #17a2b8 !important
 }
 
 a.text-info:focus, a.text-info:hover {
-  color: #0f6674!important
+  color: #0f6674 !important
 }
 
 .text-warning {
-  color: #ffc107!important
+  color: #ffc107 !important
 }
 
 a.text-warning:focus, a.text-warning:hover {
-  color: #ba8b00!important
+  color: #ba8b00 !important
 }
 
 .text-danger {
-  color: #dc3545!important
+  color: #dc3545 !important
 }
 
 a.text-danger:focus, a.text-danger:hover {
-  color: #a71d2a!important
+  color: #a71d2a !important
 }
 
 .text-light {
-  color: #f8f9fa!important
+  color: #f8f9fa !important
 }
 
 a.text-light:focus, a.text-light:hover {
-  color: #cbd3da!important
+  color: #cbd3da !important
 }
 
 .text-dark {
-  color: #343a40!important
+  color: #343a40 !important
 }
 
 a.text-dark:focus, a.text-dark:hover {
-  color: #121416!important
+  color: #121416 !important
 }
 
 .text-body {
-  color: #212529!important
+  color: #212529 !important
 }
 
 .text-muted {
-  color: #6c757d!important
+  color: #6c757d !important
 }
 
 .text-black-50 {
-  color: rgba(0, 0, 0, .5)!important
+  color: rgba(0, 0, 0, .5) !important
 }
 
 .text-white-50 {
-  color: hsla(0, 0%, 100%, .5)!important
+  color: hsla(0, 0%, 100%, .5) !important
 }
 
 .text-hide {
@@ -8158,84 +8942,102 @@ a.text-dark:focus, a.text-dark:hover {
 }
 
 .text-decoration-none {
-  text-decoration: none!important
+  text-decoration: none !important
 }
 
 .text-break {
-  word-break: break-word!important;
-  word-wrap: break-word!important
+  word-break: break-word !important;
+  word-wrap: break-word !important
 }
 
 .text-reset {
-  color: inherit!important
+  color: inherit !important
 }
 
 .visible {
-  visibility: visible!important
+  visibility: visible !important
 }
 
 .invisible {
-  visibility: hidden!important
+  visibility: hidden !important
 }
 
 @media print {
   *, :after, :before {
-    text-shadow: none!important;
-    box-shadow: none!important
+    text-shadow: none !important;
+    box-shadow: none !important
   }
+
   a:not(.btn) {
     text-decoration: underline
   }
+
   abbr[title]:after {
-    content: " (" attr(title) ")"
+    content: " ("attr(title) ")"
   }
+
   pre {
-    white-space: pre-wrap!important
+    white-space: pre-wrap !important
   }
+
   blockquote, pre {
     border: 1px solid #adb5bd;
     page-break-inside: avoid
   }
+
   thead {
     display: table-header-group
   }
+
   img, tr {
     page-break-inside: avoid
   }
+
   h2, h3, p {
     orphans: 3;
     widows: 3
   }
+
   h2, h3 {
     page-break-after: avoid
   }
+
   @page {
     size: a3
   }
+
   .container, body {
-    min-width: 992px!important
+    min-width: 992px !important
   }
+
   .navbar {
     display: none
   }
+
   .badge {
     border: 1px solid #000
   }
+
   .table {
-    border-collapse: collapse!important
+    border-collapse: collapse !important
   }
+
   .table td, .table th {
-    background-color: #fff!important
+    background-color: #fff !important
   }
+
   .table-bordered td, .table-bordered th {
-    border: 1px solid #dee2e6!important
+    border: 1px solid #dee2e6 !important
   }
+
   .table-dark {
     color: inherit
   }
+
   .table-dark tbody+tbody, .table-dark td, .table-dark th, .table-dark thead th {
     border-color: #dee2e6
   }
+
   .table .thead-dark th {
     color: inherit;
     border-color: #dee2e6
@@ -8269,6 +9071,7 @@ a.text-dark:focus, a.text-dark:hover {
   0% {
     transform: scale(0)
   }
+
   50% {
     opacity: 1;
     transform: none
@@ -8786,7 +9589,7 @@ code {
 }
 
 .header .header-logo-text {
-  min-width: 180px!important;
+  min-width: 180px !important;
   color: #616161;
   vertical-align: middle;
   font-family: "Ropa Sans";
@@ -8800,7 +9603,7 @@ code {
 @media only screen and (min-width:768px) {
   .header .header-logo-text {
     width: 300px;
-    min-width: 200px!important;
+    min-width: 200px !important;
     vertical-align: middle;
     font-family: "Ropa Sans";
     font-size: 25px;
@@ -8816,7 +9619,7 @@ code {
 }
 
 .header .header-search .icon {
-  background-color: transparent!important;
+  background-color: transparent !important;
   padding-right: 10px;
   border: none;
   cursor: pointer
@@ -8834,7 +9637,7 @@ code {
 }
 
 .header .area-global-search {
-  border: 0 solid #d3d3d3!important
+  border: 0 solid #d3d3d3 !important
 }
 
 .header .global-search {
@@ -8887,7 +9690,7 @@ code {
 }
 
 .header .header-search {
-  padding-top: 1px!important
+  padding-top: 1px !important
 }
 
 .navbar-brand-white {
@@ -8908,25 +9711,30 @@ code {
     top: -34px;
     left: -12px
   }
+
   .header .header-search {
     display: inline-block;
     padding: 20px 0 0
   }
+
   .ml-auto {
-    margin: 20px 0!important;
+    margin: 20px 0 !important;
     text-align: center
   }
+
   .mobile-btn-group {
-    display: inline-block!important;
-    top: -10px!important
+    display: inline-block !important;
+    top: -10px !important
   }
+
   .dataset-wide-box .item-image {
     width: 100%;
     margin-top: 0;
     margin-bottom: 40px
   }
+
   .item-interact .badge-likes, .item-interact .badge-retweets, .social_metrics {
-    margin-top: 0!important
+    margin-top: 0 !important
   }
 }
 
@@ -8935,23 +9743,23 @@ code {
 }
 
 .method-name-width {
-  width: 60%!important
+  width: 60% !important
 }
 
 .dark-header .nav-item .nav-link {
-  color: #fff!important
+  color: #fff !important
 }
 
 .dark-header .nav-item .nav-link:hover {
-  color: #ededed!important
+  color: #ededed !important
 }
 
 .light-header .nav-item .nav-link {
-  color: #222!important
+  color: #222 !important
 }
 
 .light-header .nav-item .nav-link:hover {
-  color: #737373!important
+  color: #737373 !important
 }
 
 .model-choose .model-align {
@@ -8966,6 +9774,7 @@ code {
   .navbar {
     padding: 1.5rem 2rem
   }
+
   .header .header-search {
     margin-top: 30px
   }
@@ -8975,160 +9784,206 @@ code {
   .paper-title h1 {
     margin-top: 20px
   }
+
   .method-content .description {
-    padding-right: 5px!important
+    padding-right: 5px !important
   }
+
   .artefact-information, .user-information {
     padding-top: 20px
   }
+
   .mobile-parameters {
     padding-left: 5px;
     padding-right: 5px;
     text-align: center
   }
+
   .library-model-image-pop img {
-    max-width: 100%!important
+    max-width: 100% !important
   }
+
   .model-page .variant-card table th {
     padding-left: 10px;
-    font-size: 13px!important
+    font-size: 13px !important
   }
+
   .model-page .variant-card .col, .model-page .variant-card table td {
-    font-size: 13px!important
+    font-size: 13px !important
   }
+
   .model-page .variant-card .col, .model-page .variant-card .col .feature-title {
     font-size: 13px
   }
+
   .model-page .model-card-border {
-    padding: 0 1.25rem 1.25rem!important
+    padding: 0 1.25rem 1.25rem !important
   }
+
   .model-page .model-border {
-    padding: .5rem!important
+    padding: .5rem !important
   }
+
   .center-mobile {
     text-align: center
   }
+
   .status-header-image img {
     padding-bottom: 10px
   }
+
   .hidden-element {
     display: none
   }
+
   .abstract-hidden-element {
-    display: none!important
+    display: none !important
   }
+
   .reverse-hidden-element {
-    display: inline!important;
-    display: initial!important
+    display: inline !important;
+    display: initial !important
   }
+
   .paper-implementations .paper-impl-cell {
-    text-align: left!important
+    text-align: left !important
   }
+
   .model-page .model-menu .form-control {
-    top: auto!important
+    top: auto !important
   }
+
   .model-choose .model-align, .navbar-light .navbar-nav .nav-link {
     text-align: center
   }
+
   .mobile-wrapper img {
     width: 100%
   }
+
   .model-page .variant-card .img-wrapper {
-    height: 160px!important;
+    height: 160px !important;
     margin-bottom: 20px
   }
+
   .featured-library-task .card-deck .card {
     margin-left: auto;
     margin-right: auto
   }
+
   .model-page h1 {
     text-align: center
   }
+
   .model-page .model-card .col-lg-10, .model-page .model-card h1 {
     text-align: left
   }
+
   .model-page .results h1 {
-    margin-top: 2rem!important;
+    margin-top: 2rem !important;
     text-align: left
   }
+
   .model-page .col-lg-10 {
     text-align: center
   }
+
   .model-page h5 {
     font-weight: 300;
     margin-top: 3rem;
     font-size: 14px
   }
+
   .model-page .results th {
-    font-size: 10px!important
+    font-size: 10px !important
   }
+
   .model-page figure {
     margin-left: -15px
   }
+
   .contribution {
-    padding-left: 1px!important
+    padding-left: 1px !important
   }
+
   .align-mobile {
     text-align: center;
     width: 100%;
     display: inline-block
   }
+
   .user-profile .badge-light, .variant-card .badge-light {
-    float: none!important
+    float: none !important
   }
+
   .library-page h3 {
-    padding-left: 10px!important
+    padding-left: 10px !important
   }
+
   .model-page .variant-select {
     text-align: center
   }
+
   .zero-padding-datasets {
-    padding-left: 15px!important;
-    padding-right: 15px!important
+    padding-left: 15px !important;
+    padding-right: 15px !important
   }
+
   .model-search .task-center {
     text-align: center
   }
+
   .paper-section, .paper-section-first {
-    padding-left: 15px!important;
-    padding-right: 15px!important
+    padding-left: 15px !important;
+    padding-right: 15px !important
   }
+
   .library-page .task-center {
     text-align: center
   }
+
   .library-search {
-    padding-left: 10px!important
+    padding-left: 10px !important
   }
+
   .model-page .results table {
     background-color: #fff
   }
+
   .model-page .results td {
     font-size: 13px
   }
+
   .model-search table {
-    width: 100%!important
+    width: 100% !important
   }
+
   .model-page .model-card table {
     background: #fff
   }
+
   .model-page .variant-header {
-    font-size: 1.25rem!important;
+    font-size: 1.25rem !important;
     text-align: center
   }
+
   .model-page .variant-card .variant-details p {
-    font-size: 13px!important;
+    font-size: 13px !important;
     text-align: center
   }
+
   .badge-model-des-edit {
     top: -22px;
-    padding-top: 0!important;
-    padding-right: 0!important;
+    padding-top: 0 !important;
+    padding-right: 0 !important;
     position: relative
   }
+
   .featured-library .card-deck .card {
     margin-left: auto;
     margin-right: auto
   }
+
   .model-page .variant-card .img-wrapper {
     height: 490px;
     position: relative;
@@ -9137,21 +9992,27 @@ code {
     text-align: center;
     margin-top: 20px
   }
+
   .method-content .description {
     margin-bottom: 20px
   }
+
   .dataTables_wrapper .dataTables_info {
     display: none
   }
+
   .dataTables_wrapper .dataTables_paginate .paginate_button {
-    margin-left: -5px!important
+    margin-left: -5px !important
   }
+
   .highcharts-container {
-    height: 300px!important
+    height: 300px !important
   }
+
   .method-name-width {
-    width: 85%!important
+    width: 85% !important
   }
+
   .method-image {
     width: 80%
   }
@@ -9169,6 +10030,7 @@ code {
     display: inline-block;
     transition: background-color .25s, color .25s, box-shadow .25s
   }
+
   .mobile-btn-group {
     display: inline-block;
     top: -10px
@@ -9207,12 +10069,12 @@ code {
 .header .header-link {
   margin: 0 auto;
   padding-right: 32px;
-  color: #444!important;
+  color: #444 !important;
   letter-spacing: .3px;
   height: 100%;
   font-family: "Lato";
   font-weight: 700;
-  font-size: 12px!important;
+  font-size: 12px !important;
   border-spacing: 35px 0
 }
 
@@ -9220,16 +10082,16 @@ code {
   height: 100%;
   padding-top: 25px;
   text-decoration: none;
-  color: #444!important
+  color: #444 !important
 }
 
 .header .header-link a:hover {
   text-decoration: none;
-  color: #89a7ba!important
+  color: #89a7ba !important
 }
 
 .header .header-link:hover {
-  color: #89a7ba!important
+  color: #89a7ba !important
 }
 
 .header .header-link .icon-fa {
@@ -9582,7 +10444,7 @@ code {
 }
 
 .badges-navbar .badge-active {
-  color: #05869c!important
+  color: #05869c !important
 }
 
 .badges-navbar .badge-trending .icon-wrapper {
@@ -9620,14 +10482,14 @@ code {
 }
 
 .badge-primary-nohover:hover {
-  background-color: #f9f9f9!important;
-  cursor: auto!important
+  background-color: #f9f9f9 !important;
+  cursor: auto !important
 }
 
 .badge-edit-profile {
   display: inline;
   margin-left: 15px;
-  vertical-align: middle!important;
+  vertical-align: middle !important;
   margin-bottom: 20px;
   background-color: #f9f9f9;
   border: 1px solid #e0e0e0;
@@ -9843,7 +10705,7 @@ code {
 }
 
 .leaderboard-tabs .nav-tabs .nav-item {
-  margin-bottom: 0!important;
+  margin-bottom: 0 !important;
   margin-right: 20px
 }
 
@@ -9961,9 +10823,9 @@ code {
 }
 
 .method-section th {
-  background-color: #fff!important;
+  background-color: #fff !important;
   color: #4a4a4a;
-  font-weight: 400!important;
+  font-weight: 400 !important;
   font-size: 11px;
   letter-spacing: 1.2px;
   font-family: "SF Pro Display";
@@ -10069,7 +10931,7 @@ code {
 
 @media only screen and (max-width:576px) {
   .title-row .col-lg, .title-row .col-lg-4 {
-    padding-left: 0!important
+    padding-left: 0 !important
   }
 }
 
@@ -10102,11 +10964,13 @@ code {
 
 @media only screen and (min-width:992px) {
   .navbar {
-    padding: 12px 40px 0!important
+    padding: 12px 40px 0 !important
   }
+
   .col-mp .col-image {
     width: 160px
   }
+
   .col {
     color: #484848;
     padding: 20px;
@@ -10297,11 +11161,11 @@ form {
 }
 
 .astro-list-button {
-  background-color: #032155!important
+  background-color: #032155 !important
 }
 
 .math-list-button {
-  background-color: #b84442!important
+  background-color: #b84442 !important
 }
 
 .index-group .btn-group {
@@ -10310,7 +11174,7 @@ form {
 }
 
 .index-group .btn-group .nonactive {
-  color: #333!important
+  color: #333 !important
 }
 
 #authorSortBy .btn-group {
@@ -10323,15 +11187,15 @@ form {
 }
 
 .cs-list-button {
-  background-color: #6842cd!important
+  background-color: #6842cd !important
 }
 
 .stat-list-button {
-  background-color: #0479f3!important
+  background-color: #0479f3 !important
 }
 
 .physics-list-button {
-  background-color: #009816!important
+  background-color: #009816 !important
 }
 
 .framework-img {
@@ -10358,7 +11222,7 @@ a, a:hover {
 }
 
 .library-modal-body {
-  font-size: 16px!important
+  font-size: 16px !important
 }
 
 .modal-body .additional-link {
@@ -10411,8 +11275,8 @@ a, a:hover {
 
 .item-image-col {
   float: left;
-  flex: 0 0 20%!important;
-  max-width: 20%!important
+  flex: 0 0 20% !important;
+  max-width: 20% !important
 }
 
 .item {
@@ -10438,12 +11302,12 @@ a, a:hover {
 }
 
 .item-content h1 a:hover {
-  color: #878787!important
+  color: #878787 !important
 }
 
 .item h1 a {
   font-size: 18px;
-  color: #000!important;
+  color: #000 !important;
   line-height: 25px
 }
 
@@ -10818,7 +11682,7 @@ a, a:hover {
 }
 
 .item-header .item-conference-link a {
-  color: #000!important;
+  color: #000 !important;
   font-weight: 500
 }
 
@@ -10832,13 +11696,13 @@ a, a:hover {
 
 .item-github-link a {
   font-weight: 500;
-  color: #717171!important
+  color: #717171 !important
 }
 
 .item-github-link a:hover {
   font-weight: 500;
-  color: #222!important;
-  text-decoration: underline!important
+  color: #222 !important;
+  text-decoration: underline !important
 }
 
 .item-header img {
@@ -10887,7 +11751,7 @@ a, a:hover {
 }
 
 .item-content .sota a:hover {
-  text-decoration: underline!important
+  text-decoration: underline !important
 }
 
 .item-content .sota a:active {
@@ -10998,8 +11862,8 @@ a, a:hover {
 }
 
 .sota-select {
-  font-size: 15px!important;
-  font-color: #565656!important;
+  font-size: 15px !important;
+  font-color: #565656 !important;
   margin-top: -20px
 }
 
@@ -11025,7 +11889,7 @@ a, a:hover {
 }
 
 .code-table th {
-  background-color: #fff!important;
+  background-color: #fff !important;
   font-weight: 500;
   color: #7b7b7b;
   font-size: 14px;
@@ -11116,16 +11980,16 @@ a, a:hover {
 .colab-logo img, .pytorch-hub-logo img {
   position: relative;
   top: -1px;
-  width: 15px!important;
-  height: 15px!important
+  width: 15px !important;
+  height: 15px !important
 }
 
 .labml-logo a {
-  padding: 5px!important
+  padding: 5px !important
 }
 
 .framework-logo img {
-  width: 55px!important;
+  width: 55px !important;
   max-height: 15px
 }
 
@@ -11137,8 +12001,8 @@ a, a:hover {
 }
 
 .github-stars .icon-ion {
-  position: relative!important;
-  top: 1px!important
+  position: relative !important;
+  top: 1px !important
 }
 
 .sota-table {
@@ -11146,11 +12010,11 @@ a, a:hover {
 }
 
 .sota-table .model-col a {
-  color: #007bff!important
+  color: #007bff !important
 }
 
 .sota-table .model-col a:hover {
-  color: revert!important
+  color: revert !important
 }
 
 .sota-table table {
@@ -11164,7 +12028,7 @@ a, a:hover {
 .sota-table th {
   background-color: #fff;
   color: #6f787d;
-  font-weight: 400!important;
+  font-weight: 400 !important;
   font-size: 12px;
   letter-spacing: 1.2px;
   font-family: "Lato";
@@ -11198,7 +12062,7 @@ a, a:hover {
 
 .sota-table td .paper-title {
   font-weight: 600;
-  font-size: 15px!important
+  font-size: 15px !important
 }
 
 .sota-table td, .sota-table td a {
@@ -11234,8 +12098,8 @@ a, a:hover {
   border-radius: 5px;
   background-color: #0297b1;
   padding: 5px 12px;
-  color: #fff!important;
-  text-decoration: none!important
+  color: #fff !important;
+  text-decoration: none !important
 }
 
 .sota-table .btn-primary:hover {
@@ -11312,9 +12176,9 @@ a, a:hover {
 }
 
 .default-available .icon-wrapper {
-  top: 2px!important;
-  font-size: 16px!important;
-  position: relative!important;
+  top: 2px !important;
+  font-size: 16px !important;
+  position: relative !important;
   color: #bbb
 }
 
@@ -11358,7 +12222,7 @@ a, a:hover {
 }
 
 .sota-table-preview .dataTables_paginate paging_simple_number a {
-  color: #6f787e!important
+  color: #6f787e !important
 }
 
 .task-benchmarks #benchmarks.collapsed table tbody tr:nth-child(n+11) {
@@ -11380,7 +12244,7 @@ a, a:hover {
 
 .sota-table-preview th {
   color: #6f787d;
-  font-weight: 400!important;
+  font-weight: 400 !important;
   font-size: 12px;
   letter-spacing: 1.2px;
   font-family: "Lato";
@@ -11397,7 +12261,7 @@ a, a:hover {
 }
 
 .sota-table-preview tbody>tr:nth-child(odd):hover, .sota-table-preview tbody>tr:nth-child(odd):odd {
-  background-color: #f9f9f9!important;
+  background-color: #f9f9f9 !important;
   cursor: pointer
 }
 
@@ -11848,7 +12712,7 @@ a, a:hover {
 }
 
 .user-profile .badge-light:hover {
-  color: #000!important;
+  color: #000 !important;
   background-color: #f9f9f9;
   cursor: pointer
 }
@@ -12111,11 +12975,11 @@ a, a:hover {
 .author-search input {
   font-family: "Lato";
   font-size: 14px;
-  padding-bottom: 8px!important
+  padding-bottom: 8px !important
 }
 
 .author-search .icon {
-  background-color: transparent!important;
+  background-color: transparent !important;
   border: none;
   cursor: pointer;
   float: right;
@@ -12691,8 +13555,8 @@ a, a:hover {
 }
 
 .datasets-filter .badge-light:hover {
-  color: #fff!important;
-  background-color: #6993c0!important;
+  color: #fff !important;
+  background-color: #6993c0 !important;
   cursor: pointer
 }
 
@@ -12787,7 +13651,7 @@ a, a:hover {
 }
 
 .dataset-list-modality-icon {
-  color: #24cbcd!important;
+  color: #24cbcd !important;
   font-size: 16px
 }
 
@@ -13228,6 +14092,7 @@ a, a:hover {
   0% {
     transform: scale(.001)
   }
+
   to {
     transform: scale(1)
   }
@@ -13683,6 +14548,7 @@ a, a:hover {
     font-family: Lato;
     background-image: linear-gradient(180deg, #02aab0 0, #00cdac 1%, #02aab0)
   }
+
   .task-content .description {
     padding-right: 3rem
   }
@@ -13728,7 +14594,7 @@ a, a:hover {
   margin-bottom: 1rem;
   margin-top: 1rem;
   font-family: "Lato";
-  border-bottom: 0!important;
+  border-bottom: 0 !important;
   padding-bottom: .3em
 }
 
@@ -13756,7 +14622,7 @@ a, a:hover {
 .library-search .dataTables_wrapper .dataTables_filter input {
   font-family: "Lato";
   font-size: 14px;
-  padding-bottom: 3px!important;
+  padding-bottom: 3px !important;
   padding-left: 10px;
   height: 35px;
   margin-left: 0;
@@ -13771,7 +14637,7 @@ a, a:hover {
   top: 2px;
   opacity: .7;
   color: #1ab37c;
-  background-color: transparent!important;
+  background-color: transparent !important;
   border: none;
   cursor: pointer
 }
@@ -13863,7 +14729,7 @@ a, a:hover {
 }
 
 .library-expand-tasks-button {
-  color: #00a497!important;
+  color: #00a497 !important;
   cursor: pointer;
   font-family: Lato;
   font-size: 13px
@@ -13987,9 +14853,11 @@ a, a:hover {
     font-family: Lato;
     background-image: linear-gradient(180deg, #02aab0 0, #00cdac 1%, #02aab0)
   }
+
   .navbar-light .navbar-nav .nav-link-right a {
-    font-size: 18px!important
+    font-size: 18px !important
   }
+
   .navbar-slack-icon, .navbar-twitter-icon {
     height: 24px;
     width: auto;
@@ -14014,16 +14882,19 @@ a, a:hover {
     font-family: Lato;
     background-image: linear-gradient(180deg, #02aab0 0, #00cdac 1%, #02aab0)
   }
+
   .navbar-twitter-icon {
-    top: 3px!important
+    top: 3px !important
   }
+
   .navbar-slack-icon, .navbar-twitter-icon {
-    height: 20px!important;
-    width: auto!important;
-    position: relative!important
+    height: 20px !important;
+    width: auto !important;
+    position: relative !important
   }
+
   .navbar-slack-icon {
-    top: 2px!important
+    top: 2px !important
   }
 }
 
@@ -14034,7 +14905,7 @@ a, a:hover {
 
 .sign-up .btn-primary:active, .sign-up .btn-primary:visited {
   cursor: pointer;
-  background-color: #21cbce!important
+  background-color: #21cbce !important
 }
 
 .sign-up a {
@@ -14147,9 +15018,9 @@ a, a:hover {
 }
 
 .sota-no-sota a {
-  color: #0096b1!important;
+  color: #0096b1 !important;
   cursor: pointer;
-  text-decoration: underline!important
+  text-decoration: underline !important
 }
 
 .sota-table-preview .table-striped>tbody>tr:nth-child(odd)>td {
@@ -14166,11 +15037,11 @@ a, a:hover {
 }
 
 .sota-table-preview .paper .icon-wrapper {
-  color: #0297b1!important
+  color: #0297b1 !important
 }
 
 .sota-table a {
-  color: #00a497!important;
+  color: #00a497 !important;
   cursor: pointer
 }
 
@@ -14181,8 +15052,8 @@ a, a:hover {
   border-radius: 5px;
   background-color: #0297b1;
   padding: 5px 12px;
-  color: #fff!important;
-  text-decoration: none!important
+  color: #fff !important;
+  text-decoration: none !important
 }
 
 .sota-table-preview .btn-primary:hover {
@@ -14190,27 +15061,27 @@ a, a:hover {
 }
 
 .sota-table td.invalid {
-  background-color: rgba(255, 0, 0, .4)!important
+  background-color: rgba(255, 0, 0, .4) !important
 }
 
 .sota-table .table-striped>tbody>tr:nth-child(odd)>td {
-  background-color: #fff!important
+  background-color: #fff !important
 }
 
 .sota-table .table-striped>tbody>tr:nth-child(odd)>td.invalid {
-  background-color: rgba(255, 0, 0, .4)!important
+  background-color: rgba(255, 0, 0, .4) !important
 }
 
 .sota-table .table-striped>tbody>tr:nth-child(2n)>td {
-  background-color: #fff!important
+  background-color: #fff !important
 }
 
 .sota-table .table-striped>tbody>tr:nth-child(2n)>td.invalid {
-  background-color: rgba(255, 0, 0, .4)!important
+  background-color: rgba(255, 0, 0, .4) !important
 }
 
 .sota-table .table-striped>thead>tr:nth-child(odd)>th {
-  background-color: #fff!important
+  background-color: #fff !important
 }
 
 .sota-table .table-striped .rowspan-td {
@@ -14346,7 +15217,7 @@ a.list-button.dropdown-toggle:after {
 .author-code input {
   font-family: "Lato";
   font-size: 14px;
-  padding-bottom: 8px!important
+  padding-bottom: 8px !important
 }
 
 .clickable {
@@ -14401,7 +15272,7 @@ a.list-button.dropdown-toggle:after {
 
 .edit-paper .edit-paper-box .border-divider {
   border-right: 1px solid #e0e0e0;
-  padding-left: 0!important;
+  padding-left: 0 !important;
   margin-right: 34px;
   margin-left: -10px
 }
@@ -14415,9 +15286,9 @@ a.list-button.dropdown-toggle:after {
 }
 
 .edit-paper .edit-paper-box table th {
-  background-color: #fff!important;
+  background-color: #fff !important;
   color: #4a4a4a;
-  font-weight: 600!important;
+  font-weight: 600 !important;
   font-size: 11px;
   letter-spacing: 1.2px;
   font-family: "Lato";
@@ -14719,8 +15590,8 @@ a.list-button.dropdown-toggle:after {
 }
 
 .ui-menu .ui-menu-item-wrapper img {
-  width: 20px!important;
-  height: 20px!important;
+  width: 20px !important;
+  height: 20px !important;
   padding: 0;
   border-radius: 5px;
   margin-right: 13px;
@@ -14729,15 +15600,15 @@ a.list-button.dropdown-toggle:after {
 }
 
 .ui-menu-item .ui-menu-item-wrapper.ui-state-active {
-  background: #f1f1f1!important;
-  color: #000!important;
-  font-weight: 400!important;
+  background: #f1f1f1 !important;
+  color: #000 !important;
+  font-weight: 400 !important;
   border: 0;
   margin: 0
 }
 
 .ui-widget-content {
-  border: 0!important;
+  border: 0 !important;
   box-shadow: 0 8px 42px -8px rgba(0, 0, 0, .2)
 }
 
@@ -14824,8 +15695,8 @@ a.list-button.dropdown-toggle:after {
 }
 
 .black-links a {
-  color: #000!important;
-  font-size: 14px!important;
+  color: #000 !important;
+  font-size: 14px !important;
   letter-spacing: .1px;
   font-weight: 500
 }
@@ -14840,15 +15711,15 @@ a.list-button.dropdown-toggle:after {
 }
 
 .blue-links a {
-  color: #0096b1!important;
-  font-size: 14px!important;
+  color: #0096b1 !important;
+  font-size: 14px !important;
   letter-spacing: .1px;
   font-weight: 500
 }
 
 .grey-links a {
-  color: #000!important;
-  font-size: 13px!important;
+  color: #000 !important;
+  font-size: 13px !important;
   letter-spacing: .1px;
   font-weight: 300;
   font-family: "Lato"
@@ -14859,8 +15730,8 @@ a.list-button.dropdown-toggle:after {
 }
 
 .grey-links .icon-wrapper, .grey-links ion-icon {
-  font-size: 11px!important;
-  top: 1px!important;
+  font-size: 11px !important;
+  top: 1px !important;
   position: relative;
   margin-right: 1px
 }
@@ -14870,32 +15741,38 @@ a.list-button.dropdown-toggle:after {
 }
 
 .sota-table-link a {
-  color: #919191!important;
+  color: #919191 !important;
   top: 0;
   position: relative
 }
 
 @media screen and (max-width:992px) {
   .home-page-title {
-    margin-top: 0!important;
-    margin-bottom: 5px!important
+    margin-top: 0 !important;
+    margin-bottom: 5px !important
   }
+
   .home-page-header .left-header {
     margin-top: 10px
   }
+
   .home-page-header h3.home-page-subtitle {
-    margin-bottom: 0!important;
-    margin-top: 15px!important
+    margin-bottom: 0 !important;
+    margin-top: 15px !important
   }
+
   .home-page-navigation {
-    margin-bottom: 5px!important
+    margin-bottom: 5px !important
   }
+
   .home-page-navigation, .search-page-order-by {
-    margin-top: 20px!important
+    margin-top: 20px !important
   }
+
   .task-page-navigation {
-    margin-bottom: 20px!important
+    margin-bottom: 20px !important
   }
+
   #social-rank-drop.dropdown {
     margin-top: 0
   }
@@ -14905,32 +15782,40 @@ a.list-button.dropdown-toggle:after {
   .paper-title h1 {
     margin-top: 20px
   }
+
   .navbar {
     padding: 1.5rem 2rem
   }
+
   .abstract-hidden-element {
-    display: none!important
+    display: none !important
   }
+
   .reverse-hidden-element {
-    display: inline!important;
-    display: initial!important
+    display: inline !important;
+    display: initial !important
   }
+
   .list-button, .list-button-active {
     font-size: 12px;
     margin-left: 7px;
     margin-right: 7px
   }
+
   .task-add-a-result {
     margin: 10px
   }
+
   .home-page-header h2, .home-page-header h3.home-page-subtitle {
     padding-left: 15px
   }
+
   .search-page-order-by {
     padding-right: 10px
   }
+
   .list-button-subscribe a {
-    min-width: 100px!important;
+    min-width: 100px !important;
     padding: 3px;
     position: relative;
     margin-left: 10px;
@@ -14948,13 +15833,15 @@ a.list-button.dropdown-toggle:after {
     margin-left: 20px;
     margin-right: 20px
   }
+
   .list-button-subscribe a {
-    min-width: 120px!important;
+    min-width: 120px !important;
     padding: 5px 12px;
     position: relative;
     top: -5px;
     margin-left: 20px
   }
+
   .author-dialog {
     max-width: 250px;
     margin: 1.75rem auto
@@ -14963,13 +15850,13 @@ a.list-button.dropdown-toggle:after {
 
 @media screen and (max-width:768px) {
   .task-main-title {
-    margin-top: 30px!important
+    margin-top: 30px !important
   }
 }
 
 @media screen and (min-width:768px) {
   .task-main-title {
-    margin-top: 0!important
+    margin-top: 0 !important
   }
 }
 
@@ -14981,31 +15868,37 @@ a.list-button.dropdown-toggle:after {
     margin: 10px auto auto;
     border-radius: 5px
   }
+
   .item-col {
     max-width: 100%
   }
+
   .model-item-image {
     height: 50px;
     width: auto;
     background-size: contain;
     margin: auto
   }
+
   .library-item-image {
     height: 120px;
     width: auto;
     background-size: contain;
     margin: 10px auto auto
   }
+
   .item-content {
-    padding-left: 15px!important;
-    padding-right: 10px!important;
-    margin-top: 10px!important
+    padding-left: 15px !important;
+    padding-right: 10px !important;
+    margin-top: 10px !important
   }
+
   .item-image-col {
     padding-right: 0;
     padding-left: 0;
-    max-width: 1000%!important
+    max-width: 1000% !important
   }
+
   .featured-task .card-deck .card {
     text-align: center;
     transition: background-color .25s, color .25s, box-shadow .25s;
@@ -15016,13 +15909,16 @@ a.list-button.dropdown-toggle:after {
     flex: 0 1 auto;
     margin: auto auto 30px
   }
+
   .featured-task .card-deck .card:hover {
     box-shadow: 0 10px 40px -10px rgba(0, 0, 0, .3);
     cursor: pointer
   }
+
   .featured-task .card-deck .card .row .card-col-title h1 {
-    font-size: 18px!important
+    font-size: 18px !important
   }
+
   .featured-datasets .card-deck .card, .featured-methods .card-deck .card {
     text-align: center;
     transition: background-color .25s, color .25s, box-shadow .25s;
@@ -15033,39 +15929,49 @@ a.list-button.dropdown-toggle:after {
     flex: 0 1 auto;
     margin: auto auto 30px
   }
+
   .featured-datasets .card-deck .card .row .card-col-title h1, .featured-methods .card-deck .card .row .card-col-title h1 {
-    font-size: 18px!important
+    font-size: 18px !important
   }
+
   .datasets-all-tasks, .methods-all-tasks, .sota-all-tasks {
     padding-top: 5px;
     padding-bottom: 50px;
     margin-top: 10px;
     text-align: center
   }
+
   .card-body-taskverse {
-    text-align: center!important
+    text-align: center !important
   }
+
   .browse-sota-title .subtitle, .card-body-taskverse .text-muted {
-    font-size: 15px!important;
-    color: #333!important
+    font-size: 15px !important;
+    color: #333 !important
   }
+
   .datasets-all-tasks a, .methods-all-tasks a, .sota-all-tasks a {
-    font-size: 18px!important
+    font-size: 18px !important
   }
+
   .task-main-title {
-    font-size: 30px!important
+    font-size: 30px !important
   }
+
   .card-body-taskverse-mobile {
-    padding-top: 5px!important
+    padding-top: 5px !important
   }
+
   .area-tag-page .card-img-top {
     margin-top: 20px
   }
+
   .area-tag-page .card-body {
-    text-align: center!important
+    text-align: center !important
   }
+
   .area-tag-page .card-body .card-title {
-    font-size: 18px!important
+    font-size: 18px !important
   }
 }
 
@@ -15073,6 +15979,7 @@ a.list-button.dropdown-toggle:after {
   .item-image-col {
     padding-right: 0
   }
+
   .featured-task .card-deck .card {
     text-align: center;
     transition: background-color .25s, color .25s, box-shadow .25s;
@@ -15081,10 +15988,12 @@ a.list-button.dropdown-toggle:after {
     min-height: 267px;
     max-width: 192px
   }
+
   .featured-task .card-deck .card:hover {
     box-shadow: 0 10px 40px -10px rgba(0, 0, 0, .3);
     cursor: pointer
   }
+
   .featured-datasets .card-deck .card, .featured-methods .card-deck .card {
     text-align: center;
     transition: background-color .25s, color .25s, box-shadow .25s;
@@ -15093,14 +16002,16 @@ a.list-button.dropdown-toggle:after {
     min-height: 267px;
     max-width: 192px
   }
+
   .datasets-all-tasks, .methods-all-tasks, .sota-all-tasks {
     padding-top: 5px;
     padding-bottom: 50px;
     margin-top: 10px;
     padding-left: 2px
   }
+
   .card-body-taskverse {
-    font-size: 12px!important
+    font-size: 12px !important
   }
 }
 
@@ -15116,6 +16027,7 @@ a.list-button.dropdown-toggle:after {
     margin: 15px auto;
     border-radius: 5px
   }
+
   .card-body-taskverse {
     margin-top: 10px
   }
@@ -15127,18 +16039,22 @@ a.list-button.dropdown-toggle:after {
     width: 180px;
     background-size: 180px auto
   }
+
   .model-item-image {
     height: 50px;
     width: 50px;
     background-size: 50px auto
   }
+
   .library-item-image {
     height: 120px;
     background-size: 180px auto
   }
+
   .item-content {
     padding-left: 60px
   }
+
   .featured-datasets .card-deck .card .row .card-col-title, .featured-methods .card-deck .card .row .card-col-title, .featured-task .card-deck .card .row .card-col-title {
     text-align: left;
     padding-left: 18px;
@@ -15155,18 +16071,22 @@ a.list-button.dropdown-toggle:after {
     width: 220px;
     background-size: 230px auto
   }
+
   .model-item-image {
     height: 50px;
     width: 50px;
     background-size: 50px auto
   }
+
   .library-item-image {
     height: 120px;
     background-size: 170px auto
   }
+
   .item-content {
     padding-left: 60px
   }
+
   .featured-task .card-deck .card .card-background-image {
     width: 50px;
     height: 50px;
@@ -15178,6 +16098,7 @@ a.list-button.dropdown-toggle:after {
     margin: 15px;
     border-radius: 5px
   }
+
   .featured-task .card-deck .card .row .card-col-title {
     text-align: left;
     padding-left: 15px;
@@ -15186,6 +16107,7 @@ a.list-button.dropdown-toggle:after {
     justify-content: center;
     display: flex
   }
+
   .featured-datasets .card-deck .card .card-background-image, .featured-methods .card-deck .card .card-background-image {
     width: 50px;
     height: 50px;
@@ -15197,6 +16119,7 @@ a.list-button.dropdown-toggle:after {
     margin: 15px;
     border-radius: 3px
   }
+
   .featured-datasets .card-deck .card .row .card-col-title, .featured-methods .card-deck .card .row .card-col-title {
     text-align: left;
     padding-left: 15px;
@@ -15215,10 +16138,10 @@ a.list-button.dropdown-toggle:after {
   border-radius: 50px;
   background-color: #21cbce;
   padding: 8px 12px;
-  color: #fff!important;
-  text-decoration: none!important;
+  color: #fff !important;
+  text-decoration: none !important;
   max-width: 300px;
-  float: none!important
+  float: none !important
 }
 
 #add-dataset-form .btn-primary, #add-method-form .btn-primary {
@@ -15249,8 +16172,8 @@ a.list-button.dropdown-toggle:after {
 }
 
 .add-paper-page .item:hover {
-  background-color: transparent!important;
-  cursor: auto!important
+  background-color: transparent !important;
+  cursor: auto !important
 }
 
 .add-paper-page .item-image-col {
@@ -15264,7 +16187,7 @@ a.list-button.dropdown-toggle:after {
 }
 
 .handsontable table {
-  border: 0!important;
+  border: 0 !important;
   border-color: #e0e0e0;
   margin-bottom: 30px;
   border-radius: 10px;
@@ -15272,15 +16195,15 @@ a.list-button.dropdown-toggle:after {
 }
 
 .handsontable table thead th {
-  color: #565656!important;
-  background-color: #f9f9f9!important;
+  color: #565656 !important;
+  background-color: #f9f9f9 !important;
   font-weight: 500;
   font-size: 15px;
   padding: 10px;
   border-bottom: 1px solid;
   border-color: #e0e0e0;
-  font-family: "Lato"!important;
-  vertical-align: top!important
+  font-family: "Lato" !important;
+  vertical-align: top !important
 }
 
 .handsontable table tbody td {
@@ -15288,21 +16211,21 @@ a.list-button.dropdown-toggle:after {
 }
 
 .ht_master tr>td {
-  padding: 5px 12px!important;
-  font-family: "Lato"!important
+  padding: 5px 12px !important;
+  font-family: "Lato" !important
 }
 
 .ht_master:not(.innerBorderLeft):not(.emptyColumns)~.handsontable tbody tr th {
   color: #565656;
-  background-color: #f9f9f9!important;
+  background-color: #f9f9f9 !important;
   font-size: 15px;
-  font-family: "Lato"!important;
+  font-family: "Lato" !important;
   font-weight: 500;
   vertical-align: middle
 }
 
 .ht_master:not(.innerBorderTop)~.handsontable thead tr:last-child th {
-  background-color: #f9f9f9!important
+  background-color: #f9f9f9 !important
 }
 
 .btn-save {
@@ -15313,10 +16236,10 @@ a.list-button.dropdown-toggle:after {
   border-radius: 50px;
   background-color: #1ab37c;
   padding: 8px 12px;
-  color: #fff!important;
-  text-decoration: none!important;
+  color: #fff !important;
+  text-decoration: none !important;
   cursor: pointer;
-  float: none!important
+  float: none !important
 }
 
 .btn-save:hover {
@@ -15331,10 +16254,10 @@ a.list-button.dropdown-toggle:after {
   border-radius: 50px;
   background-color: #888;
   padding: 8px 12px;
-  color: #fff!important;
-  text-decoration: none!important;
+  color: #fff !important;
+  text-decoration: none !important;
   cursor: pointer;
-  float: none!important
+  float: none !important
 }
 
 .btn-disabled:hover {
@@ -15349,10 +16272,10 @@ a.list-button.dropdown-toggle:after {
   border-radius: 50px;
   background-color: #e54d52;
   padding: 8px 12px;
-  color: #fff!important;
-  text-decoration: none!important;
+  color: #fff !important;
+  text-decoration: none !important;
   cursor: pointer;
-  float: none!important
+  float: none !important
 }
 
 .btn-cancel:hover {
@@ -15422,12 +16345,12 @@ a.list-button.dropdown-toggle:after {
 }
 
 .paper-evaluation-badge .btn-dark, .paper-evaluation-badge .btn-dark:active, .paper-evaluation-badge .btn-dark:visited {
-  background-color: #1ab37c!important
+  background-color: #1ab37c !important
 }
 
 .paper-evaluation-badge .btn-dark:focus, .paper-evaluation-badge .btn-dark:hover {
   cursor: pointer;
-  background-color: #199162!important
+  background-color: #199162 !important
 }
 
 .paper-evaluation-badge .btn-dark:focus {
@@ -15440,8 +16363,8 @@ a.list-button.dropdown-toggle:after {
 }
 
 mjx-container[jax=CHTML][display=true] {
-  margin-top: 1.5rem!important;
-  margin-bottom: 1.5rem!important
+  margin-top: 1.5rem !important;
+  margin-bottom: 1.5rem !important
 }
 
 .trends-page {
@@ -15459,7 +16382,7 @@ mjx-container[jax=CHTML][display=true] {
 
 .trends-page p {
   margin-bottom: 2rem;
-  font-size: 16px!important;
+  font-size: 16px !important;
   font-weight: 500;
   font-family: "Lato";
   line-height: 1.7
@@ -15483,7 +16406,7 @@ mjx-container[jax=CHTML][display=true] {
 }
 
 svg.highcharts-root {
-  font-family: "Lato", sans-serif!important
+  font-family: "Lato", sans-serif !important
 }
 
 .method-title, .method-title h1 {
@@ -15648,12 +16571,12 @@ svg.highcharts-root {
 }
 
 .dataset-content .description-source a, .method-content .description-source a {
-  font-size: 12px!important;
-  color: #797979!important
+  font-size: 12px !important;
+  color: #797979 !important
 }
 
 .dataset-content .description-source a .icon-ion, .method-content .description-source a .icon-ion {
-  color: #b31b1b!important;
+  color: #b31b1b !important;
   top: 1px;
   position: relative;
   margin-left: 5px
@@ -15758,7 +16681,7 @@ svg.highcharts-root {
 
 .method-content th {
   color: #6f787d;
-  font-weight: 400!important;
+  font-weight: 400 !important;
   font-size: 12px;
   letter-spacing: 1.2px;
   font-family: "Lato";
@@ -15796,9 +16719,9 @@ svg.highcharts-root {
 }
 
 .method-content .sota, .method-content .sota a {
-  color: #8e8e8e!important;
+  color: #8e8e8e !important;
   letter-spacing: .5px;
-  font-size: 10px!important;
+  font-size: 10px !important;
   font-family: SF Pro Display
 }
 
@@ -15812,7 +16735,7 @@ svg.highcharts-root {
 
 .method-content td .paper-title {
   font-weight: 600;
-  font-size: 15px!important
+  font-size: 15px !important
 }
 
 .method-content td {
@@ -15929,9 +16852,9 @@ svg.highcharts-root {
 }
 
 .method-content .method-image a {
-  font-size: 15px!important;
+  font-size: 15px !important;
   letter-spacing: .1px;
-  color: #000!important;
+  color: #000 !important;
   font-weight: 600
 }
 
@@ -15940,8 +16863,8 @@ svg.highcharts-root {
 }
 
 .method-content .grey-links a {
-  color: #000!important;
-  font-size: 12px!important;
+  color: #000 !important;
+  font-size: 12px !important;
   letter-spacing: .1px;
   font-weight: 300;
   font-family: "Lato"
@@ -15957,7 +16880,7 @@ svg.highcharts-root {
 }
 
 .annotator-header .icon-ion {
-  font-size: 30px!important;
+  font-size: 30px !important;
   margin-left: 10px;
   margin-right: 10px;
   top: 7px;
@@ -16240,6 +17163,7 @@ svg.highcharts-root {
   .manual-review .review-blob .blob-block input {
     width: 150px
   }
+
   .manual-review .review-blob .blob-model input {
     width: 220px
   }
@@ -16249,6 +17173,7 @@ svg.highcharts-root {
   .manual-review .review-blob .blob-block input {
     width: 200px
   }
+
   .manual-review .review-blob .blob-model input {
     width: 250px
   }
@@ -16258,6 +17183,7 @@ svg.highcharts-root {
   .manual-review .review-blob .blob-block input {
     width: 220px
   }
+
   .manual-review .review-blob .blob-model input {
     width: 250px
   }
@@ -16286,6 +17212,7 @@ svg.highcharts-root {
   0% {
     background-color: #fff
   }
+
   to {
     background-color: #ffff9d
   }
@@ -16301,6 +17228,7 @@ svg.highcharts-root {
   0% {
     background-color: #6eff63
   }
+
   to {
     background-color: #ffff9d
   }
@@ -16316,6 +17244,7 @@ svg.highcharts-root {
   0% {
     background-color: #bdccff
   }
+
   to {
     background-color: #ffff9d
   }
@@ -16560,11 +17489,11 @@ svg.highcharts-root {
 }
 
 .arxiv-table .red-border {
-  border: 2px dotted orange!important
+  border: 2px dotted orange !important
 }
 
 .arxiv-table .red-border.arxiv-addable-ref:hover {
-  border: 2px solid orange!important
+  border: 2px solid orange !important
 }
 
 .arxiv-table .table-evidences b {
@@ -16614,15 +17543,15 @@ svg.highcharts-root {
 }
 
 .arxiv-proposals-container .add-annotation-button-10:hover {
-  background-color: #00a12a!important
+  background-color: #00a12a !important
 }
 
 .arxiv-proposals-container .add-annotation-button-03:hover {
-  background-color: #60bf69!important
+  background-color: #60bf69 !important
 }
 
 .arxiv-proposals-container .add-annotation-button-00:hover {
-  background-color: #78e892!important
+  background-color: #78e892 !important
 }
 
 .arxiv-proposals-container .arxiv-proposals-footer {
@@ -16936,7 +17865,7 @@ svg.highcharts-root {
 }
 
 .parse-references button:hover {
-  background-color: #4963c5!important
+  background-color: #4963c5 !important
 }
 
 .blob-input-references button {
@@ -16951,7 +17880,7 @@ svg.highcharts-root {
 }
 
 .blob-input-references button:hover {
-  background-color: #4963c5!important
+  background-color: #4963c5 !important
 }
 
 .blob-input-gray button {
@@ -16966,7 +17895,7 @@ svg.highcharts-root {
 }
 
 .blob-input-gray button:hover {
-  background-color: #eee!important
+  background-color: #eee !important
 }
 
 .ReactModal__Body--open, .ReactModal__Html--open {
@@ -17043,13 +17972,13 @@ svg.highcharts-root {
 }
 
 .parse-references-modal .modal-footer button:hover {
-  background-color: #4963c5!important
+  background-color: #4963c5 !important
 }
 
 .parse-references-modal .modal-footer button:disabled, .parse-references-modal .modal-footer button:disabled:hover, button[disabled], button[disabled]:hover {
-  border-color: #ccc!important;
-  background-color: #ccc!important;
-  cursor: not-allowed!important
+  border-color: #ccc !important;
+  background-color: #ccc !important;
+  cursor: not-allowed !important
 }
 
 .gray-blobs-modal .manual-review .review-blob {
@@ -17088,7 +18017,7 @@ svg.highcharts-root {
 }
 
 .modal-content-gray .modal-footer button:hover {
-  background-color: #ddd!important
+  background-color: #ddd !important
 }
 
 .nav-tabs {
@@ -17096,7 +18025,7 @@ svg.highcharts-root {
 }
 
 .nav-tabs .nav-item a, .nav-tabs .nav-link.active {
-  color: #000!important;
+  color: #000 !important;
   font-weight: 300
 }
 
@@ -17204,17 +18133,17 @@ svg.highcharts-root {
 }
 
 .omnisearch__menu {
-  z-index: 2!important
+  z-index: 2 !important
 }
 
 .omnisearch__control {
-  border-color: #dee2e6!important;
-  border-color: var(--light-gray)!important;
-  min-height: 0!important
+  border-color: #dee2e6 !important;
+  border-color: var(--light-gray) !important;
+  min-height: 0 !important
 }
 
 .omnisearch__indicator {
-  padding: 6px!important
+  padding: 6px !important
 }
 
 .omnisearch .btn-light {
@@ -17236,6 +18165,7 @@ svg.highcharts-root {
   .omnisearch__order-selector {
     width: 100%
   }
+
   .omnisearch__order-selector__direction {
     max-width: 38px
   }
@@ -17554,7 +18484,7 @@ svg.highcharts-root {
 }
 
 .recent-changes-list .button-revert[disabled] {
-  background-color: #fff!important
+  background-color: #fff !important
 }
 
 .recent-changes-list .versions .item-version .updated-field {
@@ -17669,9 +18599,9 @@ svg.highcharts-root {
 }
 
 .dataset-content td .method-name a {
-  font-size: 14px!important;
+  font-size: 14px !important;
   letter-spacing: .1px;
-  color: #000!important;
+  color: #000 !important;
   font-weight: 500
 }
 
@@ -17681,7 +18611,7 @@ svg.highcharts-root {
 
 .dataset-content th {
   color: #6f787d;
-  font-weight: 400!important;
+  font-weight: 400 !important;
   font-size: 12px;
   letter-spacing: 1.2px;
   font-family: "Lato";
@@ -17705,8 +18635,8 @@ svg.highcharts-root {
   border-radius: 50px;
   background-color: #21cbce;
   padding: 5px 12px;
-  color: #fff!important;
-  text-decoration: none!important
+  color: #fff !important;
+  text-decoration: none !important
 }
 
 .dataset-content table .btn-primary:hover {
@@ -18030,6 +18960,7 @@ svg.highcharts-root {
   .dataset-wide-box .item-image {
     margin-top: 10px
   }
+
   .dataset-wide-box .item-image, .sota-dataset-wide-box .item-image {
     height: 60px;
     width: 60px;
@@ -18131,14 +19062,14 @@ svg.highcharts-root {
 }
 
 .card-one-third h1 {
-  color: #007bff!important;
+  color: #007bff !important;
   display: block;
   font-size: 15px;
   margin-top: 1rem
 }
 
 .card-one-third h1:hover {
-  color: #0056b3!important
+  color: #0056b3 !important
 }
 
 .card-one-third h2 {
@@ -18219,6 +19150,7 @@ svg.highcharts-root {
   .portal-card .col-md-9 {
     text-align: center
   }
+
   .portal-home .portal-pwc-logo {
     width: 100%;
     height: auto
@@ -18320,7 +19252,7 @@ svg.highcharts-root {
 .badge-edit-artefact {
   display: inline;
   margin-left: 15px;
-  vertical-align: middle!important;
+  vertical-align: middle !important;
   margin-bottom: 20px;
   background-color: #f9f9f9;
   border: 1px solid #e0e0e0;
@@ -18361,8 +19293,8 @@ svg.highcharts-root {
 }
 
 .artefact-description-card .context .badge-light:hover {
-  color: #000!important;
-  background-color: #eee!important;
+  color: #000 !important;
+  background-color: #eee !important;
   cursor: pointer
 }
 
@@ -18384,7 +19316,7 @@ svg.highcharts-root {
 }
 
 .artefact-description-card .context .badge-paper .icon-fal {
-  color: #1ab37c!important
+  color: #1ab37c !important
 }
 
 .artefact-description-card .context .badge-light img {
@@ -18520,12 +19452,12 @@ svg.highcharts-root {
 }
 
 .library-list .nav-tabs {
-  margin-bottom: 0!important;
-  font-size: 14px!important
+  margin-bottom: 0 !important;
+  font-size: 14px !important
 }
 
 .library-list .nav-tabs .nav-item {
-  margin-bottom: 0!important;
+  margin-bottom: 0 !important;
   margin-right: 20px
 }
 
@@ -18541,7 +19473,7 @@ svg.highcharts-root {
 }
 
 .library-list .nav-tabs a:hover, .library-list .nav-tabs li:hover a {
-  text-decoration: none!important
+  text-decoration: none !important
 }
 
 .library-list .nav-tabs .li-active {
@@ -18615,7 +19547,7 @@ svg.highcharts-root {
 .model-page .subheader h4 {
   margin-top: 0;
   margin-bottom: 0;
-  font-family: "Lato"!important;
+  font-family: "Lato" !important;
   padding-top: 0;
   padding-bottom: 0;
   font-size: 17px;
@@ -18675,7 +19607,7 @@ svg.highcharts-root {
 }
 
 .model-page a h5 {
-  color: #000!important;
+  color: #000 !important;
   font-family: "Lato";
   margin-bottom: 1.5rem
 }
@@ -18767,8 +19699,8 @@ svg.highcharts-root {
 }
 
 .model-page .model-card .context .badge-light:hover {
-  color: #000!important;
-  background-color: #eee!important;
+  color: #000 !important;
+  background-color: #eee !important;
   cursor: pointer
 }
 
@@ -18893,8 +19825,8 @@ svg.highcharts-root {
 }
 
 .variant-card .badge-light:hover {
-  color: #000!important;
-  background-color: #eee!important;
+  color: #000 !important;
+  background-color: #eee !important;
   cursor: pointer
 }
 
@@ -19104,15 +20036,15 @@ svg.highcharts-root {
 }
 
 .model-page .header-card .badge-dark:hover {
-  background-color: #fff!important;
-  color: #0b80c3!important;
+  background-color: #fff !important;
+  color: #0b80c3 !important;
   cursor: text
 }
 
 .add-attribute-content input[type=text] {
-  border: 1px solid #e0e0e0!important;
-  padding: 5px!important;
-  border-radius: 5px!important
+  border: 1px solid #e0e0e0 !important;
+  padding: 5px !important;
+  border-radius: 5px !important
 }
 
 .model-modal-title {
@@ -19134,7 +20066,7 @@ svg.highcharts-root {
 }
 
 .model-page .model-card .context .badge-paper .icon-fal {
-  color: #1ab37c!important
+  color: #1ab37c !important
 }
 
 .model-page .model-card .context .badge-light img {
@@ -19214,7 +20146,7 @@ svg.highcharts-root {
 }
 
 .dataset-subtitle {
-  color: #6c757d!important
+  color: #6c757d !important
 }
 
 .dataset-title .dataset-edit {
@@ -19223,7 +20155,7 @@ svg.highcharts-root {
 }
 
 .method-subtitle {
-  color: #6c757d!important
+  color: #6c757d !important
 }
 
 .model-page .model-card h4 {
@@ -19393,22 +20325,22 @@ svg.highcharts-root {
 
 .datasets-filter .filter-items::-webkit-scrollbar {
   -webkit-appearance: none;
-  width: 12px!important
+  width: 12px !important
 }
 
 .datasets-filter .filter-items::-webkit-scrollbar-thumb {
-  border-radius: 10px!important;
-  background: #f3f3f3!important;
-  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .2)!important
+  border-radius: 10px !important;
+  background: #f3f3f3 !important;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .2) !important
 }
 
 .datasets-filter .filter-items::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .14)!important;
-  border-radius: 10px!important
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .14) !important;
+  border-radius: 10px !important
 }
 
 .datasets-filter .filter-items::-webkit-scrollbar-thumb:window-inactive {
-  background: #eee!important
+  background: #eee !important
 }
 
 .model-page .codehilite .nf {
@@ -19459,7 +20391,7 @@ svg.highcharts-root {
   border-radius: 5px;
   display: flex;
   justify-content: space-between;
-  align-items: center!important;
+  align-items: center !important;
   color: #0072a3;
   border: 1px solid #fff;
   line-height: 120%
@@ -19574,9 +20506,9 @@ svg.highcharts-root {
 }
 
 .model-page .results th {
-  background-color: #fff!important;
+  background-color: #fff !important;
   color: #4a4a4a;
-  font-weight: 400!important;
+  font-weight: 400 !important;
   font-size: 11px;
   letter-spacing: 1.2px;
   font-family: "SF Pro Display";
@@ -19654,9 +20586,9 @@ svg.highcharts-root {
 }
 
 .model-page .artefacts th {
-  background-color: #fff!important;
+  background-color: #fff !important;
   color: #4a4a4a;
-  font-weight: 400!important;
+  font-weight: 400 !important;
   font-size: 11px;
   letter-spacing: 1.2px;
   font-family: "SF Pro Display";
@@ -19698,7 +20630,7 @@ svg.highcharts-root {
 .model-search input[type=search] {
   font-family: "Lato";
   font-size: 14px;
-  padding-bottom: 8px!important
+  padding-bottom: 8px !important
 }
 
 .model-search input[type=submit] {
@@ -19750,7 +20682,7 @@ svg.highcharts-root {
   position: relative;
   left: 10px;
   top: 4.65rem;
-  background-color: transparent!important;
+  background-color: transparent !important;
   border: none;
   cursor: pointer
 }
@@ -19765,9 +20697,9 @@ svg.highcharts-root {
 }
 
 .model-search th {
-  background-color: #fff!important;
+  background-color: #fff !important;
   color: #4a4a4a;
-  font-weight: 400!important;
+  font-weight: 400 !important;
   font-size: 11px;
   letter-spacing: 1.2px;
   font-family: "SF Pro Display";
@@ -19893,11 +20825,11 @@ svg.highcharts-root {
 }
 
 .dataset-wide-box.item h1 a {
-  color: #007bff!important
+  color: #007bff !important
 }
 
 .dataset-wide-box.item h1 a:hover {
-  color: #0056b3!important
+  color: #0056b3 !important
 }
 
 .benchmark-details-panel .btn, .dataset-search-results .search-panel .btn {
@@ -20406,10 +21338,10 @@ svg.highcharts-root {
 }
 
 .edit-library-modal input[type=text] {
-  border: 1px solid #e0e0e0!important;
-  border-radius: 5px!important;
-  width: 100%!important;
-  padding: 10px!important
+  border: 1px solid #e0e0e0 !important;
+  border-radius: 5px !important;
+  width: 100% !important;
+  padding: 10px !important
 }
 
 .library-task-description .codehilite {
@@ -20481,7 +21413,7 @@ svg.highcharts-root {
 }
 
 .tooltip-inner {
-  background-color: #fff!important;
+  background-color: #fff !important;
   transition: background-color .25s, color .25s, box-shadow .25s;
   box-shadow: 0 9px 41px -9px rgba(0, 0, 0, .2);
   border-color: 1px solid #e0e0e0;
@@ -20494,19 +21426,19 @@ svg.highcharts-root {
 }
 
 .bs-tooltip-auto[x-placement^=top] .arrow:before, .bs-tooltip-top .arrow:before {
-  border-top-color: #777!important
+  border-top-color: #777 !important
 }
 
 .bs-tooltip-auto[x-placement^=right] .arrow:before, .bs-tooltip-right .arrow:before {
-  border-right-color: #777!important
+  border-right-color: #777 !important
 }
 
 .bs-tooltip-auto[x-placement^=bottom] .arrow:before, .bs-tooltip-bottom .arrow:before {
-  border-bottom-color: #777!important
+  border-bottom-color: #777 !important
 }
 
 .bs-tooltip-auto[x-placement^=left] .arrow:before, .bs-tooltip-left .arrow:before {
-  border-left-color: #777!important
+  border-left-color: #777 !important
 }
 
 .library-page table th {
@@ -20536,7 +21468,7 @@ svg.highcharts-root {
 .library-page .model-search input[type=search] {
   font-family: "Lato";
   font-size: 14px;
-  padding-bottom: 16px!important
+  padding-bottom: 16px !important
 }
 
 .finetune-history table {
@@ -20566,7 +21498,7 @@ svg.highcharts-root {
 }
 
 .finetune-history table th .icon-ion {
-  color: #535a61!important;
+  color: #535a61 !important;
   position: relative;
   left: 22px;
   font-size: 25px;
@@ -20599,7 +21531,7 @@ svg.highcharts-root {
 }
 
 .finetune-history td .finetune-event-title {
-  color: #535a61!important
+  color: #535a61 !important
 }
 
 .finetune-history td .finetune-authors {
@@ -20706,7 +21638,7 @@ svg.highcharts-root {
 .add-page .btn-primary {
   margin-bottom: 5px;
   font-size: 14px;
-  color: #fff!important;
+  color: #fff !important;
   position: relative;
   font-weight: 500;
   padding: 7px 18px;
@@ -20834,73 +21766,93 @@ svg.highcharts-root {
   .artefact-header .artefact-information {
     padding-top: 10px
   }
+
   .artefact-header .artefact-information p {
     font-size: 14px
   }
+
   .dataset-search-results .results-count {
     margin-top: 1rem
   }
+
   .dataset-content .description {
     padding-right: 15px
   }
+
   .dataset-infobox {
     padding-left: 15px
   }
+
   .sota-table-preview td .dataset img {
     margin-left: 0
   }
+
   .mobile-width {
-    padding-right: 25px!important;
-    padding-left: 25px!important
+    padding-right: 25px !important;
+    padding-left: 25px !important
   }
+
   .reproducibility-sidebar {
     margin-bottom: 30px;
     text-align: center
   }
+
   .newsletter-items .card-body p {
     float: left
   }
+
   .newsletter-items .card-body img {
     max-width: 100%
   }
+
   .newsletter-items .card-body h4 {
     padding-bottom: 0
   }
+
   .newsletter-items .text-secondary {
     float: left
   }
+
   .newsletter-subscribe-form .btn {
     top: 0;
     margin-top: 20px;
     margin-left: 0
   }
+
   .newsletter-items h4 {
     float: left
   }
+
   .trends-date {
-    padding-left: 0!important
+    padding-left: 0 !important
   }
+
   .trends-date, .trends-freq {
-    float: left!important
+    float: left !important
   }
+
   .sota-chart-container, .trends-page .chart-container {
     height: auto
   }
+
   .datasets-items.show-list .item-image, .sota-dataset-wide-box .item-image {
     margin: 15px 0;
     height: 90px;
     display: none
   }
+
   .dataset-wide-box .name {
     font-weight: 700;
     font-size: 18px;
     display: block;
     margin-bottom: 7px
   }
+
   .dataset-wide-box .description>p {
     font-size: 15px;
     margin-bottom: 7px
   }
+
   .dataset-details .description img {
     display: block
   }
@@ -20908,7 +21860,7 @@ svg.highcharts-root {
 
 @media only screen and (max-width:991.98px) {
   .datasets-task-top, .libraries-task-top, .methods-task-top, .sota-task-top {
-    max-height: 24.5rem!important
+    max-height: 24.5rem !important
   }
 }
 
@@ -21030,8 +21982,8 @@ svg.highcharts-root {
 }
 
 .library-page .model-card .context .badge-light:hover {
-  color: #000!important;
-  background-color: #eee!important;
+  color: #000 !important;
+  background-color: #eee !important;
   cursor: pointer
 }
 
@@ -21119,8 +22071,8 @@ svg.highcharts-root {
 
 .task-img.card-img-top {
   object-fit: contain;
-  max-width: none!important;
-  margin: 0!important
+  max-width: none !important;
+  margin: 0 !important
 }
 
 .card-background-image .task-img {
@@ -21237,7 +22189,7 @@ svg.highcharts-root {
 }
 
 .careers-page a.btn:active {
-  background-color: #009fbb!important
+  background-color: #009fbb !important
 }
 
 .careers-page .apply-now {
@@ -21398,7 +22350,7 @@ svg.highcharts-root {
 
 .sota-row-tags-cell {
   position: relative;
-  padding: 20px 10px!important
+  padding: 20px 10px !important
 }
 
 .sota-row-tags-cell .edit-tags {
@@ -21644,8 +22596,8 @@ ul li.select2-search, ul li.select2-selection__choice {
 }
 
 .select2-container--default .select2-results__option--highlighted[aria-selected] {
-  color: #00a497!important;
-  background-color: #fff!important;
+  color: #00a497 !important;
+  background-color: #fff !important;
   font-family: "Lato";
   font-size: 14px
 }
@@ -21723,11 +22675,11 @@ ul li.select2-search, ul li.select2-selection__choice {
 }
 
 .select2-selection__choice.locked-tag .select2-selection__choice__remove {
-  display: none!important
+  display: none !important
 }
 
 .global-add-task-form .select2-container {
-  width: 100%!important
+  width: 100% !important
 }
 
 .global-add-task-form .select2-container--default .select2-selection--single {
@@ -21856,9 +22808,11 @@ select.select.form-control {
   #root .navbar, .legacy-cancel .navbar {
     padding: 15px 40px
   }
+
   #root .navbar-brand, .legacy-cancel .navbar-brand {
     flex-grow: 0
   }
+
   #root .nav-link-social-img, .legacy-cancel .nav-link-social-img {
     width: 25px;
     height: 25px
@@ -22019,9 +22973,11 @@ select.select.form-control {
   .navbar {
     padding: 15px 40px
   }
+
   .navbar-brand {
     flex-grow: 0
   }
+
   .nav-link-social-img {
     width: 25px;
     height: 25px
@@ -22040,3 +22996,9 @@ select.select.form-control {
   font-weight: 500;
   font-family: "Lato", sans-serif
 }
+
+/* 
+.global-search.ui-autocomplete-input {
+  color: #05869c !important;
+  font-weight: bold;
+} */

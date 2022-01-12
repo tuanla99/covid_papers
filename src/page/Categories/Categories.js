@@ -17,7 +17,8 @@ import {
   addFavoriteProduct,
   removeFavoriteProduct,
   getSearchFilter,
-  listFavoriteProduct
+  listFavoriteProduct,
+  getListHome
 } from "../../networking/Server";
 const productPageSize = 24;
 const { Search } = Input;
@@ -35,252 +36,24 @@ class SearchCar extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      itemHeight: null,
-      filterMobile: false,
-      childrenCategories: [],
-      products: [],
-      originProducts: [],
-      totalPageProduct: 0,
-      currentPageProduct: 1,
-      dataProducer: [],
-      idProducer: "all",
-      categoriesId: "all",
-      toggleFilter: 0,
-      sortMenu: false,
-      filter: {
-        value: null,
-        limit: null,
-      },
-      currentFilter: {
-        effects: 0,
-        list: [],
-      },
-      filterPrice: {
-        fromValue: null,
-        toValue: 20000000000,
-      },
-      sort: {
-        type: null,
-        value: null,
-      },
-      selectActive: {
-        category: null,
-        trademark: null,
-        price: null,
-      },
-      producerMore: false,
-      check: true,
-      manufacturer: [],
-      total: 0,
-      dataFavorite: [],
+      dataPaper: [],
+      dataTotalPaper: 0,
     };
-    this.changePage = this.changePage.bind(this);
   }
 
   componentDidMount() {
-    getListProduct().then((res) => {
+    getListHome({ page: 1 }).then((res) => {
+      console.log('res: ', res);
       this.setState({
-        products: (res && res.data) || [],
-        total: (res && res.total) || 0,
+        dataPaper: (res && res.data) || [],
+        dataTotalPaper: (res && res.total) || 0,
       });
     });
-    getListManufacturer().then((res) => {
-      this.setState({
-        manufacturer:
-          Object.values((res && res.data && res.data.manufacturer) || {}) || [],
-      });
-    });
-    dataFilter = {
-      text: '',
-      page: 0,
-      min_price: 0,
-      max_price: 0,
-      type_product: '',
-      manufacturer: ''
-    }
   }
-
-  scrollTop = (id) => {
-    const top = id ? $(`#${id}`).offset().top - 10 : 0;
-    $("html, body").animate(
-      {
-        scrollTop: top,
-      },
-      500
-    );
-  };
-
-  onChangeManufacturer = (value, index) => {
-    dataFilter.manufacturer = value
-    getSearchFilter(dataFilter).then((res) => {
-      this.setState({
-        products: (res && res.data) || [],
-        idProducerIndex: index,
-        total: (res && res.total) || 0,
-      });
-    });
-  };
-
-  onChangeType = (value, index) => {
-    getSearchFilter(dataFilter).then((res) => {
-      this.setState({
-        products: (res && res.data) || [],
-        idProducerIndex: index,
-        total: (res && res.total) || 0,
-      });
-    });
-  };
-
-  toggleSortMenu = () => {
-    this.setState({
-      sortMenu: !this.state.sortMenu,
-    });
-  };
-
-  changePage = (current, pageSize) => {
-    const { data, dispatch, dataSite } = this.props;
-    const { filterPrice, categoriesId, idProducer, sort } = this.state;
-    const { type, value } = sort;
-    console.log("page: ", current, pageSize);
-    this.scrollTop("topCategory");
-    dataFilter.page = current - 1
-    getSearchFilter(dataFilter).then((res) => {
-      this.setState({
-        products: (res && res.data) || [],
-        total: (res && res.total) || 0,
-        currentPageProduct: current,
-      });
-    });
-  };
-
-  toggleFilterBtn(num) {
-    if (this.state.toggleFilter === num) {
-      this.setState({
-        toggleFilter: 0,
-      });
-    } else {
-      this.setState({
-        toggleFilter: num,
-      });
-    }
-  }
-
-  toggleFilterMobile = () => {
-    const { filterMobile } = this.state;
-    this.setState({
-      filterMobile: !filterMobile,
-    });
-  };
-
-  filterByProduce = async (producerId, index) => {
-    await this.setState({
-      idProducer: producerId,
-      idProducerIndex: index,
-    });
-    this.filterByCategory(null, null);
-  };
-
-  producerMore = (value) => {
-    this.setState({
-      producerMore: value,
-    });
-  };
-
-  formatNumber = (value) => {
-    if (!value) {
-      return "0";
-    }
-    // eslint-disable-next-line no-param-reassign
-    value += "";
-    const list = value.split(".");
-    const prefix = list[0].charAt(0) === "-" ? "-" : "";
-    let num = prefix ? list[0].slice(1) : list[0];
-    let result = "";
-    while (num.length > 3) {
-      result = `,${num.slice(-3)}${result}`;
-      num = num.slice(0, num.length - 3);
-    }
-    if (num) {
-      result = num + result;
-    }
-    return `${prefix}${result}${list[1] ? `.${list[1]}` : ""}`;
-  };
-
-  filterByPrice = (value, limit) => {
-    this.toggleFilterBtn(0);
-    const { filter } = this.state;
-    this.setState({
-      filterPrice: {
-        fromValue: value,
-        toValue: limit,
-      },
-    });
-  };
-
-  onFilter = () => {
-    const { webs, data, dispatch, dataSite } = this.props;
-    const { filterPrice, sort, idProducer, categoriesId, currentPageProduct } =
-      this.state;
-    const { type, value } = sort;
-    const minPrice = filterPrice.fromValue;
-    const maxPrice = filterPrice.toValue;
-    dataFilter.min_price = minPrice
-    dataFilter.max_price = maxPrice
-    getSearchFilter(dataFilter).then((res) => {
-      this.setState({
-        products: (res && res.data) || [],
-        total: (res && res.total) || 0,
-      });
-    });
-  };
-
-  onSearch = value => {
-    dataFilter.text = value
-    getSearchFilter(dataFilter).then((res) => {
-      this.setState({
-        products: (res && res.data) || [],
-        total: (res && res.total) || 0,
-      });
-    });
-  };
 
   render() {
-    const { data, dataSite } = this.props;
-    const {
-      itemHeight,
-      sortMenu,
-      filterMobile,
-      products,
-      toggleFilter,
-      filter,
-      selectActive,
-      childrenCategories,
-      currentFilter,
-      currentPageProduct,
-      totalPageProduct,
-      filterPrice,
-      sort,
-      saleTime,
-      dataProducer,
-      idProducer,
-      idProducerIndex,
-      producerMore,
-      check,
-      manufacturer,
-      total,
-      dataFavorite,
-    } = this.state;
-    const { toValue, fromValue } = filterPrice;
-    const sortType =
-      currentFilter.list.length > 0 &&
-      currentFilter.list.filter(
-        (e) =>
-          e.type === "dealPrice" || e.type === "createDate" || e.type === "name"
-      )[0] &&
-      currentFilter.list.filter(
-        (e) =>
-          e.type === "dealPrice" || e.type === "createDate" || e.type === "name"
-      )[0].value;
+    const { dataPaper, dataTotalPaper } = this.state
+    console.log('aaaaa: ', dataPaper, dataTotalPaper);
     return (
       <>
         <nav class="navbar navbar-expand-lg navbar-light header">
@@ -477,528 +250,49 @@ class SearchCar extends Component {
 
 
 
-            <div class="row infinite-item item paper-card">
+            {dataPaper?.map(item => (
+              <div class="row infinite-item item paper-card">
 
 
-              <div class="col-lg-3 item-image-col">
+                <div class="col-lg-3 item-image-col">
 
 
-                <a href="/paper/wantwords-an-open-source-online-reverse">
-                  <div class="item-image" style={{ backgroundImage: "url('https://production-media.paperswithcode.com/thumbnails/papergithubrepo/0bf9dda8-65b9-49cb-85bf-c9d04aec870c.jpg')" }}> </div>
-                </a>
+                  <a href="/paper/wantwords-an-open-source-online-reverse">
+                    <div class="item-image" style={{ backgroundImage: "url('https://production-media.paperswithcode.com/thumbnails/papergithubrepo/0bf9dda8-65b9-49cb-85bf-c9d04aec870c.jpg')" }}> </div>
+                  </a>
 
 
-              </div>
+                </div>
 
 
-              <div class="col-lg-9 item-col">
-                <div class="row">
-                  <div class="col-lg-9 item-content">
-
-
-
-                    <h1><Link to="/paper">Attention Mechanisms in Computer Vision: A Survey</Link></h1>
-
-
-                    {/* <p class="author-section" style={{paddingTop:'2px'}}>
-
-
-
-
-                    <span class="item-github-link">
-                      <span class=" icon-wrapper icon-ion" data-name="logo-github"><svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512"><path d="M256 32C132.3 32 32 134.9 32 261.7c0 101.5 64.2 187.5 153.2 217.9a17.56 17.56 0 0 0 3.8.4c8.3 0 11.5-6.1 11.5-11.4 0-5.5-.2-19.9-.3-39.1a102.4 102.4 0 0 1-22.6 2.7c-43.1 0-52.9-33.5-52.9-33.5-10.2-26.5-24.9-33.6-24.9-33.6-19.5-13.7-.1-14.1 1.4-14.1h.1c22.5 2 34.3 23.8 34.3 23.8 11.2 19.6 26.2 25.1 39.6 25.1a63 63 0 0 0 25.6-6c2-14.8 7.8-24.9 14.2-30.7-49.7-5.8-102-25.5-102-113.5 0-25.1 8.7-45.6 23-61.6-2.3-5.8-10-29.2 2.2-60.8a18.64 18.64 0 0 1 5-.5c8.1 0 26.4 3.1 56.6 24.1a208.21 208.21 0 0 1 112.2 0c30.2-21 48.5-24.1 56.6-24.1a18.64 18.64 0 0 1 5 .5c12.2 31.6 4.5 55 2.2 60.8 14.3 16.1 23 36.6 23 61.6 0 88.2-52.4 107.6-102.3 113.3 8 7.1 15.2 21.1 15.2 42.5 0 30.7-.3 55.5-.3 63 0 5.4 3.1 11.5 11.4 11.5a19.35 19.35 0 0 0 4-.4C415.9 449.2 480 363.1 480 261.7 480 134.9 379.7 32 256 32z"></path></svg></span>  <a href="https://github.com/thunlp/WantWords" onclick="captureOutboundLink('https://github.com/thunlp/WantWords'); return true;" style={{fontSize:'13px'}}>
-                        thunlp/WantWords
-                      </a>
-                    </span>
-
-
-
-                    •  <span class="item-framework-link">
-                      <img class="" src="https://production-assets.paperswithcode.com/perf/images/frameworks/pytorch-2fbf2cb9.png" />
-                    </span>
-
-
-
-
-
-
-                    • <span class="item-conference-link">
-                      <a href="/conference/emnlp-2020-11">
-                        EMNLP 2020
-
-                      </a>
-                    </span>
-
-
-
-                  </p> */}
-
-                    <p class="item-strip-abstract">Humans can naturally and effectively find salient regions in complex scenes.</p>
-
-                    <div class="sota">
-
+                <div class="col-lg-9 item-col">
+                  <div class="row">
+                    <div class="col-lg-9 item-content">
+                      <h1><Link to={`/paper?id=${item?.id}`}>{item?.title}</Link></h1>
+                      <p class="author-section" style={{ paddingTop: '2px' }}>
+                        <span class="item-github-link">
+                          {item?.author}
+                        </span>
+                      </p>
+                      <p class="item-strip-abstract">{item?.abstract?.split('.')?.[0]}</p>
+                      <div class="sota">
+                      </div>
+                      <p>
+                      </p>
                     </div>
-
-
-
-
-                    <p>
-
-
-
-                    </p>
-
-                  </div>
-
-                  <div class="col-lg-3 item-interact text-center">
-                    {/* <div class="entity-stars">
-
-
-                    <span class="badge badge-secondary"><span class=" icon-wrapper icon-ion" data-name="star"><svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512"><path d="M394 480a16 16 0 0 1-9.39-3L256 383.76 127.39 477a16 16 0 0 1-24.55-18.08L153 310.35 23 221.2a16 16 0 0 1 9-29.2h160.38l48.4-148.95a16 16 0 0 1 30.44 0l48.4 149H480a16 16 0 0 1 9.05 29.2L359 310.35l50.13 148.53A16 16 0 0 1 394 480z"></path></svg></span> 741</span>
-
-
-                  </div> */}
-
-
-                    {/* <div class="stars-accumulated text-center">
-                    2.28 stars / hour
-                  </div> */}
-
-
-
-
-                    <div class="entity" style={{ marginBottom: '20px' }}>
-                      <Link to="/paper" class="badge badge-light ">
-                        <span class=" icon-wrapper icon-ion" data-name="document"><svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512"><path d="M428 224H288a48 48 0 0 1-48-48V36a4 4 0 0 0-4-4h-92a64 64 0 0 0-64 64v320a64 64 0 0 0 64 64h224a64 64 0 0 0 64-64V228a4 4 0 0 0-4-4z"></path><path d="M419.22 188.59L275.41 44.78a2 2 0 0 0-3.41 1.41V176a16 16 0 0 0 16 16h129.81a2 2 0 0 0 1.41-3.41z"></path></svg></span> Paper
-                      </Link>
-                      <br />
-
-
-
-                      {/* <a href="/paper/wantwords-an-open-source-online-reverse#code" class="badge badge-dark ">
-                      <span class=" icon-wrapper icon-ion" data-name="logo-github"><svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512"><path d="M256 32C132.3 32 32 134.9 32 261.7c0 101.5 64.2 187.5 153.2 217.9a17.56 17.56 0 0 0 3.8.4c8.3 0 11.5-6.1 11.5-11.4 0-5.5-.2-19.9-.3-39.1a102.4 102.4 0 0 1-22.6 2.7c-43.1 0-52.9-33.5-52.9-33.5-10.2-26.5-24.9-33.6-24.9-33.6-19.5-13.7-.1-14.1 1.4-14.1h.1c22.5 2 34.3 23.8 34.3 23.8 11.2 19.6 26.2 25.1 39.6 25.1a63 63 0 0 0 25.6-6c2-14.8 7.8-24.9 14.2-30.7-49.7-5.8-102-25.5-102-113.5 0-25.1 8.7-45.6 23-61.6-2.3-5.8-10-29.2 2.2-60.8a18.64 18.64 0 0 1 5-.5c8.1 0 26.4 3.1 56.6 24.1a208.21 208.21 0 0 1 112.2 0c30.2-21 48.5-24.1 56.6-24.1a18.64 18.64 0 0 1 5 .5c12.2 31.6 4.5 55 2.2 60.8 14.3 16.1 23 36.6 23 61.6 0 88.2-52.4 107.6-102.3 113.3 8 7.1 15.2 21.1 15.2 42.5 0 30.7-.3 55.5-.3 63 0 5.4 3.1 11.5 11.4 11.5a19.35 19.35 0 0 0 4-.4C415.9 449.2 480 363.1 480 261.7 480 134.9 379.7 32 256 32z"></path></svg></span> Code
-                    </a> */}
-
-                      <br />
-
+                    <div class="col-lg-3 item-interact text-center">
+                      <div class="entity" style={{ marginBottom: '20px' }}>
+                        <Link to={`/paper?id=${item?.id}`} class="badge badge-light ">
+                          <span class=" icon-wrapper icon-ion" data-name="document"><svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512"><path d="M428 224H288a48 48 0 0 1-48-48V36a4 4 0 0 0-4-4h-92a64 64 0 0 0-64 64v320a64 64 0 0 0 64 64h224a64 64 0 0 0 64-64V228a4 4 0 0 0-4-4z"></path><path d="M419.22 188.59L275.41 44.78a2 2 0 0 0-3.41 1.41V176a16 16 0 0 0 16 16h129.81a2 2 0 0 0 1.41-3.41z"></path></svg></span> Paper
+                        </Link>
+                        <br />
+                        <br />
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-
-
-
-            </div>
-
-
-
-
-
-
-
-            <div class="row infinite-item item paper-card">
-
-
-              <div class="col-lg-3 item-image-col">
-
-
-                <a href="/paper/caranet-context-axial-reverse-attention">
-                  <div class="item-image" style={{ backgroundImage: "url('https://production-media.paperswithcode.com/thumbnails/paper/2108.07368.jpg')" }}> </div>
-                </a>
-
-
-              </div>
-
-
-              <div class="col-lg-9 item-col">
-                <div class="row">
-                  <div class="col-lg-9 item-content">
-
-
-
-                    <h1><a href="/paper/caranet-context-axial-reverse-attention">CaraNet: Context Axial Reverse Attention Network for Segmentation of Small Medical Objects</a></h1>
-
-
-                    {/* <p class="author-section" style={{paddingTop:'2px'}}>
-
-
-
-
-                    <span class="item-github-link">
-                      <span class=" icon-wrapper icon-ion" data-name="logo-github"><svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512"><path d="M256 32C132.3 32 32 134.9 32 261.7c0 101.5 64.2 187.5 153.2 217.9a17.56 17.56 0 0 0 3.8.4c8.3 0 11.5-6.1 11.5-11.4 0-5.5-.2-19.9-.3-39.1a102.4 102.4 0 0 1-22.6 2.7c-43.1 0-52.9-33.5-52.9-33.5-10.2-26.5-24.9-33.6-24.9-33.6-19.5-13.7-.1-14.1 1.4-14.1h.1c22.5 2 34.3 23.8 34.3 23.8 11.2 19.6 26.2 25.1 39.6 25.1a63 63 0 0 0 25.6-6c2-14.8 7.8-24.9 14.2-30.7-49.7-5.8-102-25.5-102-113.5 0-25.1 8.7-45.6 23-61.6-2.3-5.8-10-29.2 2.2-60.8a18.64 18.64 0 0 1 5-.5c8.1 0 26.4 3.1 56.6 24.1a208.21 208.21 0 0 1 112.2 0c30.2-21 48.5-24.1 56.6-24.1a18.64 18.64 0 0 1 5 .5c12.2 31.6 4.5 55 2.2 60.8 14.3 16.1 23 36.6 23 61.6 0 88.2-52.4 107.6-102.3 113.3 8 7.1 15.2 21.1 15.2 42.5 0 30.7-.3 55.5-.3 63 0 5.4 3.1 11.5 11.4 11.5a19.35 19.35 0 0 0 4-.4C415.9 449.2 480 363.1 480 261.7 480 134.9 379.7 32 256 32z"></path></svg></span>  <a href="https://github.com/AngeLouCN/CaraNet" onclick="captureOutboundLink('https://github.com/AngeLouCN/CaraNet'); return true;" style={{fontSize:'13px'}}>
-                        AngeLouCN/CaraNet
-                      </a>
-                    </span>
-
-
-
-                    •  <span class="item-framework-link">
-                      <img class="" src="https://production-assets.paperswithcode.com/perf/images/frameworks/pytorch-2fbf2cb9.png" />
-                    </span>
-
-
-
-
-
-
-                    •
-                    <span class="author-name-text item-date-pub">16 Aug 2021</span>
-
-
-
-                  </p> */}
-
-                    <p class="item-strip-abstract">Segmenting medical images accurately and reliably is important for disease diagnosis and treatment.</p>
-
-                    {/* <div class="sota">
-
-
-                    <p>
-                      <a href="/sota/medical-image-segmentation-on-etis">
-                        <img style={{height:'20px', width:"35px", position:"relative", top:'1px'}} src="https://production-media.paperswithcode.com/sota-thumbs/medical-image-segmentation-on-etis-small_60a11876.png" />
-                      </a>
-                      Ranked #2 on
-                      <a href="/sota/medical-image-segmentation-on-etis">
-                        Medical Image Segmentation
-                        on ETIS-LARIBPOLYPDB
-                      </a>
-
-
-
-                    </p>
-
-
-                  </div> */}
-
-
-
-
-                    {/* <p>
-
-                    <a href="/task/medical-image-segmentation">
-                      <span class="badge badge-primary">
-
-                        <img src="https://production-media.paperswithcode.com/thumbnails/task/task-0000000876-6fbe75a2_gBlYteG.jpg" />
-
-                        <span>Medical Image Segmentation</span>
-                      </span>
-                    </a>
-
-
-
-                  </p> */}
-
-                  </div>
-
-                  <div class="col-lg-3 item-interact text-center">
-                    {/* <div class="entity-stars">
-
-
-                    <span class="badge badge-secondary"><span class=" icon-wrapper icon-ion" data-name="star"><svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512"><path d="M394 480a16 16 0 0 1-9.39-3L256 383.76 127.39 477a16 16 0 0 1-24.55-18.08L153 310.35 23 221.2a16 16 0 0 1 9-29.2h160.38l48.4-148.95a16 16 0 0 1 30.44 0l48.4 149H480a16 16 0 0 1 9.05 29.2L359 310.35l50.13 148.53A16 16 0 0 1 394 480z"></path></svg></span> 380</span>
-
-
-                  </div> */}
-
-
-                    {/* <div class="stars-accumulated text-center">
-                    1.06 stars / hour
-                  </div> */}
-
-
-
-
-                    <div class="entity" style={{ marginBottom: "20px" }}>
-
-                      <a href="/paper/caranet-context-axial-reverse-attention" class="badge badge-light ">
-                        <span class=" icon-wrapper icon-ion" data-name="document"><svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512"><path d="M428 224H288a48 48 0 0 1-48-48V36a4 4 0 0 0-4-4h-92a64 64 0 0 0-64 64v320a64 64 0 0 0 64 64h224a64 64 0 0 0 64-64V228a4 4 0 0 0-4-4z"></path><path d="M419.22 188.59L275.41 44.78a2 2 0 0 0-3.41 1.41V176a16 16 0 0 0 16 16h129.81a2 2 0 0 0 1.41-3.41z"></path></svg></span> Paper
-                      </a>
-
-                      <br />
-
-
-
-                      {/* <a href="/paper/caranet-context-axial-reverse-attention#code" class="badge badge-dark ">
-                      <span class=" icon-wrapper icon-ion" data-name="logo-github"><svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512"><path d="M256 32C132.3 32 32 134.9 32 261.7c0 101.5 64.2 187.5 153.2 217.9a17.56 17.56 0 0 0 3.8.4c8.3 0 11.5-6.1 11.5-11.4 0-5.5-.2-19.9-.3-39.1a102.4 102.4 0 0 1-22.6 2.7c-43.1 0-52.9-33.5-52.9-33.5-10.2-26.5-24.9-33.6-24.9-33.6-19.5-13.7-.1-14.1 1.4-14.1h.1c22.5 2 34.3 23.8 34.3 23.8 11.2 19.6 26.2 25.1 39.6 25.1a63 63 0 0 0 25.6-6c2-14.8 7.8-24.9 14.2-30.7-49.7-5.8-102-25.5-102-113.5 0-25.1 8.7-45.6 23-61.6-2.3-5.8-10-29.2 2.2-60.8a18.64 18.64 0 0 1 5-.5c8.1 0 26.4 3.1 56.6 24.1a208.21 208.21 0 0 1 112.2 0c30.2-21 48.5-24.1 56.6-24.1a18.64 18.64 0 0 1 5 .5c12.2 31.6 4.5 55 2.2 60.8 14.3 16.1 23 36.6 23 61.6 0 88.2-52.4 107.6-102.3 113.3 8 7.1 15.2 21.1 15.2 42.5 0 30.7-.3 55.5-.3 63 0 5.4 3.1 11.5 11.4 11.5a19.35 19.35 0 0 0 4-.4C415.9 449.2 480 363.1 480 261.7 480 134.9 379.7 32 256 32z"></path></svg></span> Code
-                    </a> */}
-
-                      <br />
-
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-
-
-            </div>
-
-
-            <div class="row infinite-item item paper-card">
-
-              <div class="col-lg-3 item-image-col">
-
-
-                <a href="/paper/efficiently-modeling-long-sequences-with-1">
-                  <div class="item-image" style={{ backgroundImage: "url('https://production-media.paperswithcode.com/thumbnails/papergithubrepo/27ac2e6a-ea9b-42c6-8319-6c13a1e087fa.jpg')" }}> </div>
-                </a>
-
-
-              </div>
-
-
-              <div class="col-lg-9 item-col">
-                <div class="row">
-                  <div class="col-lg-9 item-content">
-
-
-
-                    <h1><a href="/paper/efficiently-modeling-long-sequences-with-1">Efficiently Modeling Long Sequences with Structured State Spaces</a></h1>
-
-
-                    {/* <p class="author-section" style={{paddingTop:"2px"}}>
-
-
-
-
-                    <span class="item-github-link">
-                      <span class=" icon-wrapper icon-ion" data-name="logo-github"><svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512"><path d="M256 32C132.3 32 32 134.9 32 261.7c0 101.5 64.2 187.5 153.2 217.9a17.56 17.56 0 0 0 3.8.4c8.3 0 11.5-6.1 11.5-11.4 0-5.5-.2-19.9-.3-39.1a102.4 102.4 0 0 1-22.6 2.7c-43.1 0-52.9-33.5-52.9-33.5-10.2-26.5-24.9-33.6-24.9-33.6-19.5-13.7-.1-14.1 1.4-14.1h.1c22.5 2 34.3 23.8 34.3 23.8 11.2 19.6 26.2 25.1 39.6 25.1a63 63 0 0 0 25.6-6c2-14.8 7.8-24.9 14.2-30.7-49.7-5.8-102-25.5-102-113.5 0-25.1 8.7-45.6 23-61.6-2.3-5.8-10-29.2 2.2-60.8a18.64 18.64 0 0 1 5-.5c8.1 0 26.4 3.1 56.6 24.1a208.21 208.21 0 0 1 112.2 0c30.2-21 48.5-24.1 56.6-24.1a18.64 18.64 0 0 1 5 .5c12.2 31.6 4.5 55 2.2 60.8 14.3 16.1 23 36.6 23 61.6 0 88.2-52.4 107.6-102.3 113.3 8 7.1 15.2 21.1 15.2 42.5 0 30.7-.3 55.5-.3 63 0 5.4 3.1 11.5 11.4 11.5a19.35 19.35 0 0 0 4-.4C415.9 449.2 480 363.1 480 261.7 480 134.9 379.7 32 256 32z"></path></svg></span>  <a href="https://github.com/hazyresearch/state-spaces" onclick="captureOutboundLink('https://github.com/hazyresearch/state-spaces'); return true;" style={{fontSize:'13px'}}>
-                        hazyresearch/state-spaces
-                      </a>
-                    </span>
-
-
-
-                    •  <span class="item-framework-link">
-                      <img class="" src="https://production-assets.paperswithcode.com/perf/images/frameworks/pytorch-2fbf2cb9.png" />
-                    </span>
-
-
-
-
-
-
-                    •
-                    <span class="author-name-text item-date-pub">31 Oct 2021</span>
-
-
-
-                  </p> */}
-
-                    <p class="item-strip-abstract">A central goal of sequence modeling is designing a single principled model that can address sequence data across a range of modalities and tasks, particularly on long-range dependencies.</p>
-
-                    {/* <div class="sota">
-
-
-                    <p>
-                      <a href="/sota/long-range-modeling-on-lra">
-                        <img style={{height:'20px', width:"35px", position:"relative", top:'1px'}}src="https://production-media.paperswithcode.com/sota-thumbs/long-range-modeling-on-lra-small_3f1b36f7.png" />
-                      </a>
-                      &nbsp;Ranked #1 on
-                      <a class="sota-task" href="/sota/long-range-modeling-on-lra">
-                        Long-range modeling
-                        on LRA
-                      </a>
-
-
-
-
-                    </p>
-
-
-                  </div> */}
-
-
-
-
-                    {/* <p>
-
-                    <a href="/task/data-augmentation">
-                      <span class="badge badge-primary">
-
-                        <img src="https://production-media.paperswithcode.com/thumbnails/task/task-0000001560-029cbc00.jpg" />
-
-                        <span>Data Augmentation</span>
-                      </span>
-                    </a>
-
-                    <a href="/task/long-range-modeling">
-                      <span class="badge badge-primary">
-
-                        <img src="https://production-media.paperswithcode.com/tasks/default.gif" />
-
-                        <span>Long-range modeling</span>
-                      </span>
-                    </a>
-
-
-
-                  </p> */}
-
-                  </div>
-
-                  <div class="col-lg-3 item-interact text-center">
-                    {/* <div class="entity-stars">
-
-
-                    <span class="badge badge-secondary"><span class=" icon-wrapper icon-ion" data-name="star"><svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512"><path d="M394 480a16 16 0 0 1-9.39-3L256 383.76 127.39 477a16 16 0 0 1-24.55-18.08L153 310.35 23 221.2a16 16 0 0 1 9-29.2h160.38l48.4-148.95a16 16 0 0 1 30.44 0l48.4 149H480a16 16 0 0 1 9.05 29.2L359 310.35l50.13 148.53A16 16 0 0 1 394 480z"></path></svg></span> 157</span>
-
-
-                  </div> */}
-
-
-                    {/* <div class="stars-accumulated text-center">
-                    0.54 stars / hour
-                  </div> */}
-
-
-
-
-                    <div class="entity" style={{ marginBottom: "20px" }}>
-
-                      <a href="/paper/efficiently-modeling-long-sequences-with-1" class="badge badge-light ">
-                        <span class=" icon-wrapper icon-ion" data-name="document"><svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512"><path d="M428 224H288a48 48 0 0 1-48-48V36a4 4 0 0 0-4-4h-92a64 64 0 0 0-64 64v320a64 64 0 0 0 64 64h224a64 64 0 0 0 64-64V228a4 4 0 0 0-4-4z"></path><path d="M419.22 188.59L275.41 44.78a2 2 0 0 0-3.41 1.41V176a16 16 0 0 0 16 16h129.81a2 2 0 0 0 1.41-3.41z"></path></svg></span> Paper
-                      </a>
-
-                      <br />
-
-
-
-                      {/* <a href="/paper/efficiently-modeling-long-sequences-with-1#code" class="badge badge-dark ">
-                      <span class=" icon-wrapper icon-ion" data-name="logo-github"><svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512"><path d="M256 32C132.3 32 32 134.9 32 261.7c0 101.5 64.2 187.5 153.2 217.9a17.56 17.56 0 0 0 3.8.4c8.3 0 11.5-6.1 11.5-11.4 0-5.5-.2-19.9-.3-39.1a102.4 102.4 0 0 1-22.6 2.7c-43.1 0-52.9-33.5-52.9-33.5-10.2-26.5-24.9-33.6-24.9-33.6-19.5-13.7-.1-14.1 1.4-14.1h.1c22.5 2 34.3 23.8 34.3 23.8 11.2 19.6 26.2 25.1 39.6 25.1a63 63 0 0 0 25.6-6c2-14.8 7.8-24.9 14.2-30.7-49.7-5.8-102-25.5-102-113.5 0-25.1 8.7-45.6 23-61.6-2.3-5.8-10-29.2 2.2-60.8a18.64 18.64 0 0 1 5-.5c8.1 0 26.4 3.1 56.6 24.1a208.21 208.21 0 0 1 112.2 0c30.2-21 48.5-24.1 56.6-24.1a18.64 18.64 0 0 1 5 .5c12.2 31.6 4.5 55 2.2 60.8 14.3 16.1 23 36.6 23 61.6 0 88.2-52.4 107.6-102.3 113.3 8 7.1 15.2 21.1 15.2 42.5 0 30.7-.3 55.5-.3 63 0 5.4 3.1 11.5 11.4 11.5a19.35 19.35 0 0 0 4-.4C415.9 449.2 480 363.1 480 261.7 480 134.9 379.7 32 256 32z"></path></svg></span> Code
-                    </a> */}
-
-                      <br />
-
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-
-
-            </div>
-
-            <div class="row infinite-item item paper-card">
-
-              <div class="col-lg-3 item-image-col">
-
-
-                <a href="/paper/mastering-atari-games-with-limited-data">
-                  <div class="item-image" style={{ backgroundImage: "url('https://production-media.paperswithcode.com/thumbnails/paper/2111.00210.jpg')" }}> </div>
-                </a>
-
-
-              </div>
-
-
-              <div class="col-lg-9 item-col">
-                <div class="row">
-                  <div class="col-lg-9 item-content">
-
-
-
-                    <h1><a href="/paper/mastering-atari-games-with-limited-data">Mastering Atari Games with Limited Data</a></h1>
-
-
-                    {/* <p class="author-section" style={{paddingTop:'2px'}}>
-
-
-
-
-                    <span class="item-github-link">
-                      <span class=" icon-wrapper icon-ion" data-name="logo-github"><svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512"><path d="M256 32C132.3 32 32 134.9 32 261.7c0 101.5 64.2 187.5 153.2 217.9a17.56 17.56 0 0 0 3.8.4c8.3 0 11.5-6.1 11.5-11.4 0-5.5-.2-19.9-.3-39.1a102.4 102.4 0 0 1-22.6 2.7c-43.1 0-52.9-33.5-52.9-33.5-10.2-26.5-24.9-33.6-24.9-33.6-19.5-13.7-.1-14.1 1.4-14.1h.1c22.5 2 34.3 23.8 34.3 23.8 11.2 19.6 26.2 25.1 39.6 25.1a63 63 0 0 0 25.6-6c2-14.8 7.8-24.9 14.2-30.7-49.7-5.8-102-25.5-102-113.5 0-25.1 8.7-45.6 23-61.6-2.3-5.8-10-29.2 2.2-60.8a18.64 18.64 0 0 1 5-.5c8.1 0 26.4 3.1 56.6 24.1a208.21 208.21 0 0 1 112.2 0c30.2-21 48.5-24.1 56.6-24.1a18.64 18.64 0 0 1 5 .5c12.2 31.6 4.5 55 2.2 60.8 14.3 16.1 23 36.6 23 61.6 0 88.2-52.4 107.6-102.3 113.3 8 7.1 15.2 21.1 15.2 42.5 0 30.7-.3 55.5-.3 63 0 5.4 3.1 11.5 11.4 11.5a19.35 19.35 0 0 0 4-.4C415.9 449.2 480 363.1 480 261.7 480 134.9 379.7 32 256 32z"></path></svg></span>  <a href="https://github.com/yewr/efficientzero" onclick="captureOutboundLink('https://github.com/yewr/efficientzero'); return true;" style={{fontSize:'13px'}}>
-                        yewr/efficientzero
-                      </a>
-                    </span>
-
-
-
-                    •  <span class="item-framework-link">
-                      <img class="" src="https://production-assets.paperswithcode.com/perf/images/frameworks/pytorch-2fbf2cb9.png" />
-                    </span>
-
-
-
-
-
-
-                    •
-                    <span class="author-name-text item-date-pub">30 Oct 2021</span>
-
-
-
-                  </p> */}
-
-                    <p class="item-strip-abstract">Recently, there has been significant progress in sample efficient image-based RL algorithms; however, consistent human-level performance on the Atari game benchmark remains an elusive goal.</p>
-
-                    {/* <div class="sota">
-
-                  </div> */}
-
-
-
-
-                    {/* <p>
-
-                    <a href="/task/atari-games">
-                      <span class="badge badge-primary">
-
-                        <img src="https://production-media.paperswithcode.com/thumbnails/task/task-0000000900-b86ba7ff.jpg" />
-
-                        <span>Atari Games</span>
-                      </span>
-                    </a>
-
-
-
-                  </p> */}
-
-                  </div>
-
-                  <div class="col-lg-3 item-interact text-center">
-                    {/* <div class="entity-stars">
-
-
-                    <span class="badge badge-secondary"><span class=" icon-wrapper icon-ion" data-name="star"><svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512"><path d="M394 480a16 16 0 0 1-9.39-3L256 383.76 127.39 477a16 16 0 0 1-24.55-18.08L153 310.35 23 221.2a16 16 0 0 1 9-29.2h160.38l48.4-148.95a16 16 0 0 1 30.44 0l48.4 149H480a16 16 0 0 1 9.05 29.2L359 310.35l50.13 148.53A16 16 0 0 1 394 480z"></path></svg></span> 250</span>
-
-
-                  </div> */}
-
-                    {/* 
-                  <div class="stars-accumulated text-center">
-                    0.50 stars / hour
-                  </div> */}
-
-
-
-
-                    <div class="entity" style={{ marginBottom: "20px" }}>
-
-                      <a href="/paper/mastering-atari-games-with-limited-data" class="badge badge-light ">
-                        <span class=" icon-wrapper icon-ion" data-name="document"><svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512"><path d="M428 224H288a48 48 0 0 1-48-48V36a4 4 0 0 0-4-4h-92a64 64 0 0 0-64 64v320a64 64 0 0 0 64 64h224a64 64 0 0 0 64-64V228a4 4 0 0 0-4-4z"></path><path d="M419.22 188.59L275.41 44.78a2 2 0 0 0-3.41 1.41V176a16 16 0 0 0 16 16h129.81a2 2 0 0 0 1.41-3.41z"></path></svg></span> Paper
-                      </a>
-
-                      <br />
-
-
-
-                      {/* <a href="/paper/mastering-atari-games-with-limited-data#code" class="badge badge-dark ">
-                      <span class=" icon-wrapper icon-ion" data-name="logo-github"><svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512"><path d="M256 32C132.3 32 32 134.9 32 261.7c0 101.5 64.2 187.5 153.2 217.9a17.56 17.56 0 0 0 3.8.4c8.3 0 11.5-6.1 11.5-11.4 0-5.5-.2-19.9-.3-39.1a102.4 102.4 0 0 1-22.6 2.7c-43.1 0-52.9-33.5-52.9-33.5-10.2-26.5-24.9-33.6-24.9-33.6-19.5-13.7-.1-14.1 1.4-14.1h.1c22.5 2 34.3 23.8 34.3 23.8 11.2 19.6 26.2 25.1 39.6 25.1a63 63 0 0 0 25.6-6c2-14.8 7.8-24.9 14.2-30.7-49.7-5.8-102-25.5-102-113.5 0-25.1 8.7-45.6 23-61.6-2.3-5.8-10-29.2 2.2-60.8a18.64 18.64 0 0 1 5-.5c8.1 0 26.4 3.1 56.6 24.1a208.21 208.21 0 0 1 112.2 0c30.2-21 48.5-24.1 56.6-24.1a18.64 18.64 0 0 1 5 .5c12.2 31.6 4.5 55 2.2 60.8 14.3 16.1 23 36.6 23 61.6 0 88.2-52.4 107.6-102.3 113.3 8 7.1 15.2 21.1 15.2 42.5 0 30.7-.3 55.5-.3 63 0 5.4 3.1 11.5 11.4 11.5a19.35 19.35 0 0 0 4-.4C415.9 449.2 480 363.1 480 261.7 480 134.9 379.7 32 256 32z"></path></svg></span> Code
-                    </a> */}
-
-                      <br />
-
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-
-
-            </div>
-
-
-
+            ))}
           </div>
 
           <div class="loading" style={{ display: "none" }}>

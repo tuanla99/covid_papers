@@ -247,4 +247,34 @@ async function getType(value) {
 //     }
 // }
 
-export { login, register, getSearch, getListManufacturer, getDetail, getSameRangeManufacturer, getListProduct, getSearchPrice, getType, getSearchPage, getSearchFilter, getSearchPageName };
+async function getListHome({ page }) {
+  try {
+    let response = await fetch(`https://system-integration.herokuapp.com/api/v1/news/index?page=${page}`);
+    let responseJson = await response.json();
+    return responseJson;
+  } catch (error) {
+    console.error(`Error is : ${error}`);
+  }
+}
+
+async function getDetailParper({ id }) {
+  try {
+    let response = await fetch(`https://system-integration.herokuapp.com/api/v1/news/show/${id}`);
+    let responseJson = await response.json();
+    return responseJson;
+  } catch (error) {
+    console.error(`Error is : ${error}`);
+  }
+}
+
+async function getSearchPaper({ search }) {
+  try {
+    let response = await fetch(`https://system-integration.herokuapp.com/api/v1/news/search?q=${search}`);
+    let responseJson = await response.json();
+    return responseJson;
+  } catch (error) {
+    console.error(`Error is : ${error}`);
+  }
+}
+
+export { login, register, getSearch, getListManufacturer, getDetail, getSameRangeManufacturer, getListProduct, getSearchPrice, getType, getSearchPage, getSearchFilter, getSearchPageName, getListHome, getDetailParper, getSearchPaper };
