@@ -1,0 +1,273 @@
+openapi: 3.0.0
+info:
+  description: |
+    Api cho môn tích hợp hệ thống
+  version: 1.0.0-oas3
+  title: Api Document
+servers:
+  - url: https://system-integration.herokuapp.com/api/v1
+    description: server heroku
+  - url: http://127.0.0.1:8000/api/v1
+    description: server test
+tags:
+  - name: news
+    description: danh sách API để lấy bài báo
+paths:
+  /news/index:
+    get:
+      tags:
+        - news
+      summary: Get all news
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  current_page:
+                    type: integer
+                  data:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/News'
+                  first_page_url:
+                    type: string
+                    description: url first page
+                    default: "http://127.0.0.1:8000/api/v1/news/index?page=1"
+                  from:
+                    type: integer
+                  to:
+                    type: integer
+                  last_page:
+                    type: integer
+                  last_page_url:
+                    type: string
+                    default: "ví dụ http://127.0.0.1:8000/api/v1/news/index?page=6"
+                  links:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/Link'
+                  next_page_url:
+                    type: string
+                    default: " ví dụ: http://127.0.0.1:8000/api/v1/news/index?page=2"
+                  path:
+                    type: string
+                    default: "http://127.0.0.1:8000/api/v1/news/index"
+                  per_page:
+                    type: integer
+                    default: 10
+                  prev_page_url:
+                    type: string
+                    default: " ví dụ: http://127.0.0.1:8000/api/v1/news/index?page=2"
+                  total:
+                    type: integer
+  
+  /news/show/{newsId}:
+    get:
+      tags:
+        - news
+      summary: Show detail news
+      parameters: 
+        - name: newsId
+          in: path
+          required: true
+          description: id of target news
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: object
+                    properties:
+                      id:
+                        type: integer
+                        format: int64
+                      title:
+                        type: string
+                      author:
+                        type: string
+                      abstract:
+                        type: string
+                      created_at:
+                        type: string
+                        format: date-time
+                      updated_at:
+                        type: string
+                        format: date-time
+                      similar_news:
+                        type: array
+                        items:
+                          $ref: '#/components/schemas/News'
+
+  /news/category/{category}:
+    get:
+      tags:
+        - news
+      summary: Get news by category
+      parameters: 
+        - name: category
+          in: path
+          required: true
+          description: category
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  current_page:
+                    type: integer
+                  data:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/News'
+                  first_page_url:
+                    type: string
+                    description: url first page
+                    default: "http://127.0.0.1:8000/api/v1/news/index?page=1"
+                  from:
+                    type: integer
+                  to:
+                    type: integer
+                  last_page:
+                    type: integer
+                  last_page_url:
+                    type: string
+                    default: "ví dụ http://127.0.0.1:8000/api/v1/news/index?page=6"
+                  links:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/Link'
+                  next_page_url:
+                    type: string
+                    default: " ví dụ: http://127.0.0.1:8000/api/v1/news/index?page=2"
+                  path:
+                    type: string
+                    default: "http://127.0.0.1:8000/api/v1/news/index"
+                  per_page:
+                    type: integer
+                    default: 10
+                  prev_page_url:
+                    type: string
+                    default: " ví dụ: http://127.0.0.1:8000/api/v1/news/index?page=2"
+                  total:
+                    type: integer
+                          
+  /news/search:
+    get:
+      tags:
+        - news
+      summary: Search
+      parameters:
+        - in: query
+          name: q
+          schema:
+            type: string
+          description: query
+        - in: query
+          name: per
+          schema:
+            type: integer
+          description: default 10
+        - in: query
+          name: page
+          schema:
+            type: integer
+          description: default 1
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  total:
+                    type: object
+                    properties:
+                      value:
+                        type: string
+                        description: total results
+                      relation:
+                        type: string
+                        default: "eq"
+                  max_score:
+                    type: number
+                  hits:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/Search'
+                        
+                            
+      
+components:
+  schemas:
+    News:
+      type: object
+      properties:
+        id:
+          type: integer
+          format: int64
+        title:
+          type: string
+        author:
+          type: string
+        abstract:
+          type: string
+        created_at:
+          type: string
+          format: date-time
+        updated_at:
+          type: string
+          format: date-time
+    Link:
+      type: object
+      properties:
+        url:
+          type: string
+        label:
+          type: integer
+        active:
+          type: boolean
+    Search:
+      type: object
+      properties:
+        _index:
+          type: string
+          default: "news"
+        _id:
+          type: string
+        _score:
+          type: integer
+        _source:
+          $ref: '#/components/schemas/News'
+        highlight:
+          type: object
+          properties:
+            author:
+              type: array
+              items:
+                type: string
+                default: ["<em>vel</em> est", "voluptatum <em>vel</em>"]
+            abstract:
+              type: array
+              items:
+                type: string
+                default: ["<em>vel</em> est", "voluptatum <em>vel</em>"]
+            title:
+              type: array
+              items:
+                type: string
+                default: ["<em>vel</em> est", "voluptatum <em>vel</em>"]
