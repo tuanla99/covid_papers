@@ -18,6 +18,7 @@
     "firebase-tools": "^9.10.0",
     "gh-pages": "^2.2.0",
     "jquery": "^3.3.1",
+    "isomorphic-dompurify": "^0.13.0",
     "jquery-browserify": "^1.8.1",
     "jquery-mousewheel": "^3.1.13",
     "lodash": "^4.17.15",
