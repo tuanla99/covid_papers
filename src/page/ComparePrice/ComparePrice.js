@@ -1,4 +1,5 @@
 import { Col, Pagination, Row, Slider } from "antd";
+import DOMPurify from 'isomorphic-dompurify';
 import $ from "jquery";
 import { Component, default as React } from "react";
 import { Link } from "react-router-dom";
@@ -489,13 +490,19 @@ class SearchCar extends Component {
                 <div class="col-lg-9 item-col">
                   <div class="row">
                     <div class="col-lg-9 item-content">
-                      <h1><Link to={`/paper?id=${item?._source?.id}`}>{item?._source?.title}</Link></h1>
+                      <h1>
+                        <Link to={`/paper?id=${item?._source?.id}`}>
+                          <div dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(item?.highlight?.title) }} />
+                        </Link>
+                      </h1>
                       <p class="author-section" style={{ paddingTop: '2px' }}>
                         <span class="item-github-link">
                           {item?._source?.author}
                         </span>
                       </p>
-                      <p class="item-strip-abstract">{item?._source?.abstract?.split('.')?.[0]}</p>
+                      <p class="item-strip-abstract">
+                        <div dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(item?.highlight?.abstract?.[0]) }} />
+                      </p>
                       <div class="sota">
                       </div>
                       <p>
