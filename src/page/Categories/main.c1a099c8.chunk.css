@@ -23002,3 +23002,7 @@ select.select.form-control {
   color: #05869c !important;
   font-weight: bold;
 } */
+
+em {
+  color: #ff9632;
+}
