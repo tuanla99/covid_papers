@@ -277,4 +277,14 @@ async function getSearchPaper({ search }) {
   }
 }
 
-export { login, register, getSearch, getListManufacturer, getDetail, getSameRangeManufacturer, getListProduct, getSearchPrice, getType, getSearchPage, getSearchFilter, getSearchPageName, getListHome, getDetailParper, getSearchPaper };
+async function getCategoryPaper({ category }) {
+  try {
+    let response = await fetch(`https://system-integration.herokuapp.com/api/v1/news/category/${category}`);
+    let responseJson = await response.json();
+    return responseJson;
+  } catch (error) {
+    console.error(`Error is : ${error}`);
+  }
+}
+
+export { login, register, getSearch, getListManufacturer, getDetail, getSameRangeManufacturer, getListProduct, getSearchPrice, getType, getSearchPage, getSearchFilter, getSearchPageName, getListHome, getDetailParper, getSearchPaper, getCategoryPaper };
