@@ -18,7 +18,8 @@ import {
   removeFavoriteProduct,
   getSearchFilter,
   listFavoriteProduct,
-  getListHome
+  getListHome,
+  getCategoryPaper
 } from "../../networking/Server";
 const productPageSize = 24;
 const { Search } = Input;
@@ -38,6 +39,7 @@ class SearchCar extends Component {
     this.state = {
       dataPaper: [],
       dataTotalPaper: 0,
+      dataChooseCategory: 'all',
     };
   }
 
@@ -51,8 +53,19 @@ class SearchCar extends Component {
     });
   }
 
+  onChageCategory = (category) => {
+    getCategoryPaper({ category }).then((res) => {
+      console.log('res1: ', res);
+      this.setState({
+        dataPaper: (res && res.data) || [],
+        dataTotalPaper: (res && res.total) || 0,
+        dataChooseCategory: category
+      });
+    });
+  }
+
   render() {
-    const { dataPaper, dataTotalPaper } = this.state
+    const { dataPaper, dataTotalPaper, dataChooseCategory } = this.state
     console.log('aaaaa: ', dataPaper, dataTotalPaper);
     return (
       <>
@@ -167,14 +180,14 @@ class SearchCar extends Component {
                 <div class="badges-navbar ">
 
                   <a href="/" class="">
-                    <div class="badge badge-trending badge-active">
+                    <div class={`badge badge-trending ${dataChooseCategory === 'all' ? 'badge-active' : ''}`}>
                       <span class=" icon-wrapper icon-ion" data-name="trending-up-outline"><svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512"><path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M352 144h112v112"></path><path d="M48 368l121.37-121.37a32 32 0 0 1 45.26 0l50.74 50.74a32 32 0 0 0 45.26 0L448 160" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"></path></svg></span> Top
                     </div>
                   </a>
 
 
 
-                  <a class="trending-option " href="./top-social">
+                  <a class="trending-option " href="/">
                     <div class="badge badge-trending">
                       <span class=" icon-wrapper icon-ion" data-name="flame-outline"><svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512"><path d="M112 320c0-93 124-165 96-272 66 0 192 96 192 272a144 144 0 0 1-288 0z" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"></path><path d="M320 368c0 57.71-32 80-64 80s-64-22.29-64-80 40-86 32-128c42 0 96 70.29 96 128z" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"></path></svg></span> Hot
                     </div>
@@ -182,8 +195,8 @@ class SearchCar extends Component {
 
 
 
-                  <a href="./latest" class="">
-                    <div class="badge badge-trending">
+                  <a href="/" class="">
+                    <div class={`badge badge-trending ${dataChooseCategory === 'all' ? '' : ''}`}>
                       <span class=" icon-wrapper icon-ion" data-name="sparkles-outline">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                           <path d="M259.92 262.91L216.4 149.77a9 9 0 0 0-16.8 0l-43.52 113.14a9 9 0 0 1-5.17 5.17L37.77 311.6a9 9 0 0 0 0 16.8l113.14 43.52a9 9 0 0 1 5.17 5.17l43.52 113.14a9 9 0 0 0 16.8 0l43.52-113.14a9 9 0 0 1 5.17-5.17l113.14-43.52a9 9 0 0 0 0-16.8l-113.14-43.52a9 9 0 0 1-5.17-5.17zM108 68L88 16 68 68 16 88l52 20 20 52 20-52 52-20-52-20zm318.67 49.33L400 48l-26.67 69.33L304 144l69.33 26.67L400 240l26.67-69.33L496 144l-69.33-26.67z" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="32">
@@ -194,29 +207,32 @@ class SearchCar extends Component {
                   </a>
 
 
-                  <a href="./greatest" class="">
-                    <div class="badge badge-trending">
-                      <span class=" icon-wrapper icon-ion" data-name="trophy-outline">
-                        <svg viewBox="0 0 384 513.795" xmlns="http://www.w3.org/2000/svg"><path d="M369.9 98.88c9 9 14.1 21.3 14.1 34v332.1c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48v-416c0-26.5 21.5-48 48-48.1h204.1c12.7 0 24.9 5.1 33.9 14.1zm-37.8 30.1L256 52.88v76.1h76.1zM48 464.98h288v-288H232c-13.3 0-24-10.7-24-24v-104H48v416z"></path></svg>                    </span> CV
-                    </div>
-                  </a>
-                  <a href="./greatest" class="">
-                    <div class="badge badge-trending">
-                      <span class=" icon-wrapper icon-ion" data-name="trophy-outline">
-                        <svg viewBox="0 0 384 513.795" xmlns="http://www.w3.org/2000/svg"><path d="M369.9 98.88c9 9 14.1 21.3 14.1 34v332.1c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48v-416c0-26.5 21.5-48 48-48.1h204.1c12.7 0 24.9 5.1 33.9 14.1zm-37.8 30.1L256 52.88v76.1h76.1zM48 464.98h288v-288H232c-13.3 0-24-10.7-24-24v-104H48v416z"></path></svg>                    </span> NLP
-                    </div>
-                  </a>
-                  <a href="./greatest" class="">
-                    <div class="badge badge-trending">
-                      <span class=" icon-wrapper icon-ion" data-name="trophy-outline">
-                        <svg viewBox="0 0 384 513.795" xmlns="http://www.w3.org/2000/svg"><path d="M369.9 98.88c9 9 14.1 21.3 14.1 34v332.1c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48v-416c0-26.5 21.5-48 48-48.1h204.1c12.7 0 24.9 5.1 33.9 14.1zm-37.8 30.1L256 52.88v76.1h76.1zM48 464.98h288v-288H232c-13.3 0-24-10.7-24-24v-104H48v416z"></path></svg>                    </span> Covid
-                    </div>
-                  </a>
+                  {/* <a href="./greatest" class=""> */}
+                  <div class={`badge badge-trending ${dataChooseCategory === 'cv' ? 'badge-active' : ''}`} onClick={() => this.onChageCategory('cv')} style={{ cursor: "pointer" }}>
+                    <span class=" icon-wrapper icon-ion" data-name="trophy-outline">
+                      <svg viewBox="0 0 384 513.795" xmlns="http://www.w3.org/2000/svg"><path d="M369.9 98.88c9 9 14.1 21.3 14.1 34v332.1c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48v-416c0-26.5 21.5-48 48-48.1h204.1c12.7 0 24.9 5.1 33.9 14.1zm-37.8 30.1L256 52.88v76.1h76.1zM48 464.98h288v-288H232c-13.3 0-24-10.7-24-24v-104H48v416z"></path></svg>
+                    </span> CV
+                  </div>
+                  {/* </a> */}
+                  {/* <a href="./greatest" class=""> */}
+                  <div class={`badge badge-trending ${dataChooseCategory === 'nlp' ? 'badge-active' : ''}`} onClick={() => this.onChageCategory('nlp')} style={{ cursor: "pointer" }}>
+                    <span class=" icon-wrapper icon-ion" data-name="trophy-outline">
+                      <svg viewBox="0 0 384 513.795" xmlns="http://www.w3.org/2000/svg"><path d="M369.9 98.88c9 9 14.1 21.3 14.1 34v332.1c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48v-416c0-26.5 21.5-48 48-48.1h204.1c12.7 0 24.9 5.1 33.9 14.1zm-37.8 30.1L256 52.88v76.1h76.1zM48 464.98h288v-288H232c-13.3 0-24-10.7-24-24v-104H48v416z"></path></svg>
+                    </span> NLP
+                  </div>
+                  {/* </a> */}
+                  {/* <a href="./greatest" class=""> */}
+                  <div class={`badge badge-trending ${dataChooseCategory === 'covid' ? 'badge-active' : ''}`} onClick={() => this.onChageCategory('covid')} style={{ cursor: "pointer" }}>
+                    <span class=" icon-wrapper icon-ion" data-name="trophy-outline">
+                      <svg viewBox="0 0 384 513.795" xmlns="http://www.w3.org/2000/svg"><path d="M369.9 98.88c9 9 14.1 21.3 14.1 34v332.1c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48v-416c0-26.5 21.5-48 48-48.1h204.1c12.7 0 24.9 5.1 33.9 14.1zm-37.8 30.1L256 52.88v76.1h76.1zM48 464.98h288v-288H232c-13.3 0-24-10.7-24-24v-104H48v416z"></path></svg>
+                    </span> Covid
+                  </div>
+                  {/* </a> */}
 
                 </div>
 
                 <h2 class="home-page-title">
-                  Trending Research
+                  {dataChooseCategory === 'all' ? 'Trending Research' : (dataChooseCategory === 'cv' ? 'CV' : (dataChooseCategory === 'nlp' ? 'NLP' : 'Covid'))}
 
                 </h2>
 
