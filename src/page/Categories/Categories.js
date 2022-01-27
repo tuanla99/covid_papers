@@ -116,6 +116,9 @@ class SearchCar extends Component {
               <li class="nav-item">
                 <a class="nav-link" href="/methods">Methods</a>
               </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/statistic">Statistic</a>
+              </li>
 
 
               {/* <li class="nav-item dropdown">

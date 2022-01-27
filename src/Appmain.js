@@ -22,6 +22,7 @@ export default class Appmain extends Component {
                          <Route exact path="/" component={Categories} />
                          <Route path="/paper" component={Paper} />
                          <Route path="/search" component={ComparePrice} />
+                         <Route exact path="/statistic" component={View_profile} />
                          {/* <Route exact path="/Categories" component={Categories} />
                          <Route exact path="/View_profile" component={View_profile} />
                          <Route exact path="/SearchCar" component={SearchCar} />

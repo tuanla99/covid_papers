@@ -23006,3 +23006,7 @@ select.select.form-control {
 em {
   color: #ff9632;
 }
+
+.highcharts-credits {
+  display: none;
+}

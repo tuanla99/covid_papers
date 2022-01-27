@@ -328,7 +328,9 @@ class SearchCar extends Component {
                 <a class="nav-link" href="/methods">Methods</a>
               </li>
 
-
+              <li class="nav-item">
+                <a class="nav-link" href="/statistic">Statistic</a>
+              </li>
               {/* <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" role="button" id="navbarDropdownRepro" data-toggle="dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             More
