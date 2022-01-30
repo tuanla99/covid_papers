@@ -17,3 +17,6 @@ npm start
 ```
 
 The Application Runs on **localhost:3000**
+
+# Server Project
+### [server](https://github.com/tuanla99/covid_papers/tree/master/backend/system_integration)
