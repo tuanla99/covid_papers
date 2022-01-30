@@ -219,13 +219,13 @@ class View_profile extends Component {
               colorByPoint: true,
               data: [{
                 name: 'Cv',
-                y: 117,
+                y: 587,
               }, {
                 name: 'NLP',
-                y: 284
+                y: 717
               }, {
                 name: 'Covid',
-                y: 173
+                y: 819
               }]
             }]
           }}
